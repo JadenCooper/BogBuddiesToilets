@@ -1,0 +1,9 @@
+Missing Textures (That I can think of/seen):
+Mesh_3 (the faucet)
+Extrude_85 , 86, 87, and 88 for the doors
+Extrude_139, 140, and 141 for the windows, also group_35 (the glass pane) is missing one side
+The assistants doorframe, and door
+Generic_Solid_8, the toilet bowl is missing a top side
+
+Progress Report:
+I have made some progress in the 3D walk around of the old Octagon toilets. I have implimented a walk around through the model, while being able to provide some interactivity. This means that the user is able to open and close doors, and turning taps. I plan to further increase this interactivity, by when the user turns a tap, water will come out of the corresponding faucet.
