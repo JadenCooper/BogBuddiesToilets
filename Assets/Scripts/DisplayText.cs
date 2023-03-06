@@ -7,14 +7,13 @@ using System;
 public class DisplayText : MonoBehaviour
 {
     public GameObject canvas;
-    private bool hovering;
+    private bool hovering = false;
     private float hoverValue = 0.0f;
     
     // Start is called before the first frame update
     void Start()
     {
         canvas.GetComponent<CanvasGroup>().alpha = hoverValue;
-        hovering = false;
     }
 
     // Update is called once per frame
