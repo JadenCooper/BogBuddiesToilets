@@ -4007,6 +4007,113 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 302542873}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &227881979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227881974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 282c8a8b4cb4f4e4e8fa399dc312db67,
+    type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 86e93bac-32a7-4110-9440-0423afc8543b
+    m_ActionName: Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow,/ROCCAT
+      ROCCAT Tyon White/stick]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f41165a5-23e4-4587-814a-adc70cec3a54
+    m_ActionName: Player/Look[/Mouse/delta,/Simulated Touchscreen/delta]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c699eb38-83f8-42bb-9d19-e8a4d8ad806d
+    m_ActionName: Player/Fire[/Mouse/leftButton,/Simulated Touchscreen/primaryTouch/tap,/ROCCAT
+      ROCCAT Tyon White/trigger]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a25bb5b4-d480-4dc0-b077-f0f0be6b3286
+    m_ActionName: UI/Navigate[/ROCCAT ROCCAT Tyon White/stick/up,/ROCCAT ROCCAT Tyon
+      White/stick/down,/ROCCAT ROCCAT Tyon White/stick/left,/ROCCAT ROCCAT Tyon White/stick/right,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e6ead1cc-262e-4304-bc1f-a8496e7c6086
+    m_ActionName: UI/Submit[/Keyboard/enter]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 45c07fdf-17ed-44b2-b3cd-88d3c3711894
+    m_ActionName: UI/Cancel[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6edc239d-d2a8-4ca9-8bcd-bece7b10beb1
+    m_ActionName: UI/Point[/Mouse/position,/Simulated Touchscreen/touch0/position,/Simulated
+      Touchscreen/touch1/position,/Simulated Touchscreen/touch2/position,/Simulated
+      Touchscreen/touch3/position,/Simulated Touchscreen/touch4/position,/Simulated
+      Touchscreen/touch5/position,/Simulated Touchscreen/touch6/position,/Simulated
+      Touchscreen/touch7/position,/Simulated Touchscreen/touch8/position,/Simulated
+      Touchscreen/touch9/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4f55e998-fd72-426e-9f39-006f0eab7cf1
+    m_ActionName: UI/Click[/Mouse/leftButton,/Simulated Touchscreen/touch0/press,/Simulated
+      Touchscreen/touch1/press,/Simulated Touchscreen/touch2/press,/Simulated Touchscreen/touch3/press,/Simulated
+      Touchscreen/touch4/press,/Simulated Touchscreen/touch5/press,/Simulated Touchscreen/touch6/press,/Simulated
+      Touchscreen/touch7/press,/Simulated Touchscreen/touch8/press,/Simulated Touchscreen/touch9/press]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e729952a-90f1-4857-9f70-8f90fa698420
+    m_ActionName: UI/ScrollWheel[/Mouse/scroll]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 319241cc-d687-4af8-b915-88b72eadbae2
+    m_ActionName: UI/MiddleClick[/Mouse/middleButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 07169901-15d5-4a27-bf5d-baf96d516790
+    m_ActionName: UI/RightClick[/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: fac0a542-e753-45fc-801f-81489b1559ff
+    m_ActionName: UI/TrackedDevicePosition
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7d5bb9d2-a05a-4104-a982-4d292960be41
+    m_ActionName: UI/TrackedDeviceOrientation
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 304805285}
+--- !u!114 &227881980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227881974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d79ed5ad5a5f7243b8601c6f2a256f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
 --- !u!1 &231016395
 GameObject:
   m_ObjectHideFlags: 0
@@ -5607,7 +5714,7 @@ PrefabInstance:
     - target: {fileID: 4905743814244590537, guid: d1cf45922b53f4e41bb8f905c017561e,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6004343870197294308, guid: d1cf45922b53f4e41bb8f905c017561e,
         type: 3}
@@ -5797,12 +5904,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304805281}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 88.75, y: 42.32, z: -44.911972}
+  m_LocalPosition: {x: 0, y: 0.5999985, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 227881977}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!124 &304805283
 Behaviour:
@@ -14070,7 +14177,7 @@ RectTransform:
   - {fileID: 1850676260}
   - {fileID: 1205060381}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -14132,7 +14239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
-  m_DragThreshold: 10
+  m_DragThreshold: 1
 --- !u!1 &704667375
 GameObject:
   m_ObjectHideFlags: 0
