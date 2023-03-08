@@ -36,9 +36,5 @@ public class MouseLook : MonoBehaviour
 
         //Rotate the camera
         transform.rotation = Quaternion.Euler(xrotation , yrotation , 0);
-
-        //Rotating the player
-        Player.transform.localRotation = Quaternion.Euler(0 , yrotation , 0);
-        
     }
 }

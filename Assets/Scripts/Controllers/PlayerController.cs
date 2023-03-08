@@ -20,6 +20,11 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
     }
+    private void Start()
+    {
+        //UnityEngine.Cursor.visible = true;
+        //UnityEngine.Cursor.lockState = CursorLockMode.Locked;
+    }
     private Vector2 GetPointerPosition()
     {
         Vector3 mousePos = Look.action.ReadValue<Vector2>();
@@ -50,6 +55,6 @@ public class PlayerController : MonoBehaviour
     {
         MovementInput = Movement.action.ReadValue<Vector3>().normalized;
         Move();
-        rb.velocity = transform.TransformDirection(movement * Time.deltaTime);
+        rb.velocity = transform.TransformDirection(movement * Time.deltaTime); // Increases Velocity And Changes Direction From Local World
     }
 }
