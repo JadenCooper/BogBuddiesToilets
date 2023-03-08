@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
@@ -49,6 +50,6 @@ public class PlayerController : MonoBehaviour
     {
         MovementInput = Movement.action.ReadValue<Vector3>().normalized;
         Move();
-        rb.velocity = movement * Time.deltaTime;
+        rb.velocity = transform.TransformDirection(movement * Time.deltaTime);
     }
 }
