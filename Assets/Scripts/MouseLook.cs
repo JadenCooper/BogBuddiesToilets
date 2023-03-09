@@ -16,7 +16,7 @@ public class MouseLook : MonoBehaviour
     void Start()
     {
         camera_y = transform.position.y - Player.transform.position.y;
-        //Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Locked;
     }
     
 
