@@ -8,7 +8,7 @@ using UnityEngine.UIElements;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField]
-    private InputActionReference Look, Movement;
+    private InputActionReference Movement;
     [SerializeField]
     private Vector3 MovementInput;
     private Rigidbody rb;
@@ -20,17 +20,6 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
     }
-    private void Start()
-    {
-        //UnityEngine.Cursor.visible = true;
-        //UnityEngine.Cursor.lockState = CursorLockMode.Locked;
-    }
-    private Vector2 GetPointerPosition()
-    {
-        Vector3 mousePos = Look.action.ReadValue<Vector2>();
-        return Camera.main.ScreenToWorldPoint(mousePos);
-    }
-
     public void Move()
     {
         CalculateSpeed();
@@ -54,6 +43,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         MovementInput = Movement.action.ReadValue<Vector3>().normalized;
+        Debug.Log(MovementInput);
         Move();
         rb.velocity = transform.TransformDirection(movement * Time.deltaTime); // Increases Velocity And Changes Direction From Local World
     }
