@@ -8,6 +8,7 @@ TagManager:
   - LoadLeft
   - LoadRight
   - UnloadRight
+  - Text
   layers:
   - Default
   - TransparentFX
