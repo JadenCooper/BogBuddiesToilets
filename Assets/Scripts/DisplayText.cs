@@ -1,41 +1,37 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using Unity.UI;
 using System;
+using UnityEngine.UI;
+using TMPro;
 
 public class DisplayText : MonoBehaviour
 {
-    public GameObject canvas;
-    private bool hovering;
-    private float hoverValue = 0.0f;
-    
-    // Start is called before the first frame update
-    void Start()
+    public GameObject Text;
+    public String InputText;
+    private void Start()
     {
-        canvas.GetComponent<CanvasGroup>().alpha = hoverValue;
-        hovering = false;
+        Text.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = InputText;
     }
-
     // Update is called once per frame
     void Update()
     {
-        if (hovering && hoverValue < 1.0f)
+        if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
         {
-            hoverValue += 0.05f;
+            Debug.Log("Touched");
+            Ray raycast = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+            RaycastHit raycastHit;
+            if (Physics.Raycast(raycast, out raycastHit))
+            {
+                Debug.Log("Something Hit");
+
+                if (raycastHit.collider.CompareTag("Text"))
+                {
+                    Text.SetActive(!Text.activeSelf);
+                }
+            }
+
         }
-        if (!hovering && hoverValue > 0.0f)
-        {
-            hoverValue -= 0.05f;
-        }
-        canvas.GetComponent<CanvasGroup>().alpha = hoverValue;
-    }
-    public void OnEnter()
-    {
-        hovering = true;
-    }
-    public void OnExit()
-    {
-        hovering = false;
     }
 }
