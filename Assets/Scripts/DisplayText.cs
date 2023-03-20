@@ -11,7 +11,7 @@ public class DisplayText : Interactable
     public GameObject Text;
     public String InputText;
     [SerializeField]
-    private float invisableTimer = 2f;
+    private float invisableTimer = 20f;
     [SerializeField]
     private bool isCoroutineRunning = false;
     private void Start()
@@ -21,31 +21,29 @@ public class DisplayText : Interactable
     // Update is called once per frame
     void Update()
     {
-        if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
-        {
-            Debug.Log("Touched");
-            Ray raycast = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
-            RaycastHit raycastHit;
-            if (Physics.Raycast(raycast, out raycastHit))
-            {
-                Debug.Log("Something Hit");
 
-                if (raycastHit.collider.CompareTag("Text"))
-                {
-                    Text.SetActive(!Text.activeSelf);
-                }
-            }
-
-        }
-    }
-
-    public void Test()
-    {
-        Debug.Log("Press");
     }
 
     public override void Interact()
     {
-        Test();
+        if (Text.activeSelf)
+        {
+            StopCoroutine(InvisableTimer());
+            isCoroutineRunning = false;
+            Text.SetActive(false);
+        }
+        else
+        {
+            //Turn On
+            Text.SetActive(true);
+            StartCoroutine(InvisableTimer());
+        }
+    }
+    public IEnumerator InvisableTimer()
+    {
+        isCoroutineRunning = true;
+        yield return new WaitForSeconds(invisableTimer);
+        isCoroutineRunning = false;
+        Text.SetActive(false);
     }
 }
