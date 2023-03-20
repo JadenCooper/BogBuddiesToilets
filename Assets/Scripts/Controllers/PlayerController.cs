@@ -59,13 +59,14 @@ public class PlayerController : MonoBehaviour
 
     private void Press(InputAction.CallbackContext obj)
     {
+        // Interact - Shoots Out Raycast Out At Press/Click Position 
         Ray raycast = Camera.main.ScreenPointToRay(Look.action.ReadValue<Vector2>());
         RaycastHit raycastHit;
         if (Physics.Raycast(raycast, out raycastHit))
         {
-            if (raycastHit.collider.CompareTag("Text"))
+            if (raycastHit.collider.CompareTag("Text")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
             {
-                raycastHit.collider.GetComponentInParent<Interactable>().Interact();
+                raycastHit.collider.GetComponentInParent<Interactable>().Interact(); // Activates Object's Interaction
             }
         }
     }

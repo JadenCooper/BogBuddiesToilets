@@ -11,36 +11,34 @@ public class DisplayText : Interactable
     public GameObject Text;
     public String InputText;
     [SerializeField]
-    private float invisableTimer = 20f;
+    private float invisableTimer = 20f; // Time To Turn Off
     [SerializeField]
     private bool isCoroutineRunning = false;
     private void Start()
     {
         Text.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = InputText;
     }
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     public override void Interact()
     {
+        // Pressed On 
         if (Text.activeSelf)
         {
+            // Turn Off Display
             StopCoroutine(InvisableTimer());
             isCoroutineRunning = false;
             Text.SetActive(false);
         }
         else
         {
-            //Turn On
+            //Turn On Display
             Text.SetActive(true);
             StartCoroutine(InvisableTimer());
         }
     }
     public IEnumerator InvisableTimer()
     {
+        // Timer To Turn Off
         isCoroutineRunning = true;
         yield return new WaitForSeconds(invisableTimer);
         isCoroutineRunning = false;
