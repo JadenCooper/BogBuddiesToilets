@@ -6,10 +6,14 @@ using System;
 using UnityEngine.UI;
 using TMPro;
 
-public class DisplayText : MonoBehaviour
+public class DisplayText : Interactable
 {
     public GameObject Text;
     public String InputText;
+    [SerializeField]
+    private float invisableTimer = 2f;
+    [SerializeField]
+    private bool isCoroutineRunning = false;
     private void Start()
     {
         Text.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = InputText;
@@ -33,5 +37,15 @@ public class DisplayText : MonoBehaviour
             }
 
         }
+    }
+
+    public void Test()
+    {
+        Debug.Log("Press");
+    }
+
+    public override void Interact()
+    {
+        Test();
     }
 }

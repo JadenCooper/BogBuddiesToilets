@@ -8,7 +8,7 @@ using UnityEngine.UIElements;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField]
-    private InputActionReference Movement;
+    private InputActionReference Movement, Interact, Look;
     [SerializeField]
     private Vector3 MovementInput;
     private Rigidbody rb;
@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public float MaxSpeed = 20;
     public float CurrentSpeed = 0;
     public float Acceleration = 10;
+    public MouseLook mouseLook;
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -43,8 +44,29 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         MovementInput = Movement.action.ReadValue<Vector3>().normalized;
-        Debug.Log(MovementInput);
         Move();
         rb.velocity = transform.TransformDirection(movement * Time.deltaTime); // Increases Velocity And Changes Direction From Local World
+    }
+
+    private void OnEnable()
+    {
+        Interact.action.performed += Press;
+    }
+    private void OnDisable()
+    {
+        Interact.action.performed -= Press;
+    }
+
+    private void Press(InputAction.CallbackContext obj)
+    {
+        Ray raycast = Camera.main.ScreenPointToRay(Look.action.ReadValue<Vector2>());
+        RaycastHit raycastHit;
+        if (Physics.Raycast(raycast, out raycastHit))
+        {
+            if (raycastHit.collider.CompareTag("Text"))
+            {
+                raycastHit.collider.GetComponentInParent<Interactable>().Interact();
+            }
+        }
     }
 }
