@@ -613,6 +613,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9860549}
   m_Mesh: {fileID: 4300296, guid: 5b8c5d15bf5cc4d4bb06d33f570abedd, type: 3}
+--- !u!1 &16234595 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5997685455865862240, guid: 2531c8733be84e24387fc6b85e48356f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1743656140}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &18514776
 GameObject:
   m_ObjectHideFlags: 0
@@ -2299,6 +2305,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 109674879}
   m_CullTransparentMesh: 0
+--- !u!1 &114379892 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5997685455865862240, guid: 2531c8733be84e24387fc6b85e48356f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1146125207}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &114809272
 GameObject:
   m_ObjectHideFlags: 0
@@ -5777,7 +5789,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTo: {x: 96.923, y: 38.502045, z: -47.058777}
-  character: {fileID: 9010264695610810677}
   startingText: Male Enterance Two
   text: {fileID: 910783463}
   rotation: -70
@@ -6530,7 +6541,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTo: {x: 89.25366, y: 41.91, z: -44.690994}
-  character: {fileID: 9010264695610810677}
   startingText: Male Toilets Front
   text: {fileID: 219624680}
   rotation: 90
@@ -7317,6 +7327,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 308698166}
   m_Mesh: {fileID: 4300328, guid: 5b8c5d15bf5cc4d4bb06d33f570abedd, type: 3}
+--- !u!1 &309410708 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5997685455865862240, guid: 2531c8733be84e24387fc6b85e48356f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1535986095}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &311623406
 GameObject:
   m_ObjectHideFlags: 0
@@ -13184,7 +13200,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTo: {x: 101.768074, y: 38.502045, z: -47.282925}
-  character: {fileID: 9010264695610810677}
   startingText: Side Room
   text: {fileID: 1018585231}
   rotation: 90
@@ -13778,6 +13793,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
         type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 759677367}
+    - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
       propertyPath: InputText
       value: There were three undergrounds built in Dunedin in 1910
       objectReference: {fileID: 0}
@@ -13911,7 +13931,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTo: {x: 95.038, y: 38.502045, z: -44.972954}
-  character: {fileID: 9010264695610810677}
   startingText: Left Room
   text: {fileID: 1785683900}
   rotation: -90
@@ -14483,7 +14502,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTo: {x: 96.923, y: 38.502045, z: -47.058777}
-  character: {fileID: 9010264695610810677}
   startingText: Male Toilets Main Area
   text: {fileID: 1186208106}
   rotation: -90
@@ -18290,6 +18308,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 752208427}
   m_Mesh: {fileID: 4300476, guid: 5b8c5d15bf5cc4d4bb06d33f570abedd, type: 3}
+--- !u!1 &759677367 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5997685455865862240, guid: 2531c8733be84e24387fc6b85e48356f,
+    type: 3}
+  m_PrefabInstance: {fileID: 573837948}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &776068780
 GameObject:
   m_ObjectHideFlags: 0
@@ -19769,7 +19793,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTo: {x: 101.402, y: 38.502045, z: -45.069}
-  character: {fileID: 9010264695610810677}
   startingText: Female Toilets
   text: {fileID: 818615338}
   rotation: -90
@@ -20007,6 +20030,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 840379650}
   m_Mesh: {fileID: 4300404, guid: 5b8c5d15bf5cc4d4bb06d33f570abedd, type: 3}
+--- !u!1 &844870173 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5997685455865862240, guid: 2531c8733be84e24387fc6b85e48356f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1137805983}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &846384341
 GameObject:
   m_ObjectHideFlags: 0
@@ -20953,81 +20982,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878064101}
   m_CullTransparentMesh: 0
---- !u!1 &880115319
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 880115320}
-  - component: {fileID: 880115321}
-  m_Layer: 0
-  m_Name: MainCamera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &880115320
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 880115319}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9010264695610810677}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!20 &880115321
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 880115319}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.01
-  far clip plane: 1000
-  field of view: 70
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 0
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
 --- !u!1 &890165861
 GameObject:
   m_ObjectHideFlags: 0
@@ -22939,7 +22893,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTo: {x: 103.29, y: 41.908775, z: -46.028}
-  character: {fileID: 9010264695610810677}
   startingText: Female Toilets
   text: {fileID: 2027839808}
   rotation: -90
@@ -23791,7 +23744,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTo: {x: 97.331, y: 41.91, z: -51.574}
-  character: {fileID: 9010264695610810677}
   startingText: Front Of Toilets
   text: {fileID: 587752956}
   rotation: 0
@@ -26171,7 +26123,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTo: {x: 101.402, y: 38.502045, z: -45.069}
-  character: {fileID: 9010264695610810677}
   startingText: Return
   text: {fileID: 1729691885}
   rotation: -90
@@ -27527,6 +27478,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1114440712}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1118282535 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5997685455865862240, guid: 2531c8733be84e24387fc6b85e48356f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1845420503}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1121418950
 GameObject:
   m_ObjectHideFlags: 0
@@ -28493,6 +28450,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
         type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 844870173}
+    - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
       propertyPath: InputText
       value: These conveniences were the first in the city built for women
       objectReference: {fileID: 0}
@@ -28767,6 +28729,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 694016135}
     m_Modifications:
+    - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 114379892}
     - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
         type: 3}
       propertyPath: InputText
@@ -30216,7 +30183,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTo: {x: 97.331, y: 41.91, z: -51.574}
-  character: {fileID: 9010264695610810677}
   startingText: Front Of Toilets
   text: {fileID: 2022103595}
   rotation: 0
@@ -30691,7 +30657,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTo: {x: 95.038, y: 38.502045, z: -44.972954}
-  character: {fileID: 9010264695610810677}
   startingText: Male Toilets Main Area
   text: {fileID: 683069892}
   rotation: -90
@@ -32046,7 +32011,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTo: {x: 96.707, y: 38.502045, z: -43.066776}
-  character: {fileID: 9010264695610810677}
   startingText: Male Toilets Main Area
   text: {fileID: 1411352416}
   rotation: -110
@@ -33010,11 +32974,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTo: {x: 93.069, y: 38.502045, z: -46.188778}
-  character: {fileID: 9010264695610810677}
   startingText: Right Room
   text: {fileID: 1691680030}
   rotation: -110
   LocationArrows: {fileID: 1857181472}
+--- !u!1 &1282038743 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5997685455865862240, guid: 2531c8733be84e24387fc6b85e48356f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1711231383}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1287978159
 GameObject:
   m_ObjectHideFlags: 0
@@ -33174,7 +33143,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTo: {x: 101.402, y: 38.502045, z: -45.069}
-  character: {fileID: 9010264695610810677}
   startingText: Return
   text: {fileID: 221833042}
   rotation: -90
@@ -34216,6 +34184,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 694016135}
     m_Modifications:
+    - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 1557680626}
     - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
         type: 3}
       propertyPath: InputText
@@ -36484,7 +36457,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTo: {x: 95.038, y: 38.502045, z: -44.972954}
-  character: {fileID: 9010264695610810677}
   startingText: Male Toilets Main Area
   text: {fileID: 1714770831}
   rotation: -90
@@ -37139,7 +37111,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTo: {x: 89.25366, y: 41.91, z: -44.690994}
-  character: {fileID: 9010264695610810677}
   startingText: Male Toilets Front
   text: {fileID: 833440485}
   rotation: 90
@@ -38588,6 +38559,12 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1497789442 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5997685455865862240, guid: 2531c8733be84e24387fc6b85e48356f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1923113851}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1498493567
 GameObject:
   m_ObjectHideFlags: 0
@@ -39174,7 +39151,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTo: {x: 93.156, y: 38.502045, z: -43.99}
-  character: {fileID: 9010264695610810677}
   startingText: Left Room
   text: {fileID: 190656890}
   rotation: -110
@@ -39611,6 +39587,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 694016135}
     m_Modifications:
+    - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 309410708}
     - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
         type: 3}
       propertyPath: InputText
@@ -40190,6 +40171,12 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1557680626 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5997685455865862240, guid: 2531c8733be84e24387fc6b85e48356f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1337526253}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1561558519
 GameObject:
   m_ObjectHideFlags: 0
@@ -43179,6 +43166,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
         type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 1282038743}
+    - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
       propertyPath: InputText
       value: "Each water closet had a \u201Cpenny in the slot\u201D locking system.
         It cost a penny to unlock the door to use the water closets. Urinals were
@@ -44726,6 +44718,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 694016135}
     m_Modifications:
+    - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 16234595}
     - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
         type: 3}
       propertyPath: InputText
@@ -48038,6 +48035,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
         type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 1118282535}
+    - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
       propertyPath: InputText
       value: All the interior tiles and fixtures were imported from England from
         the Twyford company
@@ -49285,6 +49287,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
         type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 1497789442}
+    - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
       propertyPath: InputText
       value: The Octagon underground convenience was built in 1910.
       objectReference: {fileID: 0}
@@ -49886,7 +49893,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTo: {x: 103.29, y: 41.908775, z: -46.028}
-  character: {fileID: 9010264695610810677}
   startingText: Female Toilets Front
   text: {fileID: 91097960}
   rotation: -90
@@ -50051,7 +50057,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTo: {x: 99.628, y: 38.502045, z: -47.154953}
-  character: {fileID: 9010264695610810677}
   startingText: Right Room
   text: {fileID: 620465711}
   rotation: -100
@@ -51509,7 +51514,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTo: {x: 89.25366, y: 41.91, z: -44.690994}
-  character: {fileID: 9010264695610810677}
   startingText: Male Toilets
   text: {fileID: 5997685457274902410}
   rotation: 90
@@ -52623,7 +52627,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTo: {x: 100.149, y: 38.502045, z: -42.57415}
-  character: {fileID: 9010264695610810677}
   startingText: Left Room
   text: {fileID: 1108520189}
   rotation: -100
@@ -54731,7 +54734,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTo: {x: 95.038, y: 38.502045, z: -44.972954}
-  character: {fileID: 9010264695610810677}
   startingText: Right Room
   text: {fileID: 2138319825}
   rotation: -90
@@ -55006,7 +55008,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTo: {x: 101.402, y: 38.502045, z: -45.069}
-  character: {fileID: 9010264695610810677}
   startingText: Return
   text: {fileID: 2048137099}
   rotation: -90
@@ -55533,7 +55534,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTo: {x: 96.707, y: 38.502045, z: -43.066776}
-  character: {fileID: 9010264695610810677}
   startingText: Male Enterance One
   text: {fileID: 1413672444}
   rotation: -110
@@ -55958,6 +55958,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 843281804658075895, guid: b2306de44b0abca41918c5bb5c6f198f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9010264696739504848, guid: b2306de44b0abca41918c5bb5c6f198f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9010264696739504849, guid: b2306de44b0abca41918c5bb5c6f198f,
         type: 3}
       propertyPath: m_Enabled
@@ -56053,12 +56063,6 @@ PrefabInstance:
 --- !u!20 &9010264695610810668 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 9010264696739504849, guid: b2306de44b0abca41918c5bb5c6f198f,
-    type: 3}
-  m_PrefabInstance: {fileID: 9010264695610810667}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &9010264695610810677 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9010264696739504856, guid: b2306de44b0abca41918c5bb5c6f198f,
     type: 3}
   m_PrefabInstance: {fileID: 9010264695610810667}
   m_PrefabAsset: {fileID: 0}
