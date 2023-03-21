@@ -19,13 +19,10 @@ public class DisplayText : MonoBehaviour
     {
         if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
         {
-            Debug.Log("Touched");
             Ray raycast = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
             RaycastHit raycastHit;
             if (Physics.Raycast(raycast, out raycastHit))
             {
-                Debug.Log("Something Hit");
-
                 if (raycastHit.collider.CompareTag("Text"))
                 {
                     Text.SetActive(!Text.activeSelf);

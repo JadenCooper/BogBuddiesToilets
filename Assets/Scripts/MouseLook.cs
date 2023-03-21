@@ -19,7 +19,7 @@ public class MouseLook : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
     
-
+    /*
     // Update is called once per frame
     void Update()
     {
@@ -37,4 +37,5 @@ public class MouseLook : MonoBehaviour
         //Rotate the camera
         transform.rotation = Quaternion.Euler(xrotation , yrotation , 0);
     }
+    */
 }

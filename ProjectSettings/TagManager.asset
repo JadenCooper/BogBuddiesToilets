@@ -8,6 +8,8 @@ TagManager:
   - LoadLeft
   - LoadRight
   - UnloadRight
+  - Text
+  - Arrow
   layers:
   - Default
   - TransparentFX
