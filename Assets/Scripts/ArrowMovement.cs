@@ -11,8 +11,9 @@ public class ArrowMovement : MonoBehaviour
     public Vector3 moveTo;
     public Transform character;
     public string startingText;
-    private TextMeshProUGUI text;
+    public TextMeshProUGUI text;
     public float rotation;
+    public GameObject LocationArrows;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +32,9 @@ public class ArrowMovement : MonoBehaviour
                 if (raycastHit.collider.CompareTag("Arrow"))
                 {
                     ArrowMovement objectHit = raycastHit.collider.gameObject.transform.GetComponent<ArrowMovement>();
-                    character.SetPositionAndRotation(objectHit.moveTo, Quaternion.Euler(0, objectHit.rotation, 0));       
+                    character.SetPositionAndRotation(objectHit.moveTo, Quaternion.Euler(0, objectHit.rotation, 0));
+                    objectHit.LocationArrows.SetActive(true);
+                    objectHit.gameObject.transform.parent.gameObject.SetActive(false);
                 }
             }
         }

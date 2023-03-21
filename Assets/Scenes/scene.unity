@@ -1743,7 +1743,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &86430460
 Transform:
   m_ObjectHideFlags: 0
@@ -4144,7 +4144,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &203962265
 Transform:
   m_ObjectHideFlags: 0
@@ -4152,14 +4152,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 203962264}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 100.881744, y: 38.06612, z: -44.843304}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.6166306, y: -3.5146751, z: 4.907467}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1288686591}
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 1466515866}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &207149795
 GameObject:
@@ -5779,7 +5779,9 @@ MonoBehaviour:
   moveTo: {x: 96.923, y: 38.502045, z: -47.058777}
   character: {fileID: 9010264695610810677}
   startingText: Male Enterance Two
+  text: {fileID: 910783463}
   rotation: -70
+  LocationArrows: {fileID: 1520203092}
 --- !u!1 &271146226
 GameObject:
   m_ObjectHideFlags: 0
@@ -6530,7 +6532,9 @@ MonoBehaviour:
   moveTo: {x: 89.25366, y: 41.91, z: -44.690994}
   character: {fileID: 9010264695610810677}
   startingText: Male Toilets Front
+  text: {fileID: 219624680}
   rotation: 90
+  LocationArrows: {fileID: 345294515}
 --- !u!1 &296338524
 GameObject:
   m_ObjectHideFlags: 0
@@ -7948,7 +7952,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &345294516
 Transform:
   m_ObjectHideFlags: 0
@@ -8389,37 +8393,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c21639f612a36ad419958a7e4be9f10c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &364623189
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 364623190}
-  m_Layer: 0
-  m_Name: Side Area
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &364623190
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 364623189}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.316, y: -2.806, z: 5.005}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1466515866}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &365718283
 GameObject:
   m_ObjectHideFlags: 0
@@ -11245,7 +11218,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &472288830
 Transform:
   m_ObjectHideFlags: 0
@@ -13213,7 +13186,9 @@ MonoBehaviour:
   moveTo: {x: 101.768074, y: 38.502045, z: -47.282925}
   character: {fileID: 9010264695610810677}
   startingText: Side Room
+  text: {fileID: 1018585231}
   rotation: 90
+  LocationArrows: {fileID: 1042167370}
 --- !u!1 &556471336
 GameObject:
   m_ObjectHideFlags: 0
@@ -13938,7 +13913,9 @@ MonoBehaviour:
   moveTo: {x: 95.038, y: 38.502045, z: -44.972954}
   character: {fileID: 9010264695610810677}
   startingText: Left Room
+  text: {fileID: 1785683900}
   rotation: -90
+  LocationArrows: {fileID: 1003928916}
 --- !u!1 &578997891
 GameObject:
   m_ObjectHideFlags: 0
@@ -14508,7 +14485,9 @@ MonoBehaviour:
   moveTo: {x: 96.923, y: 38.502045, z: -47.058777}
   character: {fileID: 9010264695610810677}
   startingText: Male Toilets Main Area
+  text: {fileID: 1186208106}
   rotation: -90
+  LocationArrows: {fileID: 1520203092}
 --- !u!1 &600517865
 GameObject:
   m_ObjectHideFlags: 0
@@ -19792,7 +19771,9 @@ MonoBehaviour:
   moveTo: {x: 101.402, y: 38.502045, z: -45.069}
   character: {fileID: 9010264695610810677}
   startingText: Female Toilets
+  text: {fileID: 818615338}
   rotation: -90
+  LocationArrows: {fileID: 86430459}
 --- !u!1 &833440483
 GameObject:
   m_ObjectHideFlags: 0
@@ -22922,7 +22903,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962868083}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.515, y: -0.5527954, z: 0.5187721}
+  m_LocalPosition: {x: 0.764, y: -0.5527954, z: 0.5187721}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -22960,7 +22941,9 @@ MonoBehaviour:
   moveTo: {x: 103.29, y: 41.908775, z: -46.028}
   character: {fileID: 9010264695610810677}
   startingText: Female Toilets
+  text: {fileID: 2027839808}
   rotation: -90
+  LocationArrows: {fileID: 472288829}
 --- !u!1 &963072857
 GameObject:
   m_ObjectHideFlags: 0
@@ -23810,7 +23793,9 @@ MonoBehaviour:
   moveTo: {x: 97.331, y: 41.91, z: -51.574}
   character: {fileID: 9010264695610810677}
   startingText: Front Of Toilets
+  text: {fileID: 587752956}
   rotation: 0
+  LocationArrows: {fileID: 1634859400}
 --- !u!1 &993814961
 GameObject:
   m_ObjectHideFlags: 0
@@ -24511,7 +24496,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1003928917
 Transform:
   m_ObjectHideFlags: 0
@@ -26004,12 +25989,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1042167371}
   m_Layer: 0
-  m_Name: Female Size Area
+  m_Name: Female Side Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1042167371
 Transform:
   m_ObjectHideFlags: 0
@@ -26017,14 +26002,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042167370}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 100.881744, y: 38.06612, z: -44.843304}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.6166306, y: -3.5146751, z: 4.907467}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2130956847}
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_Father: {fileID: 1466515866}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1044787262
 GameObject:
@@ -26188,7 +26173,9 @@ MonoBehaviour:
   moveTo: {x: 101.402, y: 38.502045, z: -45.069}
   character: {fileID: 9010264695610810677}
   startingText: Return
+  text: {fileID: 1729691885}
   rotation: -90
+  LocationArrows: {fileID: 86430459}
 --- !u!1 &1054059458
 GameObject:
   m_ObjectHideFlags: 0
@@ -28945,7 +28932,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1157756334
 Transform:
   m_ObjectHideFlags: 0
@@ -28953,14 +28940,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157756333}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 100.881744, y: 38.06612, z: -44.843304}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.6166306, y: -3.5146751, z: 4.907467}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1045932588}
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 1466515866}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1161420719
 GameObject:
@@ -30231,7 +30218,9 @@ MonoBehaviour:
   moveTo: {x: 97.331, y: 41.91, z: -51.574}
   character: {fileID: 9010264695610810677}
   startingText: Front Of Toilets
+  text: {fileID: 2022103595}
   rotation: 0
+  LocationArrows: {fileID: 1634859400}
 --- !u!1 &1211720052
 GameObject:
   m_ObjectHideFlags: 0
@@ -30704,7 +30693,9 @@ MonoBehaviour:
   moveTo: {x: 95.038, y: 38.502045, z: -44.972954}
   character: {fileID: 9010264695610810677}
   startingText: Male Toilets Main Area
+  text: {fileID: 683069892}
   rotation: -90
+  LocationArrows: {fileID: 1003928916}
 --- !u!1 &1225335983
 GameObject:
   m_ObjectHideFlags: 0
@@ -32057,7 +32048,9 @@ MonoBehaviour:
   moveTo: {x: 96.707, y: 38.502045, z: -43.066776}
   character: {fileID: 9010264695610810677}
   startingText: Male Toilets Main Area
+  text: {fileID: 1411352416}
   rotation: -110
+  LocationArrows: {fileID: 1584612349}
 --- !u!1 &1255755900
 GameObject:
   m_ObjectHideFlags: 0
@@ -33019,7 +33012,9 @@ MonoBehaviour:
   moveTo: {x: 93.069, y: 38.502045, z: -46.188778}
   character: {fileID: 9010264695610810677}
   startingText: Right Room
+  text: {fileID: 1691680030}
   rotation: -110
+  LocationArrows: {fileID: 1857181472}
 --- !u!1 &1287978159
 GameObject:
   m_ObjectHideFlags: 0
@@ -33181,7 +33176,9 @@ MonoBehaviour:
   moveTo: {x: 101.402, y: 38.502045, z: -45.069}
   character: {fileID: 9010264695610810677}
   startingText: Return
+  text: {fileID: 221833042}
   rotation: -90
+  LocationArrows: {fileID: 86430459}
 --- !u!1 &1290309595
 GameObject:
   m_ObjectHideFlags: 0
@@ -36489,7 +36486,9 @@ MonoBehaviour:
   moveTo: {x: 95.038, y: 38.502045, z: -44.972954}
   character: {fileID: 9010264695610810677}
   startingText: Male Toilets Main Area
+  text: {fileID: 1714770831}
   rotation: -90
+  LocationArrows: {fileID: 1003928916}
 --- !u!1 &1424796587
 GameObject:
   m_ObjectHideFlags: 0
@@ -37142,7 +37141,9 @@ MonoBehaviour:
   moveTo: {x: 89.25366, y: 41.91, z: -44.690994}
   character: {fileID: 9010264695610810677}
   startingText: Male Toilets Front
+  text: {fileID: 833440485}
   rotation: 90
+  LocationArrows: {fileID: 345294515}
 --- !u!1 &1446454625
 GameObject:
   m_ObjectHideFlags: 0
@@ -37976,7 +37977,9 @@ Transform:
   - {fileID: 1857181473}
   - {fileID: 472288830}
   - {fileID: 86430460}
-  - {fileID: 364623190}
+  - {fileID: 203962265}
+  - {fileID: 1157756334}
+  - {fileID: 1042167371}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -39173,7 +39176,9 @@ MonoBehaviour:
   moveTo: {x: 93.156, y: 38.502045, z: -43.99}
   character: {fileID: 9010264695610810677}
   startingText: Left Room
+  text: {fileID: 190656890}
   rotation: -110
+  LocationArrows: {fileID: 1857181472}
 --- !u!1 &1518021207
 GameObject:
   m_ObjectHideFlags: 0
@@ -39385,7 +39390,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1520203093
 Transform:
   m_ObjectHideFlags: 0
@@ -40669,7 +40674,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1584612350
 Transform:
   m_ObjectHideFlags: 0
@@ -48267,7 +48272,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1857181473
 Transform:
   m_ObjectHideFlags: 0
@@ -49883,7 +49888,9 @@ MonoBehaviour:
   moveTo: {x: 103.29, y: 41.908775, z: -46.028}
   character: {fileID: 9010264695610810677}
   startingText: Female Toilets Front
+  text: {fileID: 91097960}
   rotation: -90
+  LocationArrows: {fileID: 472288829}
 --- !u!1 &1945301626
 GameObject:
   m_ObjectHideFlags: 0
@@ -50046,7 +50053,9 @@ MonoBehaviour:
   moveTo: {x: 99.628, y: 38.502045, z: -47.154953}
   character: {fileID: 9010264695610810677}
   startingText: Right Room
+  text: {fileID: 620465711}
   rotation: -100
+  LocationArrows: {fileID: 1157756333}
 --- !u!1 &1961222156
 GameObject:
   m_ObjectHideFlags: 0
@@ -51502,7 +51511,9 @@ MonoBehaviour:
   moveTo: {x: 89.25366, y: 41.91, z: -44.690994}
   character: {fileID: 9010264695610810677}
   startingText: Male Toilets
+  text: {fileID: 5997685457274902410}
   rotation: 90
+  LocationArrows: {fileID: 345294515}
 --- !u!65 &2021043837
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51536,7 +51547,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.2771149, y: -0.5527954}
+  m_AnchoredPosition: {x: -0.665, y: -0.5527954}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2022043898
@@ -52614,7 +52625,9 @@ MonoBehaviour:
   moveTo: {x: 100.149, y: 38.502045, z: -42.57415}
   character: {fileID: 9010264695610810677}
   startingText: Left Room
+  text: {fileID: 1108520189}
   rotation: -100
+  LocationArrows: {fileID: 203962264}
 --- !u!1 &2053021501
 GameObject:
   m_ObjectHideFlags: 0
@@ -54720,7 +54733,9 @@ MonoBehaviour:
   moveTo: {x: 95.038, y: 38.502045, z: -44.972954}
   character: {fileID: 9010264695610810677}
   startingText: Right Room
+  text: {fileID: 2138319825}
   rotation: -90
+  LocationArrows: {fileID: 2124309184}
 --- !u!1 &2125053623
 GameObject:
   m_ObjectHideFlags: 0
@@ -54993,7 +55008,9 @@ MonoBehaviour:
   moveTo: {x: 101.402, y: 38.502045, z: -45.069}
   character: {fileID: 9010264695610810677}
   startingText: Return
+  text: {fileID: 2048137099}
   rotation: -90
+  LocationArrows: {fileID: 86430459}
 --- !u!1 &2135683183
 GameObject:
   m_ObjectHideFlags: 0
@@ -55518,7 +55535,9 @@ MonoBehaviour:
   moveTo: {x: 96.707, y: 38.502045, z: -43.066776}
   character: {fileID: 9010264695610810677}
   startingText: Male Enterance One
+  text: {fileID: 1413672444}
   rotation: -110
+  LocationArrows: {fileID: 1584612349}
 --- !u!1 &2146112906
 GameObject:
   m_ObjectHideFlags: 0
@@ -55972,17 +55991,17 @@ PrefabInstance:
     - target: {fileID: 9010264696739504856, guid: b2306de44b0abca41918c5bb5c6f198f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 89.76
+      value: 97.331
       objectReference: {fileID: 0}
     - target: {fileID: 9010264696739504856, guid: b2306de44b0abca41918c5bb5c6f198f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 41.96
+      value: 41.91
       objectReference: {fileID: 0}
     - target: {fileID: 9010264696739504856, guid: b2306de44b0abca41918c5bb5c6f198f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -45.02
+      value: -50.41
       objectReference: {fileID: 0}
     - target: {fileID: 9010264696739504856, guid: b2306de44b0abca41918c5bb5c6f198f,
         type: 3}
