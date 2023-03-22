@@ -56372,7 +56372,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 9010264696739504862, guid: b2306de44b0abca41918c5bb5c6f198f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 9010264696739504862, guid: b2306de44b0abca41918c5bb5c6f198f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b2306de44b0abca41918c5bb5c6f198f, type: 3}
 --- !u!20 &9010264695610810668 stripped
 Camera:
