@@ -27,7 +27,6 @@ public class MouseLook : MonoBehaviour
         pos = Player.transform.position;
         pos.y += camera_y;
         transform.position = pos;
-
         //Get mouse movement in new input system
         mousemovement = Mouse.current.delta.ReadValue();     
         xrotation -= mousemovement.y * Time.deltaTime * mouse_sensitivity;   

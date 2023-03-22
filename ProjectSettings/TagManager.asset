@@ -9,7 +9,8 @@ TagManager:
   - LoadRight
   - UnloadRight
   - Text
-  - Arrow
+  - Interact
+  - interact
   layers:
   - Default
   - TransparentFX
