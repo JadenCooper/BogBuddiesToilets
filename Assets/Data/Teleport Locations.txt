@@ -1,0 +1,74 @@
+Front Gate 
+---------------------------
+Urinal Top Stairs -> Vector3(89.2536621,41.9099998,-44.6909943) R = 90
+
+Female Top Stairs -> Vector3(103.290001,41.9087753,-46.0279999) R = -90
+
+Urinal Top Stairs
+---------------------------
+Urinal Front -> Vector3(96.9229965,38.5020447,-47.0587769) R = -70
+
+Urinal Back -> Vector3(96.7070007,38.5020447,-43.0667763) R = -110
+
+Front Gate -> Vector3(97.3310013,41.9099998,-51.5740013) R = 0
+
+Urinal Front 
+------------------------
+
+Urinal Top Stairs -> Vector3(89.2536621,41.9099998,-44.6909943) R = 90
+
+Urinal Main -> Vector3(95.038002,38.5020447,-44.9729538) - R = -90
+
+
+Urinal Back
+-------------------------
+
+Urinal Top Stairs -> Vector3(89.2536621,41.9099998,-44.6909943) R = 90
+
+Urinal Main -> Vector3(95.038002,38.5020447,-44.9729538) - R = -90
+
+Urinal Main
+-----------------
+
+Urinal Left Room -> Vector3(93.0690002,38.5020447,-46.1887779) - R = -110
+
+Urinal Right Room -> Vector3(93.1559982,38.5020447,-43.9900017) - R = -110
+
+Urinal Front -> Vector3(96.9229965,38.5020447,-47.0587769) R = -90
+
+Urinal Back -> Vector3(96.7070007,38.5020447,-43.0667763) R = -110
+
+Urinal Left Room
+----------------------------
+
+Urinal Main -> Vector3(95.038002,38.5020447,-44.9729538) - R = -90
+
+Urinal Right Room
+----------------------------
+
+Urinal Main -> Vector3(95.038002,38.5020447,-44.9729538) - R = -90
+
+Female Top Stairs
+-----------------------
+
+Front Gate -> Vector3(97.3310013,41.9099998,-51.5740013) R = 0
+
+Female Main Area -> Vector3(101.402,38.5020447,-45.0690002) - R = -90
+ 
+Female Main Area
+------------------------
+
+Blocked Off Room -> Vector3(101.768074,38.5020447,-47.2829247) - R = 90
+
+Big Side Room -> Vector3(99.6279984,38.5020447,-47.154953) - R = -100
+
+Two Toilets Corner -> Vector3(100.149002,38.5020447,-42.5741501) - R = -100
+
+Female Top Stairs -> Vector3(103.290001,41.9087753,-46.0279999) R = -90
+
+Each one:
+------------------
+
+Main Area -> Vector3(101.402,38.5020447,-45.0690002) - R = -90
+
+
