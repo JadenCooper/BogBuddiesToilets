@@ -34,6 +34,7 @@ public class LookingMobile : MonoBehaviour
             //If player is not moving their finger, no need to move the camera so its set to 0,0.
             lookInput = Vector2.zero;
         }
+
         else if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
         {
             //Starts by sending out a raycast to check what object has been hit closest to the player.
@@ -45,14 +46,14 @@ public class LookingMobile : MonoBehaviour
             //Checks IF you hit something and returns raycasthit WITH a gameobject attached to it.
             if (Physics.Raycast(raycast, out raycastHit))
             {
-                //Checks if the gameobjects tag is Arrow.
-                if (raycastHit.collider.CompareTag("Arrow"))
-                {
-                    ArrowMovement objectHit = raycastHit.collider.gameObject.transform.GetComponent<ArrowMovement>();
-                    transform.SetPositionAndRotation(objectHit.moveTo, Quaternion.Euler(0, objectHit.rotation, 0));
-                    objectHit.LocationArrows.SetActive(true);
-                    objectHit.gameObject.transform.parent.gameObject.SetActive(false);
-                }
+                ////Checks if the gameobjects tag is Arrow.
+                //if (raycastHit.collider.CompareTag("Arrow"))
+                //{
+                //    ArrowMovement objectHit = raycastHit.collider.gameObject.transform.GetComponent<ArrowMovement>();
+                //    transform.SetPositionAndRotation(objectHit.moveTo, Quaternion.Euler(0, objectHit.rotation, 0));
+                //    objectHit.LocationArrows.SetActive(true);
+                //    objectHit.gameObject.transform.parent.gameObject.SetActive(false);
+                //}
 
                 //Checks if the game objects tag is Text
                 if (raycastHit.collider.CompareTag("Text"))

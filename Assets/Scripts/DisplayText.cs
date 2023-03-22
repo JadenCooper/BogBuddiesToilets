@@ -24,6 +24,25 @@ public class DisplayText : Interactable
         isCoroutineRunning = true;
         yield return new WaitForSeconds(invisableTimer);
         isCoroutineRunning = false;
-        Text.SetActive(false);
+        text.SetActive(false);
+    }
+
+    public override void Interact()
+    {
+        // Pressed On 
+        if (text.activeSelf)
+        {
+            // Turn Off Display
+            StopCoroutine(InvisableTimer());
+            isCoroutineRunning = false;
+            text.SetActive(false);
+        }
+        else
+        {
+            //Turn On
+            //Turn On Display
+            text.SetActive(true);
+            StartCoroutine(InvisableTimer());
+        }
     }
 }
