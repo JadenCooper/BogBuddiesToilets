@@ -7699,6 +7699,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304238295}
   m_Mesh: {fileID: 4300836, guid: 5b8c5d15bf5cc4d4bb06d33f570abedd, type: 3}
+--- !u!20 &306127282 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 7956743661226496844, guid: b2306de44b0abca41918c5bb5c6f198f,
+    type: 3}
+  m_PrefabInstance: {fileID: 9010264695610810667}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &306792686
 GameObject:
   m_ObjectHideFlags: 0
@@ -17793,8 +17799,8 @@ Canvas:
   m_GameObject: {fileID: 701953638}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 306127282}
   m_PlaneDistance: 1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -55367,7 +55373,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2060094173
 MonoBehaviour:
   m_ObjectHideFlags: 0
