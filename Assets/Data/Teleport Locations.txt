@@ -1,6 +1,6 @@
-Front Gate 
+Front Gate  Vector3(97.3310013,41.5699997,-50.4099998)
 ---------------------------
-Urinal Top Stairs -> Vector3(89.2536621,41.9099998,-44.6909943) R = 90
+Urinal Top Stairs -> Vector3(91.8410034,41.5019684,-45.0130005) R = 90
 
 Female Top Stairs -> Vector3(103.290001,41.9087753,-46.0279999) R = -90
 
