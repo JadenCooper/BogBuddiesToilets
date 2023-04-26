@@ -5,8 +5,12 @@ using UnityEngine;
 public class PauseManager : MonoBehaviour
 {
     public GameObject PauseMenu;
+    public LookingMobile look;
+    public PlayerController playerController;
     public void Pause()
     {
+        look.CanMove = !look.CanMove;
+        playerController.CanMove = !playerController.CanMove;
         if (PauseMenu.activeSelf)
         {
             // Pause Menu Is Already Active

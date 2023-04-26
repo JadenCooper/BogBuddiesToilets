@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public float MaxSpeed = 20;
     public float CurrentSpeed = 0;
     public float Acceleration = 10;
+    public bool CanMove = true;
     public MouseLook mouseLook;
     private void Awake()
     {
@@ -62,14 +63,17 @@ public class PlayerController : MonoBehaviour
     private void Press(InputAction.CallbackContext obj)
     {
         // Interact - Shoots Out Raycast Out At Press/Click Position 
-        Ray raycast = Camera.main.ScreenPointToRay(Look.action.ReadValue<Vector2>());
-        RaycastHit raycastHit;
-        if (Physics.Raycast(raycast, out raycastHit))
+        if (CanMove)
         {
-            Debug.Log(raycastHit.collider.tag);
-            if (raycastHit.collider.CompareTag("Arrow")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
+            Ray raycast = Camera.main.ScreenPointToRay(Look.action.ReadValue<Vector2>());
+            RaycastHit raycastHit;
+            if (Physics.Raycast(raycast, out raycastHit))
             {
-                raycastHit.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
+                Debug.Log(raycastHit.collider.tag);
+                if (raycastHit.collider.CompareTag("Arrow")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
+                {
+                    raycastHit.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
+                }
             }
         }
     }
