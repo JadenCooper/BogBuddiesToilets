@@ -6,16 +6,9 @@ public class TriggerZone : MonoBehaviour
 {
     public GameObject target;
 
-    // Start is called before the first frame update
     void Start()
     {
         target.SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void OnTriggerEnter(Collider obj)
