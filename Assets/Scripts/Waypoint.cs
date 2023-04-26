@@ -9,8 +9,21 @@ public class Waypoint : MonoBehaviour
     public Vector3 moveTo;
     //rotation of character after teleportation.
     public float rotation;
+    public TransportLocation transportLocation;
     public void Teleport()
     {
         arrowManager.MovePlayer(moveTo, rotation);
+    }
+
+    public void Initialize()
+    {
+        Vector3[] temp = WaypointData.Locations[transportLocation];
+        rotation = temp[1].x;
+        moveTo = temp[0];
+    }
+
+    private void Awake()
+    {
+        Initialize();
     }
 }

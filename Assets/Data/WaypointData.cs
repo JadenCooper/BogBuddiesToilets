@@ -4,7 +4,7 @@ using UnityEngine;
 
 public static class WaypointData
 {
-    public static readonly Dictionary<TransportLocation, Vector3[]> Cells = new Dictionary<TransportLocation, Vector3[]>()
+    public static readonly Dictionary<TransportLocation, Vector3[]> Locations = new Dictionary<TransportLocation, Vector3[]>()
     {
         { TransportLocation.FG, new Vector3[] { new Vector3(97.3310013f, 41.5699997f, -50.4099998f), new Vector3( 90, 0, 0)} },
 
