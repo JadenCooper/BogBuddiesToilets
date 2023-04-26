@@ -9,7 +9,7 @@ public class Waypoint : MonoBehaviour
     public Vector3 moveTo;
     //rotation of character after teleportation.
     public float rotation;
-    public  void Teleport()
+    public void Teleport()
     {
         arrowManager.MovePlayer(moveTo, rotation);
     }
