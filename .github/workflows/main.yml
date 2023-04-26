@@ -20,7 +20,6 @@ jobs:
           key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
           restore-keys: |
             Library-
-
       # Test
       - name: Run tests
         uses: game-ci/unity-test-runner@v2
@@ -43,8 +42,8 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: build-WebGL
-          path: build
-          
+          path: build/WebGL
+
   deployPages:
     needs: build
     name: Deploy to Github Pages 🚀
@@ -56,10 +55,10 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           name: build-WebGL
-          path: Build
+          path: build/WebGL
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages
-          folder: Build
+          folder: build/WebGL
