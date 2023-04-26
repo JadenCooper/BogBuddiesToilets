@@ -8,7 +8,7 @@ using UnityEngine.UIElements;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField]
-    private InputActionReference Movement, Interact, Look;
+    private InputActionReference Movement, Interact, Look, Pause;
     [SerializeField]
     private Vector3 MovementInput;
     private Rigidbody rb;
@@ -51,10 +51,12 @@ public class PlayerController : MonoBehaviour
     private void OnEnable()
     {
         Interact.action.performed += Press;
+        Pause.action.performed += PausePress;
     }
     private void OnDisable()
     {
         Interact.action.performed -= Press;
+        Pause.action.performed -= PausePress;
     }
 
     private void Press(InputAction.CallbackContext obj)
@@ -64,10 +66,15 @@ public class PlayerController : MonoBehaviour
         RaycastHit raycastHit;
         if (Physics.Raycast(raycast, out raycastHit))
         {
+            Debug.Log(raycastHit.collider.tag);
             if (raycastHit.collider.CompareTag("Arrow")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
             {
                 raycastHit.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
             }
         }
+    }
+    private void PausePress(InputAction.CallbackContext obj)
+    {
+        Debug.Log("Pause");
     }
 }
