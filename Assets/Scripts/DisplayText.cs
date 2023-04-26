@@ -44,4 +44,12 @@ public class DisplayText : Interactable
             StartCoroutine(InvisableTimer());
         }
     }
+
+    public void OnEnable()
+    {
+        // Ensure display is off and timer is stopped when enabled
+        StopCoroutine(InvisableTimer());
+        isCoroutineRunning = false;
+        text.SetActive(false);
+    }
 }
