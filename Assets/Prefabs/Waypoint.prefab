@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6658261266444525748}
   - component: {fileID: 6658261266444525749}
   - component: {fileID: 6658261266444525750}
+  - component: {fileID: 3007062998414289984}
   m_Layer: 5
   m_Name: Waypoint
   m_TagString: Untagged
@@ -121,3 +122,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &3007062998414289984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6658261266444525744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5330d30506a06a342bf59c8d6138a511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrowManager: {fileID: 0}
+  moveTo: {x: 0, y: 0, z: 0}
+  rotation: 0
