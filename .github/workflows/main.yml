@@ -55,10 +55,10 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           name: build-WebGL
-          path: build/WebGL
+          path: WebGL/Build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages
-          folder: build/WebGL
+          folder: WebGL/Build
