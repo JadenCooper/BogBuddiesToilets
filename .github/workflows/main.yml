@@ -1,6 +1,6 @@
 name: WebGL Builder 😎
 
-on: [push, pull_request]
+on: workflow_dispatch
 
 jobs:
   build:
@@ -20,7 +20,6 @@ jobs:
           key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
           restore-keys: |
             Library-
-
       # Test
       - name: Run tests
         uses: game-ci/unity-test-runner@v2
@@ -42,5 +41,24 @@ jobs:
       # Output
       - uses: actions/upload-artifact@v2
         with:
-          name: Build
-          path: build
+          name: build-WebGL
+          path: build/WebGL
+
+  deployPages:
+    needs: build
+    name: Deploy to Github Pages 🚀
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - uses: actions/download-artifact@v2
+        with:
+          name: build-WebGL
+          path: WebGL/Build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages
+          folder: WebGL
