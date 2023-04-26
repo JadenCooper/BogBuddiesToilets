@@ -34,8 +34,7 @@ public class LookingMobile : MonoBehaviour
             //If player is not moving their finger, no need to move the camera so its set to 0,0.
             lookInput = Vector2.zero;
         }
-
-        else if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
+        else if (Input.touchCount > 0 && t.phase == TouchPhase.Began && t.phase != TouchPhase.Moved && t.phase == TouchPhase.Stationary)
         {
             //Starts by sending out a raycast to check what object has been hit closest to the player.
             Ray raycast = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
