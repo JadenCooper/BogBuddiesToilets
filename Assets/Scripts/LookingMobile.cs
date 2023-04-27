@@ -27,13 +27,18 @@ public class LookingMobile : MonoBehaviour
 
                 //for left/right
                 cameraTransform.localRotation = Quaternion.Euler(cameraPitch, 0, 0);
-            //If player is not moving their finger, no need to move the camera so its set to 0,0.
-            lookInput = Vector2.zero;
-        }
-        else if (Input.touchCount > 0 && t.phase == TouchPhase.Began && t.phase != TouchPhase.Moved && t.phase == TouchPhase.Stationary)
-        {
-            //Starts by sending out a raycast to check what object has been hit closest to the player.
-            Ray raycast = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+
+                transform.Rotate(transform.up, lookInput.x);
+            }
+            else if (t.phase == TouchPhase.Stationary)
+            {
+                //If player is not moving their finger, no need to move the camera so its set to 0,0.
+                lookInput = Vector2.zero;
+            }
+            else if (Input.touchCount > 0 && t.phase == TouchPhase.Began && t.phase != TouchPhase.Moved && t.phase == TouchPhase.Stationary)
+            {
+                //Starts by sending out a raycast to check what object has been hit closest to the player.
+                Ray raycast = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
 
                 //for up/down
                 transform.Rotate(transform.up, lookInput.x);
