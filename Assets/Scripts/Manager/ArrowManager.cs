@@ -15,15 +15,19 @@ public class ArrowManager : MonoBehaviour
     {
         foreach (ArrowHolder arrowHolder in ArrowHolders)
         {
-            if (arrowHolder.transportLocation == newLocation)
+            foreach (TransportLocation location in arrowHolder.transportLocation)
             {
-                arrowHolder.gameObject.SetActive(true);
-                Debug.Log("Open");
-            }
-            else
-            {
-                arrowHolder.gameObject.SetActive(false);
-                Debug.Log("Close");
+                if (location == newLocation)
+                {
+                    arrowHolder.gameObject.SetActive(true);
+                    break;
+                    Debug.Log("Open");
+                }
+                else
+                {
+                    arrowHolder.gameObject.SetActive(false);
+                    Debug.Log("Close");
+                }
             }
         }
     }

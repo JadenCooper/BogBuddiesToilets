@@ -13,7 +13,7 @@ public class Waypoint : MonoBehaviour
     public void Teleport()
     {
         arrowManager.MovePlayer(moveTo, rotation);
-        //arrowManager.OpenArrows(transportLocation);
+        arrowManager.OpenArrows(transportLocation);
     }
 
     public void Initialize()
