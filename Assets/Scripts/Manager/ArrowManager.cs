@@ -21,12 +21,10 @@ public class ArrowManager : MonoBehaviour
                 {
                     arrowHolder.gameObject.SetActive(true);
                     break;
-                    Debug.Log("Open");
                 }
                 else
                 {
                     arrowHolder.gameObject.SetActive(false);
-                    Debug.Log("Close");
                 }
             }
         }
