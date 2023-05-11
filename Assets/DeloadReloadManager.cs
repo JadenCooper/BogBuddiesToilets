@@ -6,6 +6,14 @@ public class DeloadReloadManager : MonoBehaviour
 {
     public List<GameObject> Load;
 
+    void awake()
+    {
+        foreach (GameObject gameObject in Load)
+        {
+            gameObject.SetActive(false);
+        }
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name.Equals("Player"))
