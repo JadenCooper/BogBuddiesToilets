@@ -45,13 +45,11 @@ public class PauseManager : MonoBehaviour
     {
         if (image.color == orginalMapColor)
         {
-            Debug.Log("Map On");
             image.sprite = map;
             image.color = Color.white;
         }
         else
         {
-            Debug.Log("Map Off");
             image.sprite = orginalSprite;
             image.color = orginalMapColor;
             IntialScreen.SetActive(true);

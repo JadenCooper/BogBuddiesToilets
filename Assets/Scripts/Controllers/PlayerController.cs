@@ -69,7 +69,6 @@ public class PlayerController : MonoBehaviour
             RaycastHit raycastHit;
             if (Physics.Raycast(raycast, out raycastHit))
             {
-                Debug.Log(raycastHit.collider.tag);
                 if (raycastHit.collider.CompareTag("Arrow")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
                 {
                     raycastHit.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
