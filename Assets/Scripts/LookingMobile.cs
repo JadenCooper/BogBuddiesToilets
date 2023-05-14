@@ -9,7 +9,7 @@ public class LookingMobile : MonoBehaviour
 
     private Vector2 lookInput;
     private float cameraPitch;
-    public bool CanMove = true;
+    public bool CanMove = false;
     // Update is called once per frame
     void Update()
     {

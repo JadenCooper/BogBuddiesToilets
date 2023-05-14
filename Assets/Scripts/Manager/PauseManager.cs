@@ -23,8 +23,7 @@ public class PauseManager : MonoBehaviour
     }
     public void Pause()
     {
-        look.CanMove = !look.CanMove;
-        playerController.CanMove = !playerController.CanMove;
+        DisablePlayerMovement();
         if (PauseMenu.activeSelf)
         {
             // Pause Menu Is Already Active
@@ -41,6 +40,11 @@ public class PauseManager : MonoBehaviour
         }
     }
 
+    public void DisablePlayerMovement()
+    {
+        look.CanMove = !look.CanMove;
+        playerController.CanMove = !playerController.CanMove;
+    }
     public void MapChange()
     {
         if (image.color == orginalMapColor)

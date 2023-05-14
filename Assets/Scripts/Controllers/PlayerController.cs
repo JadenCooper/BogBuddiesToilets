@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     public float MaxSpeed = 20;
     public float CurrentSpeed = 0;
     public float Acceleration = 10;
-    public bool CanMove = true;
+    public bool CanMove = false;
     public MouseLook mouseLook;
     private void Awake()
     {
