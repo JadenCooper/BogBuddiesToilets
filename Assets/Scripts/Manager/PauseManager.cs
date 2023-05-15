@@ -23,8 +23,7 @@ public class PauseManager : MonoBehaviour
     }
     public void Pause()
     {
-        look.CanMove = !look.CanMove;
-        playerController.CanMove = !playerController.CanMove;
+        DisablePlayerMovement();
         if (PauseMenu.activeSelf)
         {
             // Pause Menu Is Already Active
@@ -41,17 +40,20 @@ public class PauseManager : MonoBehaviour
         }
     }
 
+    public void DisablePlayerMovement()
+    {
+        look.CanMove = !look.CanMove;
+        playerController.CanMove = !playerController.CanMove;
+    }
     public void MapChange()
     {
         if (image.color == orginalMapColor)
         {
-            Debug.Log("Map On");
             image.sprite = map;
             image.color = Color.white;
         }
         else
         {
-            Debug.Log("Map Off");
             image.sprite = orginalSprite;
             image.color = orginalMapColor;
             IntialScreen.SetActive(true);
