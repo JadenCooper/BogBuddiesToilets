@@ -8494,12 +8494,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.25, y: 3, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &309410708 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5997685455865862240, guid: 2531c8733be84e24387fc6b85e48356f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1535986095}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &311623406
 GameObject:
   m_ObjectHideFlags: 0
@@ -9165,6 +9159,7 @@ Transform:
   - {fileID: 2144944212}
   - {fileID: 270057350}
   - {fileID: 1205426688}
+  - {fileID: 802061792}
   m_Father: {fileID: 1466515866}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -9379,6 +9374,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349681764}
   m_Mesh: {fileID: 4300536, guid: 5b8c5d15bf5cc4d4bb06d33f570abedd, type: 3}
+--- !u!114 &351441210 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5997685457133931511, guid: 2531c8733be84e24387fc6b85e48356f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1137805983}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &357929792
 GameObject:
   m_ObjectHideFlags: 0
@@ -16164,7 +16171,7 @@ PrefabInstance:
         type: 3}
       propertyPath: text
       value: 
-      objectReference: {fileID: 759677367}
+      objectReference: {fileID: 1420607614}
     - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
         type: 3}
       propertyPath: InputText
@@ -18554,6 +18561,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 669753736}
   m_Mesh: {fileID: 4300504, guid: 5b8c5d15bf5cc4d4bb06d33f570abedd, type: 3}
+--- !u!114 &672591106 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5997685457133931511, guid: 2531c8733be84e24387fc6b85e48356f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1711231383}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &676336860
 GameObject:
   m_ObjectHideFlags: 0
@@ -21306,12 +21325,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 752208427}
   m_Mesh: {fileID: 4300476, guid: 5b8c5d15bf5cc4d4bb06d33f570abedd, type: 3}
---- !u!1 &759677367 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5997685455865862240, guid: 2531c8733be84e24387fc6b85e48356f,
-    type: 3}
-  m_PrefabInstance: {fileID: 573837948}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &776068780
 GameObject:
   m_ObjectHideFlags: 0
@@ -22178,6 +22191,12 @@ Transform:
   m_Father: {fileID: 9010657080123978441}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: -180.07599, z: 0}
+--- !u!4 &802061792 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5997685455340090037, guid: 2531c8733be84e24387fc6b85e48356f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1029147259}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &806111849
 GameObject:
   m_ObjectHideFlags: 0
@@ -22685,6 +22704,112 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 818731653}
   m_Mesh: {fileID: 4300228, guid: 5b8c5d15bf5cc4d4bb06d33f570abedd, type: 3}
+--- !u!1001 &818925032
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1634859401}
+    m_Modifications:
+    - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 1522766142}
+    - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: InputText
+      value: Prior to 1910 there were only ten public toilets across Dunedin and
+        all were for men
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455340090037, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455340090037, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.027
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455340090037, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.405
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455340090037, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455340090037, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7526897
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455340090037, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455340090037, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.65837544
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455340090037, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455340090037, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455340090037, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 277.648
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455340090037, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455837704275, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_Name
+      value: DisplayText
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685456616446491, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.63529414
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685456616446491, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.3679245
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685456616446491, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.3679245
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685456616446491, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.3679245
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685457133931511, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_text
+      value: Prior to 1910 there were only ten public toilets across Dunedin and
+        all were for men
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2531c8733be84e24387fc6b85e48356f, type: 3}
 --- !u!1 &824566660
 GameObject:
   m_ObjectHideFlags: 0
@@ -23164,12 +23289,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 840379650}
   m_Mesh: {fileID: 4300404, guid: 5b8c5d15bf5cc4d4bb06d33f570abedd, type: 3}
---- !u!1 &844870173 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5997685455865862240, guid: 2531c8733be84e24387fc6b85e48356f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1137805983}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &846384341
 GameObject:
   m_ObjectHideFlags: 0
@@ -29043,6 +29162,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016314878}
   m_Mesh: {fileID: 4300132, guid: 5b8c5d15bf5cc4d4bb06d33f570abedd, type: 3}
+--- !u!114 &1018360770 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5997685457133931511, guid: 2531c8733be84e24387fc6b85e48356f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1535986095}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1018585229
 GameObject:
   m_ObjectHideFlags: 0
@@ -29783,6 +29914,87 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1028858604}
   m_Mesh: {fileID: 4300796, guid: 5b8c5d15bf5cc4d4bb06d33f570abedd, type: 3}
+--- !u!1001 &1029147259
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 345294516}
+    m_Modifications:
+    - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 1626186142}
+    - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: InputText
+      value: The 19th and early 20th century society saw public urination as indecent
+        and the out of sight public toilet was seen as the only appropriate place
+        for these "offensive" bodily functions.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455340090037, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455340090037, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.195
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455340090037, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.286
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455340090037, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.266
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455340090037, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455340090037, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455340090037, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455340090037, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455340090037, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455340090037, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455340090037, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455837704275, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_Name
+      value: DisplayText
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2531c8733be84e24387fc6b85e48356f, type: 3}
 --- !u!1 &1030065399
 GameObject:
   m_ObjectHideFlags: 0
@@ -31897,12 +32109,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1114440712}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1118282535 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5997685455865862240, guid: 2531c8733be84e24387fc6b85e48356f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1845420503}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1121418950
 GameObject:
   m_ObjectHideFlags: 0
@@ -33026,7 +33232,7 @@ PrefabInstance:
         type: 3}
       propertyPath: text
       value: 
-      objectReference: {fileID: 844870173}
+      objectReference: {fileID: 351441210}
     - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
         type: 3}
       propertyPath: InputText
@@ -37654,12 +37860,6 @@ MonoBehaviour:
   rotation: -110
   LocationArrows: {fileID: 1857181472}
   arrowManager: {fileID: 1466515867}
---- !u!1 &1282038743 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5997685455865862240, guid: 2531c8733be84e24387fc6b85e48356f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1711231383}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1287978159
 GameObject:
   m_ObjectHideFlags: 0
@@ -38940,7 +39140,7 @@ PrefabInstance:
         type: 3}
       propertyPath: text
       value: 
-      objectReference: {fileID: 1557680626}
+      objectReference: {fileID: 1487648858}
     - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
         type: 3}
       propertyPath: InputText
@@ -41970,6 +42170,18 @@ MonoBehaviour:
   rotation: -90
   LocationArrows: {fileID: 1003928916}
   arrowManager: {fileID: 1466515867}
+--- !u!114 &1420607614 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5997685457133931511, guid: 2531c8733be84e24387fc6b85e48356f,
+    type: 3}
+  m_PrefabInstance: {fileID: 573837948}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1424796587
 GameObject:
   m_ObjectHideFlags: 0
@@ -43982,6 +44194,18 @@ Transform:
   m_Father: {fileID: 1054641858}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1487648858 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5997685457133931511, guid: 2531c8733be84e24387fc6b85e48356f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1337526253}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1493950589
 GameObject:
   m_ObjectHideFlags: 0
@@ -45029,6 +45253,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transportLocation: 07000000
+--- !u!1 &1522766142 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5997685455865862240, guid: 2531c8733be84e24387fc6b85e48356f,
+    type: 3}
+  m_PrefabInstance: {fileID: 818925032}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1531200877
 GameObject:
   m_ObjectHideFlags: 0
@@ -45236,7 +45466,7 @@ PrefabInstance:
         type: 3}
       propertyPath: text
       value: 
-      objectReference: {fileID: 309410708}
+      objectReference: {fileID: 1018360770}
     - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
         type: 3}
       propertyPath: InputText
@@ -45817,12 +46047,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &1557680626 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5997685455865862240, guid: 2531c8733be84e24387fc6b85e48356f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1337526253}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1561558519
 GameObject:
   m_ObjectHideFlags: 0
@@ -47445,6 +47669,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626126225}
   m_Mesh: {fileID: 4300158, guid: 5b8c5d15bf5cc4d4bb06d33f570abedd, type: 3}
+--- !u!114 &1626186142 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5997685457133931511, guid: 2531c8733be84e24387fc6b85e48356f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1029147259}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1628976574
 GameObject:
   m_ObjectHideFlags: 0
@@ -47567,6 +47803,7 @@ Transform:
   m_Children:
   - {fileID: 2021043838}
   - {fileID: 962868084}
+  - {fileID: 1821775078}
   m_Father: {fileID: 1466515866}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -49423,7 +49660,7 @@ PrefabInstance:
         type: 3}
       propertyPath: text
       value: 
-      objectReference: {fileID: 1282038743}
+      objectReference: {fileID: 672591106}
     - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
         type: 3}
       propertyPath: InputText
@@ -53990,6 +54227,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1820821497}
   m_Mesh: {fileID: 4300906, guid: 5b8c5d15bf5cc4d4bb06d33f570abedd, type: 3}
+--- !u!4 &1821775078 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5997685455340090037, guid: 2531c8733be84e24387fc6b85e48356f,
+    type: 3}
+  m_PrefabInstance: {fileID: 818925032}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1822453822
 GameObject:
   m_ObjectHideFlags: 0
@@ -54734,7 +54977,7 @@ PrefabInstance:
         type: 3}
       propertyPath: text
       value: 
-      objectReference: {fileID: 1118282535}
+      objectReference: {fileID: 2111829950}
     - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
         type: 3}
       propertyPath: InputText
@@ -61818,6 +62061,18 @@ Transform:
   m_Father: {fileID: 1424796588}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2111829950 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5997685457133931511, guid: 2531c8733be84e24387fc6b85e48356f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1845420503}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2115029181
 GameObject:
   m_ObjectHideFlags: 0

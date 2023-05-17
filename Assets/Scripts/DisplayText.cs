@@ -7,7 +7,8 @@ using TMPro;
 
 public class DisplayText : Interactable
 {
-    public GameObject text;
+    public GameObject textHolder;
+    public TextMeshProUGUI text;
     public String InputText;
     [SerializeField]
     private float invisableTimer = 20f; // Time To Turn Off
@@ -15,7 +16,7 @@ public class DisplayText : Interactable
     private bool isCoroutineRunning = false;
     private void Start()
     {
-        text.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = InputText;
+        text.text = InputText;
     }
     public IEnumerator InvisableTimer()
     {
@@ -23,24 +24,24 @@ public class DisplayText : Interactable
         isCoroutineRunning = true;
         yield return new WaitForSeconds(invisableTimer);
         isCoroutineRunning = false;
-        text.SetActive(false);
+        textHolder.SetActive(false);
     }
 
     public override void Interact()
     {
         // Pressed On 
-        if (text.activeSelf)
+        if (textHolder.activeSelf)
         {
             // Turn Off Display
             StopCoroutine(InvisableTimer());
             isCoroutineRunning = false;
-            text.SetActive(false);
+            textHolder.SetActive(false);
         }
         else
         {
             //Turn On
             //Turn On Display
-            text.SetActive(true);
+            textHolder.SetActive(true);
             StartCoroutine(InvisableTimer());
         }
     }
@@ -50,6 +51,6 @@ public class DisplayText : Interactable
         // Ensure display is off and timer is stopped when enabled
         StopCoroutine(InvisableTimer());
         isCoroutineRunning = false;
-        text.SetActive(false);
+        textHolder.SetActive(false);
     }
 }
