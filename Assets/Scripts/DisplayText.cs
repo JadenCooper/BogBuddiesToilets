@@ -7,15 +7,18 @@ using TMPro;
 
 public class DisplayText : Interactable
 {
-    public GameObject text;
+    public GameObject textHolder;
+    public Image image;
+    public TextMeshProUGUI text;
     public String InputText;
+    public bool Seen = false;
     [SerializeField]
     private float invisableTimer = 20f; // Time To Turn Off
     [SerializeField]
     private bool isCoroutineRunning = false;
     private void Start()
     {
-        text.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = InputText;
+        text.text = InputText;
     }
     public IEnumerator InvisableTimer()
     {
@@ -23,24 +26,29 @@ public class DisplayText : Interactable
         isCoroutineRunning = true;
         yield return new WaitForSeconds(invisableTimer);
         isCoroutineRunning = false;
-        text.SetActive(false);
+        textHolder.SetActive(false);
     }
 
     public override void Interact()
     {
         // Pressed On 
-        if (text.activeSelf)
+        if (textHolder.activeSelf)
         {
             // Turn Off Display
             StopCoroutine(InvisableTimer());
             isCoroutineRunning = false;
-            text.SetActive(false);
+            textHolder.SetActive(false);
         }
         else
         {
             //Turn On
             //Turn On Display
-            text.SetActive(true);
+            textHolder.SetActive(true);
+            if (!Seen)
+            {
+                Seen = true;
+                image.color = Color.blue; // Set Image To Blue For Playerfeedback That Text Has Been Seen
+            }
             StartCoroutine(InvisableTimer());
         }
     }
@@ -50,6 +58,6 @@ public class DisplayText : Interactable
         // Ensure display is off and timer is stopped when enabled
         StopCoroutine(InvisableTimer());
         isCoroutineRunning = false;
-        text.SetActive(false);
+        textHolder.SetActive(false);
     }
 }
