@@ -14,7 +14,7 @@ public class LookingMobile : MonoBehaviour
     void Update()
     {
         // Grabs the Touch Input.
-        if (CanMove)
+        if (CanMove && Input.touchCount > 0)
         {
             Touch t = Input.GetTouch(0);
             if (t.phase == TouchPhase.Moved)
