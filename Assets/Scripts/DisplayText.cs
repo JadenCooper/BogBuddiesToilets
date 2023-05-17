@@ -8,6 +8,7 @@ using TMPro;
 public class DisplayText : Interactable
 {
     public GameObject textHolder;
+    public Image image;
     public TextMeshProUGUI text;
     public String InputText;
     [SerializeField]
@@ -42,6 +43,7 @@ public class DisplayText : Interactable
             //Turn On
             //Turn On Display
             textHolder.SetActive(true);
+            image.color = Color.blue; // Set Image To Blue For Playerfeedback That Text Has Been Seen
             StartCoroutine(InvisableTimer());
         }
     }

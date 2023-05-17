@@ -74,7 +74,8 @@ public class LookingMobile : MonoBehaviour
                     {
                         DisplayText textObj = raycastHit.collider.GetComponent<DisplayText>();
                         Debug.Log(raycastHit.collider.GetComponent<DisplayText>());
-                        textObj.textHolder.SetActive(!textObj.textHolder.activeSelf);
+                        //textObj.textHolder.SetActive(!textObj.textHolder.activeSelf);
+                        textObj.Interact();
                     }
                 }
             }

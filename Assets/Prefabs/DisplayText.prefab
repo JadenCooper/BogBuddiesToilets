@@ -163,6 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textHolder: {fileID: 5997685455865862240}
+  image: {fileID: 5997685456499837224}
   text: {fileID: 5997685457133931511}
   InputText: 
   invisableTimer: 20
