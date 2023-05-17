@@ -11,8 +11,7 @@ public class DisplayText : Interactable
     public Image image;
     public TextMeshProUGUI text;
     public String InputText;
-    private bool Seen = false;
-    public PauseManager pauseManager;
+    public bool Seen = false;
     [SerializeField]
     private float invisableTimer = 20f; // Time To Turn Off
     [SerializeField]
@@ -20,7 +19,6 @@ public class DisplayText : Interactable
     private void Start()
     {
         text.text = InputText;
-        pauseManager.IncreaseCount(true);
     }
     public IEnumerator InvisableTimer()
     {
@@ -50,7 +48,6 @@ public class DisplayText : Interactable
             {
                 Seen = true;
                 image.color = Color.blue; // Set Image To Blue For Playerfeedback That Text Has Been Seen
-                pauseManager.IncreaseCount(false);
             }
             StartCoroutine(InvisableTimer());
         }

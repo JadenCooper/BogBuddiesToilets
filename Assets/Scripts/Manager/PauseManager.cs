@@ -18,11 +18,13 @@ public class PauseManager : MonoBehaviour
     private Image image;
     [SerializeField]
     private Vector2 textDisplayStatus = Vector2.zero; // X = Displays Seen Y = Total Displays
+    public List<DisplayText> DisplayTextList = new List<DisplayText>();
     public TextMeshProUGUI textDisplayCount;
     public TextMeshProUGUI textDisplaySeenCount;
     private void Start()
     {
         image = PauseMenu.GetComponent<Image>();
+        textDisplayStatus.y = DisplayTextList.Count;
         orginalMapColor = image.color;
         orginalSprite = image.sprite;
     }
@@ -47,22 +49,16 @@ public class PauseManager : MonoBehaviour
     }
     public void UpdateTextDisplayTracker()
     {
+        for (int i = 0; i < DisplayTextList.Count; i++)
+        {
+            if (DisplayTextList[i].Seen)
+            {
+                textDisplayStatus.x++;
+            }
+        }
         textDisplayCount.text = textDisplayStatus.y.ToString();
         textDisplaySeenCount.text = textDisplayStatus.x.ToString() + '/';
-    }
-
-    public void IncreaseCount(bool CountIncrement)
-    {
-        if (CountIncrement)
-        {
-            // Increase Count
-            textDisplayStatus.y++;
-        }
-        else
-        {
-            // Increase Seen
-            textDisplayStatus.x++;
-        }
+        textDisplayStatus.x = 0; // Reset
     }
     public void DisablePlayerMovement()
     {
