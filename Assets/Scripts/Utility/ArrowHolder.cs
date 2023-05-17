@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class ArrowHolder : MonoBehaviour
 {
-    public TransportLocation transportLocation;
+    public List<TransportLocation> transportLocation = new List<TransportLocation>();
 }

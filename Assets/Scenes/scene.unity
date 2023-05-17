@@ -2005,6 +2005,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 86430460}
+  - component: {fileID: 86430461}
   m_Layer: 0
   m_Name: Female Main Area
   m_TagString: Untagged
@@ -2031,6 +2032,19 @@ Transform:
   m_Father: {fileID: 1466515866}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &86430461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86430459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7cfbd4e3166a8439ac49c15e045327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transportLocation: 02000000
 --- !u!1 &89459209
 GameObject:
   m_ObjectHideFlags: 0
@@ -4760,6 +4774,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 203962265}
+  - component: {fileID: 203962266}
   m_Layer: 0
   m_Name: Female Two Toilets Area
   m_TagString: Untagged
@@ -4783,6 +4798,19 @@ Transform:
   m_Father: {fileID: 1466515866}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &203962266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203962264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7cfbd4e3166a8439ac49c15e045327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transportLocation: 05000000
 --- !u!1 &207149795
 GameObject:
   m_ObjectHideFlags: 0
@@ -9114,6 +9142,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 345294516}
+  - component: {fileID: 345294517}
   m_Layer: 0
   m_Name: Male Top Stairs
   m_TagString: Untagged
@@ -9139,6 +9168,19 @@ Transform:
   m_Father: {fileID: 1466515866}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &345294517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345294515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7cfbd4e3166a8439ac49c15e045327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transportLocation: 06000000
 --- !u!1001 &347914847
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12552,6 +12594,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 472288830}
+  - component: {fileID: 472288831}
   m_Layer: 0
   m_Name: Female Top Stairs
   m_TagString: Untagged
@@ -12576,6 +12619,19 @@ Transform:
   m_Father: {fileID: 1466515866}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &472288831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472288829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7cfbd4e3166a8439ac49c15e045327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transportLocation: 01000000
 --- !u!1 &476204338
 GameObject:
   m_ObjectHideFlags: 0
@@ -28440,6 +28496,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1003928917}
+  - component: {fileID: 1003928918}
   m_Layer: 0
   m_Name: Male Main
   m_TagString: Untagged
@@ -28466,6 +28523,19 @@ Transform:
   m_Father: {fileID: 1466515866}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1003928918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003928916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7cfbd4e3166a8439ac49c15e045327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transportLocation: 09000000
 --- !u!1 &1007502328
 GameObject:
   m_ObjectHideFlags: 0
@@ -29938,6 +30008,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1042167371}
+  - component: {fileID: 1042167372}
   m_Layer: 0
   m_Name: Female Side Area
   m_TagString: Untagged
@@ -29961,6 +30032,19 @@ Transform:
   m_Father: {fileID: 1466515866}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1042167372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042167370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7cfbd4e3166a8439ac49c15e045327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transportLocation: 03000000
 --- !u!1 &1044787262
 GameObject:
   m_ObjectHideFlags: 0
@@ -33298,6 +33382,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1157756334}
+  - component: {fileID: 1157756335}
   m_Layer: 0
   m_Name: Female Big Room
   m_TagString: Untagged
@@ -33321,6 +33406,19 @@ Transform:
   m_Father: {fileID: 1466515866}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1157756335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157756333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7cfbd4e3166a8439ac49c15e045327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transportLocation: 04000000
 --- !u!1 &1161420719
 GameObject:
   m_ObjectHideFlags: 0
@@ -43480,7 +43578,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 9010264695610810677}
-  ArrowHolders: []
+  ArrowHolders:
+  - {fileID: 1634859402}
+  - {fileID: 345294517}
+  - {fileID: 1520203094}
+  - {fileID: 1584612351}
+  - {fileID: 1003928918}
+  - {fileID: 1857181474}
+  - {fileID: 472288831}
+  - {fileID: 86430461}
+  - {fileID: 203962266}
+  - {fileID: 1157756335}
+  - {fileID: 1042167372}
 --- !u!1 &1471612567
 GameObject:
   m_ObjectHideFlags: 0
@@ -44882,6 +44991,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1520203093}
+  - component: {fileID: 1520203094}
   m_Layer: 0
   m_Name: Male Front
   m_TagString: Untagged
@@ -44906,6 +45016,19 @@ Transform:
   m_Father: {fileID: 1466515866}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &1520203094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520203092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7cfbd4e3166a8439ac49c15e045327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transportLocation: 07000000
 --- !u!1 &1531200877
 GameObject:
   m_ObjectHideFlags: 0
@@ -46178,6 +46301,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1584612350}
+  - component: {fileID: 1584612351}
   m_Layer: 0
   m_Name: Male Back
   m_TagString: Untagged
@@ -46202,6 +46326,19 @@ Transform:
   m_Father: {fileID: 1466515866}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &1584612351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584612349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7cfbd4e3166a8439ac49c15e045327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transportLocation: 08000000
 --- !u!1 &1589191820
 GameObject:
   m_ObjectHideFlags: 0
@@ -47408,6 +47545,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1634859401}
+  - component: {fileID: 1634859402}
   m_Layer: 0
   m_Name: Front Gate
   m_TagString: Untagged
@@ -47432,6 +47570,19 @@ Transform:
   m_Father: {fileID: 1466515866}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1634859402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634859400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7cfbd4e3166a8439ac49c15e045327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transportLocation: 00000000
 --- !u!1 &1638932260
 GameObject:
   m_ObjectHideFlags: 0
@@ -54703,6 +54854,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1857181473}
+  - component: {fileID: 1857181474}
   m_Layer: 0
   m_Name: Male Left And Right Rooms
   m_TagString: Untagged
@@ -54727,6 +54879,19 @@ Transform:
   m_Father: {fileID: 1466515866}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1857181474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857181472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7cfbd4e3166a8439ac49c15e045327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transportLocation: 0a0000000b000000
 --- !u!1 &1865032343
 GameObject:
   m_ObjectHideFlags: 0
