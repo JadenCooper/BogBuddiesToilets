@@ -57,7 +57,7 @@ public class PauseManager : MonoBehaviour
             }
         }
         textDisplayCount.text = textDisplayStatus.y.ToString();
-        textDisplaySeenCount.text = textDisplayStatus.x.ToString() + '/';
+        textDisplaySeenCount.text = textDisplayStatus.x.ToString() + " /";
         textDisplayStatus.x = 0; // Reset
     }
     public void DisablePlayerMovement()
