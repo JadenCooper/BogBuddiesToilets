@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,6 +16,10 @@ public class PauseManager : MonoBehaviour
     public Sprite map;
     private Sprite orginalSprite;
     private Image image;
+    [SerializeField]
+    private Vector2 textDisplayStatus = Vector2.zero; // X = Displays Seen Y = Total Displays
+    public TextMeshProUGUI textDisplayCount;
+    public TextMeshProUGUI textDisplaySeenCount;
     private void Start()
     {
         image = PauseMenu.GetComponent<Image>();
@@ -36,10 +41,29 @@ public class PauseManager : MonoBehaviour
             // Activate Pause Menu
             PauseMenu.SetActive(true);
             pauseButton.SetActive(false);
+            UpdateTextDisplayTracker();
             Time.timeScale = 0f;
         }
     }
+    public void UpdateTextDisplayTracker()
+    {
+        textDisplayCount.text = textDisplayStatus.y.ToString();
+        textDisplaySeenCount.text = textDisplayStatus.x.ToString() + '/';
+    }
 
+    public void IncreaseCount(bool CountIncrement)
+    {
+        if (CountIncrement)
+        {
+            // Increase Count
+            textDisplayStatus.y++;
+        }
+        else
+        {
+            // Increase Seen
+            textDisplayStatus.x++;
+        }
+    }
     public void DisablePlayerMovement()
     {
         look.CanMove = !look.CanMove;
