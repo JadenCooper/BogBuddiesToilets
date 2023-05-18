@@ -9,12 +9,12 @@ public class LookingMobile : MonoBehaviour
 
     private Vector2 lookInput;
     private float cameraPitch;
-    public bool CanMove = true;
+    public bool CanMove = false;
     // Update is called once per frame
     void Update()
     {
         // Grabs the Touch Input.
-        if (CanMove)
+        if (CanMove && Input.touchCount > 0)
         {
             Touch t = Input.GetTouch(0);
             if (t.phase == TouchPhase.Moved)
@@ -74,7 +74,8 @@ public class LookingMobile : MonoBehaviour
                     {
                         DisplayText textObj = raycastHit.collider.GetComponent<DisplayText>();
                         Debug.Log(raycastHit.collider.GetComponent<DisplayText>());
-                        textObj.text.SetActive(!textObj.text.activeSelf);
+                        //textObj.textHolder.SetActive(!textObj.textHolder.activeSelf);
+                        textObj.Interact();
                     }
                 }
             }
