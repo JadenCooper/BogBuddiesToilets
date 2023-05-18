@@ -47,6 +47,12 @@ public class PauseManager : MonoBehaviour
             Time.timeScale = 0f;
         }
     }
+    public void TempUnpause()
+    {
+        Time.timeScale = 1f;
+        pauseButton.SetActive(true);
+        DisablePlayerMovement();
+    }
     public void UpdateTextDisplayTracker()
     {
         for (int i = 0; i < DisplayTextList.Count; i++)
