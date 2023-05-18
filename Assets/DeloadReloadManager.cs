@@ -6,7 +6,7 @@ public class DeloadReloadManager : MonoBehaviour
 {
     public List<GameObject> Load;
 
-    void awake()
+    void Awake()
     {
         foreach (GameObject gameObject in Load)
         {
