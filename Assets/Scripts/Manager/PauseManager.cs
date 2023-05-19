@@ -77,11 +77,13 @@ public class PauseManager : MonoBehaviour
         {
             image.sprite = map;
             image.color = Color.white;
+            image.preserveAspect = true;
         }
         else
         {
             image.sprite = orginalSprite;
             image.color = orginalMapColor;
+            image.preserveAspect = false;
             IntialScreen.SetActive(true);
             MapScreen.SetActive(false);
         }
