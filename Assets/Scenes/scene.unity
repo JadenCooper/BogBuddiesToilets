@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -15018,8 +15018,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 507546730}
-  - component: {fileID: 507546729}
-  - component: {fileID: 507546728}
+  - component: {fileID: 507546731}
   m_Layer: 0
   m_Name: RightTap
   m_TagString: Untagged
@@ -15027,63 +15026,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &507546728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 507546727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 507546729}
-          m_TargetAssemblyTypeName: 
-          m_MethodName: OnEnter
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 507546729}
-          m_TargetAssemblyTypeName: 
-          m_MethodName: OnExit
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!114 &507546729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 507546727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c21639f612a36ad419958a7e4be9f10c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &507546730
 Transform:
   m_ObjectHideFlags: 0
@@ -15100,6 +15042,18 @@ Transform:
   m_Father: {fileID: 1439669068}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &507546731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507546727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c60241f795b88d4c8715162eaaa8d6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &509008380
 GameObject:
   m_ObjectHideFlags: 0
@@ -43838,9 +43792,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1439669067}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ffc78a417102d54d932912c1b48c3dd, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b29125a556d8f940ae09c74bafba3f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LeftTap: {fileID: 1866242073}
+  RightTap: {fileID: 507546727}
+  WaterObjects: {fileID: 2120040999}
+  FillingWater: {fileID: 1136790163}
 --- !u!1 &1441657205
 GameObject:
   m_ObjectHideFlags: 0
@@ -56744,7 +56702,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1866242074}
-  - component: {fileID: 1866242076}
   - component: {fileID: 1866242075}
   m_Layer: 0
   m_Name: LeftTap
@@ -56778,52 +56735,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1866242073}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1866242076}
-          m_TargetAssemblyTypeName: 
-          m_MethodName: OnEnter
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1866242076}
-          m_TargetAssemblyTypeName: 
-          m_MethodName: OnExit
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!114 &1866242076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1866242073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c21639f612a36ad419958a7e4be9f10c, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c60241f795b88d4c8715162eaaa8d6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1870895455
