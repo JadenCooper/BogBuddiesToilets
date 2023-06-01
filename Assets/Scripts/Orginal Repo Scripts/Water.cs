@@ -21,40 +21,40 @@ public class Water : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //    if (!LeftTap.GetComponent<Rotation>().open || !RightTap.GetComponent<Rotation>().open)
-        //    {
-        //        WaterObjects.SetActive(true);
-        //        if (count <= FRAMES)
-        //        {
-        //            if(count % OCCURANCE == 0)
-        //            {
-        //                FillingWater.transform.localScale += new Vector3(0, 0, SIZE);
-        //                FillingWater.transform.localPosition += new Vector3(0, DISTANCE, 0);
-        //            }
-        //            count++;
-        //        }
+        if (!LeftTap.GetComponent<Rotation>().open || !RightTap.GetComponent<Rotation>().open)
+        {
+            WaterObjects.SetActive(true);
+            if (count <= FRAMES)
+            {
+                if (count % OCCURANCE == 0)
+                {
+                    FillingWater.transform.localScale += new Vector3(0, 0, SIZE);
+                    FillingWater.transform.localPosition += new Vector3(0, DISTANCE, 0);
+                }
+                count++;
+            }
 
-        //    }
-        //    else
-        //    {
-        //        if(count > 0)
-        //        {
-        //            if(count % OCCURANCE == 0)
-        //            {
-        //                FillingWater.transform.localScale -= new Vector3(0, 0, SIZE);
-        //                FillingWater.transform.localPosition -= new Vector3(0, DISTANCE, 0);
-        //            }
-        //            count--;
-        //            if (count == 0)
-        //            {
-        //                FillingWater.transform.localScale -= new Vector3(0, 0, SIZE);
-        //                FillingWater.transform.localPosition -= new Vector3(0, DISTANCE, 0);
-        //            }
-        //        }
-        //        if(count == 0)
-        //        {
-        //            WaterObjects.SetActive(false);
-        //        }
-        //    }
+        }
+        else
+        {
+            if (count > 0)
+            {
+                if (count % OCCURANCE == 0)
+                {
+                    FillingWater.transform.localScale -= new Vector3(0, 0, SIZE);
+                    FillingWater.transform.localPosition -= new Vector3(0, DISTANCE, 0);
+                }
+                count--;
+                if (count == 0)
+                {
+                    FillingWater.transform.localScale -= new Vector3(0, 0, SIZE);
+                    FillingWater.transform.localPosition -= new Vector3(0, DISTANCE, 0);
+                }
+            }
+            if (count == 0)
+            {
+                WaterObjects.SetActive(false);
+            }
+        }
     }
 }
