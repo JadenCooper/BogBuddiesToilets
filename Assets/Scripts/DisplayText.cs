@@ -16,8 +16,15 @@ public class DisplayText : Interactable
     private float invisableTimer = 20f; // Time To Turn Off
     [SerializeField]
     private bool isCoroutineRunning = false;
+
+    public Collectible collectible;
+
     private void Start()
     {
+        if(collectible)//making sure the game doesn't break while we finish adding collectibles
+        {
+            collectible.collected = false;
+        }
         text.text = InputText;
     }
     public IEnumerator InvisableTimer()
@@ -46,6 +53,10 @@ public class DisplayText : Interactable
             textHolder.SetActive(true);
             if (!Seen)
             {
+                if(collectible) //making sure the game doesn't break while we finish adding collectibles
+                {
+                    collectible.collected = true;
+                }
                 Seen = true;
                 image.color = Color.blue; // Set Image To Blue For Playerfeedback That Text Has Been Seen
             }

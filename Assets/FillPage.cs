@@ -17,7 +17,6 @@ public class FillPage : MonoBehaviour
     {
         if(collectible)
         {
-            Debug.Log(collectible.background);
             background.GetComponent<Image>().sprite = collectible.background;
             picture.GetComponent<Image>().sprite = collectible.picture;
             title.text = collectible.title;

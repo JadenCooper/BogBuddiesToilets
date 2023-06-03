@@ -12,8 +12,7 @@ public class Scrapbook : MonoBehaviour
 
     public GameObject scrapbookPage;
 
-    // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
         int count = 0;
         foreach(Collectible collectible in collectiblesList)
