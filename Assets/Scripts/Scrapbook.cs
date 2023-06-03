@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using TMPro;
 
 public class Scrapbook : MonoBehaviour
 {
     public List<Collectible> collectiblesList;
     public List<GameObject> indexList;
+
+    public GameObject scrapbookPage;
 
     // Start is called before the first frame update
     void Start()
@@ -19,9 +22,7 @@ public class Scrapbook : MonoBehaviour
             {
                 indexList[count].GetComponentInChildren<TextMeshProUGUI>().text = collectible.title;
                 indexList[count].GetComponent<Image>().sprite = collectible.picture;
-                Debug.Log(collectible.picture);
-                indexList[count].GetComponent<Image>().color = Color.white;
-            }
+                indexList[count].GetComponent<Image>().color = Color.white;            }
             else
             {
                 indexList[count].GetComponent<Image>().sprite = collectible.background;
@@ -30,9 +31,12 @@ public class Scrapbook : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void FillPage(int index)
     {
-        
+        if(collectiblesList[index].collected)
+        {
+            scrapbookPage.GetComponent<FillPage>().collectible = collectiblesList[index];
+            scrapbookPage.SetActive(true);
+        }
     }
 }

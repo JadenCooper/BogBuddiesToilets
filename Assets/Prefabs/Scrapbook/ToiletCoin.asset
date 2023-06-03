@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90412d6a7919d984ca0092dbb6129d29, type: 3}
   m_Name: ToiletCoin
   m_EditorClassIdentifier: 
-  title: 
-  description: 
-  background: {fileID: 0}
-  picture: {fileID: 0}
+  title: ToiletCoin
+  description: "These toilets used to be coin operated, looks like someone dropped
+    theirs. \nNow you have your very own vintage peepee penny."
+  background: {fileID: 21300000, guid: 04d7cf0b31bd5414ab846ce1f029479b, type: 3}
+  picture: {fileID: 21300000, guid: 3168140d6f409d0448447f18568d9482, type: 3}
   collected: 0
