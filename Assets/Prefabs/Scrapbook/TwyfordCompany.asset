@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90412d6a7919d984ca0092dbb6129d29, type: 3}
-  m_Name: ToiletCoin
+  m_Name: TwyfordCompany
   m_EditorClassIdentifier: 
-  title: ToiletCoin
-  description: The Penny in the Slot system was introduced for the water closets
-    (toilets), urinals were free to use, although this never covered the cost of
-    annual maintenance.
-  background: {fileID: 21300000, guid: 04d7cf0b31bd5414ab846ce1f029479b, type: 3}
+  title: English Craftmanship
+  description: All the interior tiles and fixtures were imported from England from
+    the Twyford company
+  background: {fileID: 21300000, guid: 965734c7bd8e1b64cbb42e3ba8240386, type: 3}
   picture: {fileID: 21300000, guid: deb1b8264b2a7774a97da79d386dacd0, type: 3}
   collected: 0

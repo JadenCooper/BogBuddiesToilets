@@ -12,6 +12,14 @@ public class Scrapbook : MonoBehaviour
 
     public GameObject scrapbookPage;
 
+    void Start()
+    {
+        foreach(Collectible collectible in collectiblesList)
+        {
+            collectible.collected = false;
+        }
+    }
+
     void OnEnable()
     {
         int count = 0;
@@ -21,7 +29,8 @@ public class Scrapbook : MonoBehaviour
             {
                 indexList[count].GetComponentInChildren<TextMeshProUGUI>().text = collectible.title;
                 indexList[count].GetComponent<Image>().sprite = collectible.picture;
-                indexList[count].GetComponent<Image>().color = Color.white;            }
+                indexList[count].GetComponent<Image>().color = Color.white;            
+            }
             else
             {
                 indexList[count].GetComponent<Image>().sprite = collectible.background;

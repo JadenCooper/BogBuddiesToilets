@@ -24,8 +24,9 @@ public class DisplayText : Interactable
         if(collectible)//making sure the game doesn't break while we finish adding collectibles
         {
             collectible.collected = false;
+            text.text = collectible.description;
         }
-        text.text = InputText;
+        //text.text = InputText;
     }
     public IEnumerator InvisableTimer()
     {

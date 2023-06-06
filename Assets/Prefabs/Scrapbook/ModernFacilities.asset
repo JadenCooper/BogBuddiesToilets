@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90412d6a7919d984ca0092dbb6129d29, type: 3}
-  m_Name: ToiletCoin
+  m_Name: ModernFacilities
   m_EditorClassIdentifier: 
-  title: ToiletCoin
-  description: The Penny in the Slot system was introduced for the water closets
-    (toilets), urinals were free to use, although this never covered the cost of
-    annual maintenance.
-  background: {fileID: 21300000, guid: 04d7cf0b31bd5414ab846ce1f029479b, type: 3}
+  title: Fancy Toilet
+  description: They were state of the art, modern facilities for both sanitation
+    reasons and for promoting cities as hygienic and modern.
+  background: {fileID: 21300000, guid: cc65860030c966a40bc0e1cfe98dbb1b, type: 3}
   picture: {fileID: 21300000, guid: deb1b8264b2a7774a97da79d386dacd0, type: 3}
   collected: 0

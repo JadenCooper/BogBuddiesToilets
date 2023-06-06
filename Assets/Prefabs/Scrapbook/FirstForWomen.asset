@@ -10,12 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90412d6a7919d984ca0092dbb6129d29, type: 3}
-  m_Name: ToiletCoin
+  m_Name: FirstForWomen
   m_EditorClassIdentifier: 
-  title: ToiletCoin
-  description: The Penny in the Slot system was introduced for the water closets
-    (toilets), urinals were free to use, although this never covered the cost of
-    annual maintenance.
-  background: {fileID: 21300000, guid: 04d7cf0b31bd5414ab846ce1f029479b, type: 3}
+  title: Ladies First
+  description: These conveniences were the first in the city built for women
+  background: {fileID: 21300000, guid: 0b39533d3d6db5a4398d45703e260761, type: 3}
   picture: {fileID: 21300000, guid: deb1b8264b2a7774a97da79d386dacd0, type: 3}
   collected: 0
