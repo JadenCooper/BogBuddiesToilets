@@ -36,10 +36,12 @@ public class PlayerInput : MonoBehaviour
 
     private void PerformInteraction(InputAction.CallbackContext obj)
     {
+        // Sends Out The Raycast To Check For Interaction
         OnInteract?.Invoke(pointerPosition.action.ReadValue<Vector2>());
     }
     private void PreformPause(InputAction.CallbackContext obj)
     {
+        // Opens Pause Menu
         OnPause?.Invoke();
     }
 }

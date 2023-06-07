@@ -71,6 +71,7 @@ public class PauseManager : MonoBehaviour
         playerController.CanMove = !playerController.CanMove;
         if (Cursor.lockState == CursorLockMode.Locked)
         {
+            // Disables Crosshair And Unlocks Mouse While In Pause Menu
             Cursor.lockState = CursorLockMode.Confined;
             crosshair.SetActive(false);
         }

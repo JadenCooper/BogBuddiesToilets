@@ -11,6 +11,7 @@ public class Crosshair : MonoBehaviour
     }
     private void Update()
     {
+        // Makes Sure Crosshair Is Exactly Where The Mouse Is
         CrosshairObject.transform.position = Input.mousePosition;
     }
 }
