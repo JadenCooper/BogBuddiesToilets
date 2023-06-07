@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
         rb.velocity = transform.TransformDirection(movement); // Increases Velocity And Changes Direction From Local World
     }
 
-    private void Press(Vector2 InteractedLocation)
+    public void Press(Vector2 InteractedLocation)
     {
         // Interact - Shoots Out Raycast Out At Press/Click Position 
         if (CanMove)
@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
             RaycastHit raycastHit;
             if (Physics.Raycast(raycast, out raycastHit))
             {
-                if (raycastHit.collider.CompareTag("Arrow")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
+                if ((raycastHit.collider.CompareTag("Arrow") || raycastHit.collider.CompareTag("Text"))) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
                 {
                     raycastHit.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
                 }
