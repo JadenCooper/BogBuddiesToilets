@@ -15,26 +15,28 @@ public class MouseLook : MonoBehaviour
 
     void Start()
     {
+        //Cursor.lockState = CursorLockMode.Confined;
         camera_y = transform.position.y - Player.transform.position.y;
-        Cursor.lockState = CursorLockMode.Locked;
     }
-    
-    /*
-    // Update is called once per frame
+
+
     void Update()
     {
         //Update Mouse position to player position
-        pos = Player.transform.position;
-        pos.y += camera_y;
-        transform.position = pos;
-        //Get mouse movement in new input system
-        mousemovement = Mouse.current.delta.ReadValue();     
-        xrotation -= mousemovement.y * Time.deltaTime * mouse_sensitivity;   
-        xrotation = Mathf.Clamp(xrotation,-90,90);
-        yrotation += mousemovement.x * Time.deltaTime * mouse_sensitivity;
+        if (Cursor.lockState == CursorLockMode.Locked)
+        {
+            pos = Player.transform.position;
+            pos.y += camera_y;
+            transform.position = pos;
+            //Get mouse movement in new input system
+            mousemovement = Mouse.current.delta.ReadValue();
+            xrotation -= mousemovement.y * Time.deltaTime * mouse_sensitivity;
+            xrotation = Mathf.Clamp(xrotation, -90, 90);
+            yrotation += mousemovement.x * Time.deltaTime * mouse_sensitivity;
 
-        //Rotate the camera
-        transform.rotation = Quaternion.Euler(xrotation , yrotation , 0);
+            //Rotate the camera
+            transform.rotation = Quaternion.Euler(xrotation, yrotation, 0);
+        }
     }
-    */
+
 }

@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour
 
     public void Press(Vector2 InteractedLocation)
     {
+        Debug.Log("Press");
         // Interact - Shoots Out Raycast Out At Press/Click Position 
         if (CanMove)
         {
@@ -42,15 +43,12 @@ public class PlayerController : MonoBehaviour
             RaycastHit raycastHit;
             if (Physics.Raycast(raycast, out raycastHit))
             {
+                Debug.Log(raycastHit);
                 if ((raycastHit.collider.CompareTag("Arrow") || raycastHit.collider.CompareTag("Text"))) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
                 {
                     raycastHit.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
                 }
             }
         }
-    }
-    private void PausePress(InputAction.CallbackContext obj)
-    {
-        Debug.Log("Pause");
     }
 }

@@ -20,6 +20,7 @@ public class PauseManager : MonoBehaviour
     public List<DisplayText> DisplayTextList = new List<DisplayText>();
     public TextMeshProUGUI textDisplayCount;
     public TextMeshProUGUI textDisplaySeenCount;
+    public GameObject crosshair;
     private void Start()
     {
         image = PauseMenu.GetComponent<Image>();
@@ -68,6 +69,16 @@ public class PauseManager : MonoBehaviour
     public void DisablePlayerMovement()
     {
         playerController.CanMove = !playerController.CanMove;
+        if (Cursor.lockState == CursorLockMode.Locked)
+        {
+            Cursor.lockState = CursorLockMode.Confined;
+            crosshair.SetActive(false);
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            crosshair.SetActive(true);
+        }
     }
     public void MapChange()
     {
