@@ -246,6 +246,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6984c2426aac794fb3559fbcf20ed9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnPointerInput:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPause:
+    m_PersistentCalls:
+      m_Calls: []
+  pointerPosition: {fileID: -4402864217975144489, guid: 282c8a8b4cb4f4e4e8fa399dc312db67,
+    type: 3}
+  interact: {fileID: -1625955947220829342, guid: 282c8a8b4cb4f4e4e8fa399dc312db67,
+    type: 3}
+  pause: {fileID: 9159594919121882040, guid: 282c8a8b4cb4f4e4e8fa399dc312db67, type: 3}
 --- !u!114 &9010264696739504860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,10 +274,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Movement: {fileID: -4882181663567758122, guid: 282c8a8b4cb4f4e4e8fa399dc312db67,
     type: 3}
-  Interact: {fileID: -1625955947220829342, guid: 282c8a8b4cb4f4e4e8fa399dc312db67,
-    type: 3}
-  Look: {fileID: -4402864217975144489, guid: 282c8a8b4cb4f4e4e8fa399dc312db67, type: 3}
-  Pause: {fileID: 0}
   MovementInput: {x: 0, y: 0, z: 0}
   movement: {x: 0, y: 0, z: 0}
   MaxSpeed: 300

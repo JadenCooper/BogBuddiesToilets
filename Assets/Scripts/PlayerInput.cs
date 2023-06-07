@@ -7,14 +7,13 @@ using UnityEngine.InputSystem;
 public class PlayerInput : MonoBehaviour
 {
     // This script handles all player inputs and sends that information out in events
-    public UnityEvent<Vector2> OnMovementInput, OnPointerInput;
-    public UnityEvent OnInteract, OnPause;
+    public UnityEvent<Vector2> OnPointerInput, OnInteract;
+    public UnityEvent OnPause;
     [SerializeField]
-    private InputActionReference movement, pointerPosition, interact, pause;
+    private InputActionReference pointerPosition, interact, pause;
     private void Update()
     {
         // These Actions/Events Give Values
-        OnMovementInput?.Invoke(movement.action.ReadValue<Vector2>().normalized);
         OnPointerInput?.Invoke(GetPointerPosition());
     }
     private Vector2 GetPointerPosition()
@@ -37,7 +36,7 @@ public class PlayerInput : MonoBehaviour
 
     private void PerformInteraction(InputAction.CallbackContext obj)
     {
-        OnInteract?.Invoke();
+        OnInteract?.Invoke(pointerPosition.action.ReadValue<Vector2>());
     }
     private void PreformPause(InputAction.CallbackContext obj)
     {
