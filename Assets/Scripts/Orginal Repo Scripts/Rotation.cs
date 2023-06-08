@@ -34,6 +34,7 @@ public class Rotation : Interactable
             {
                 Toggle();
             }
+            Activated = false;
         }
         if (opening && !closing)
         {
@@ -77,7 +78,6 @@ public class Rotation : Interactable
         }
         open = !open;
         lastOpen = DateTime.Now;
-        Debug.Log("Activated = true");
     }
 
     public override void Interact()
