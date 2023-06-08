@@ -11,6 +11,8 @@ TagManager:
   - Text
   - Interact
   - interact
+  - Arrow
+  - Image
   layers:
   - Default
   - TransparentFX
