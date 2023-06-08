@@ -222,7 +222,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""7b6368a4-91d5-4a3f-98e8-d0546e18be6a"",
-                    ""path"": ""<Keyboard>/#(P)"",
+                    ""path"": ""<Keyboard>/escape"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""PC"",
