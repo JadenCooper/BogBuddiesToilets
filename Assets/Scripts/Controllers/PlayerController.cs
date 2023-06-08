@@ -8,76 +8,45 @@ using UnityEngine.UIElements;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField]
-    private InputActionReference Movement, Interact, Look, Pause;
+    private InputActionReference Movement;
     [SerializeField]
     private Vector3 MovementInput;
     private Rigidbody rb;
     public Vector3 movement;
-    public float MaxSpeed = 20;
-    public float CurrentSpeed = 0;
-    public float Acceleration = 10;
+    public float Speed = 18;
     public bool CanMove = false;
-    public MouseLook mouseLook;
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
     }
     public void Move()
     {
-        CalculateSpeed();
-        MovementInput *= CurrentSpeed;
-        movement = MovementInput;
+        MovementInput *= Speed;
+        movement = new Vector3(MovementInput.x, 0, MovementInput.y);
     }
 
-    public void CalculateSpeed()
-    {
-        if (MovementInput == Vector3.zero)
-        {
-            CurrentSpeed += -Acceleration * Time.deltaTime;
-        }
-        else
-        {
-            CurrentSpeed += Acceleration * Time.deltaTime;
-        }
-        CurrentSpeed = Mathf.Clamp(CurrentSpeed, 0, MaxSpeed);
-    }
 
     private void FixedUpdate()
     {
-        MovementInput = Movement.action.ReadValue<Vector3>().normalized;
+        MovementInput = Movement.action.ReadValue<Vector2>().normalized;
         Move();
-        rb.velocity = transform.TransformDirection(movement * Time.deltaTime); // Increases Velocity And Changes Direction From Local World
+        rb.velocity = transform.TransformDirection(movement); // Increases Velocity And Changes Direction From Local World
     }
 
-    private void OnEnable()
-    {
-        Interact.action.performed += Press;
-        Pause.action.performed += PausePress;
-    }
-    private void OnDisable()
-    {
-        Interact.action.performed -= Press;
-        Pause.action.performed -= PausePress;
-    }
-
-    private void Press(InputAction.CallbackContext obj)
+    public void Press(Vector2 InteractedLocation)
     {
         // Interact - Shoots Out Raycast Out At Press/Click Position 
         if (CanMove)
         {
-            Ray raycast = Camera.main.ScreenPointToRay(Look.action.ReadValue<Vector2>());
+            Ray raycast = Camera.main.ScreenPointToRay(InteractedLocation);
             RaycastHit raycastHit;
             if (Physics.Raycast(raycast, out raycastHit))
             {
-                if (raycastHit.collider.CompareTag("Arrow")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
+                if ((raycastHit.collider.CompareTag("Arrow") || raycastHit.collider.CompareTag("Text"))) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
                 {
                     raycastHit.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
                 }
             }
         }
-    }
-    private void PausePress(InputAction.CallbackContext obj)
-    {
-        Debug.Log("Pause");
     }
 }

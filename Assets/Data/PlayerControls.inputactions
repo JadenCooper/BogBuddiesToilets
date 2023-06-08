@@ -9,7 +9,7 @@
                     "name": "Movement",
                     "type": "Value",
                     "id": "d4268348-12ce-46ac-b20c-f1dfa06a7d7f",
-                    "expectedControlType": "Vector3",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -67,61 +67,6 @@
                 },
                 {
                     "name": "3D Vector",
-                    "id": "fe67a574-112f-473b-9784-b78fd164523e",
-                    "path": "3DVector",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Movement",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "left",
-                    "id": "c5389b5d-c6f2-468e-b86f-eca2bb2199a2",
-                    "path": "<Keyboard>/a",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "PC",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "d733aa66-0cac-4f90-a393-f98c3e52e248",
-                    "path": "<Keyboard>/d",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "PC",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "forward",
-                    "id": "cdc6e422-c52a-4704-9552-28265047f063",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "PC",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "backward",
-                    "id": "79fef540-fc9b-4db7-9ce3-ec5ca0f64f43",
-                    "path": "<Keyboard>/s",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "PC",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "3D Vector",
                     "id": "edf5a177-01d0-439f-9447-84e03a6e64b4",
                     "path": "3DVector",
                     "interactions": "",
@@ -176,6 +121,61 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "WASD",
+                    "id": "26821c1a-f0ba-437d-acd1-0fbedff84f1c",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "a892dbe5-1c49-4466-b05f-60bec0351766",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PC",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "0c72a62e-0dc6-4680-b14c-1f2f714bb406",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PC",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "1b666d99-05c6-4424-ac66-f1ba3676cc83",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PC",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "1b1c8248-0881-476b-8729-074cbde66cd0",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "PC",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
                     "id": "65405536-edb3-4d2e-a94c-23ce49a32c39",
                     "path": "<Touchscreen>/Press",
@@ -199,8 +199,8 @@
                 },
                 {
                     "name": "",
-                    "id": "7652f056-63c5-4c5e-8e75-87a878a8e13a",
-                    "path": "<Keyboard>/#(P)",
+                    "id": "7b6368a4-91d5-4a3f-98e8-d0546e18be6a",
+                    "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
                     "groups": "PC",

@@ -10,7 +10,6 @@ public class PauseManager : MonoBehaviour
     public GameObject pauseButton;
     public GameObject MapScreen;
     public GameObject IntialScreen;
-    public LookingMobile look;
     public PlayerController playerController;
     private Color orginalMapColor;
     public Sprite map;
@@ -21,6 +20,7 @@ public class PauseManager : MonoBehaviour
     public List<DisplayText> DisplayTextList = new List<DisplayText>();
     public TextMeshProUGUI textDisplayCount;
     public TextMeshProUGUI textDisplaySeenCount;
+    public GameObject crosshair;
     private void Start()
     {
         image = PauseMenu.GetComponent<Image>();
@@ -68,8 +68,18 @@ public class PauseManager : MonoBehaviour
     }
     public void DisablePlayerMovement()
     {
-        look.CanMove = !look.CanMove;
         playerController.CanMove = !playerController.CanMove;
+        if (Cursor.lockState == CursorLockMode.Locked)
+        {
+            // Disables Crosshair And Unlocks Mouse While In Pause Menu
+            Cursor.lockState = CursorLockMode.Confined;
+            crosshair.SetActive(false);
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            crosshair.SetActive(true);
+        }
     }
     public void MapChange()
     {
