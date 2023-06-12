@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1068,12 +1068,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cc19920907525148bde8071223b490f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &69182599 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c289a477d4c9ae542b73188a84a7435b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1686794099}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &76370505
 GameObject:
   m_ObjectHideFlags: 0
@@ -2485,12 +2479,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 142058805}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &143095463 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c289a477d4c9ae542b73188a84a7435b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1606108742}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &143229373
 GameObject:
   m_ObjectHideFlags: 0
@@ -3669,12 +3657,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205191952}
   m_CullTransparentMesh: 0
---- !u!1 &205302610 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f679f7d96503ea644b045ca3bffc7fbf,
-    type: 3}
-  m_PrefabInstance: {fileID: 1956298295}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &207149795
 GameObject:
   m_ObjectHideFlags: 0
@@ -5751,12 +5733,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 297370555}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &300924171 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c289a477d4c9ae542b73188a84a7435b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1398951821}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &305883586
 GameObject:
   m_ObjectHideFlags: 0
@@ -6245,12 +6221,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cc19920907525148bde8071223b490f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &328833405 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f679f7d96503ea644b045ca3bffc7fbf,
-    type: 3}
-  m_PrefabInstance: {fileID: 42581735}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &338415140
 GameObject:
   m_ObjectHideFlags: 0
@@ -9890,12 +9860,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 527be4f5b494b97459ecadb0ad229d72, type: 3}
---- !u!1 &505197177 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f679f7d96503ea644b045ca3bffc7fbf,
-    type: 3}
-  m_PrefabInstance: {fileID: 1766403748}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &505492416 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a56eb9cec70dec548bff44702324d278,
@@ -10561,12 +10525,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 531551817}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &533518124 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f679f7d96503ea644b045ca3bffc7fbf,
-    type: 3}
-  m_PrefabInstance: {fileID: 2084136690}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &535518041
 GameObject:
   m_ObjectHideFlags: 0
@@ -12309,12 +12267,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e407c87b1c5413f4a861e5e132fa6a57, type: 3}
---- !u!1 &630515027 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c289a477d4c9ae542b73188a84a7435b,
-    type: 3}
-  m_PrefabInstance: {fileID: 347914847}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &631074492
 GameObject:
   m_ObjectHideFlags: 0
@@ -14812,12 +14764,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 757318528}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &759504685 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f679f7d96503ea644b045ca3bffc7fbf,
-    type: 3}
-  m_PrefabInstance: {fileID: 1241448063}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &760273547
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14992,12 +14938,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 834c3fa5e648f5b4faae78fbdd317a75, type: 3}
---- !u!1 &765237060 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c289a477d4c9ae542b73188a84a7435b,
-    type: 3}
-  m_PrefabInstance: {fileID: 2087251321}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &765999907
 GameObject:
   m_ObjectHideFlags: 0
@@ -15080,12 +15020,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 834c3fa5e648f5b4faae78fbdd317a75,
     type: 3}
   m_PrefabInstance: {fileID: 947271254}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &782038692 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f679f7d96503ea644b045ca3bffc7fbf,
-    type: 3}
-  m_PrefabInstance: {fileID: 1713108245}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &789672777
 GameObject:
@@ -15695,12 +15629,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e407c87b1c5413f4a861e5e132fa6a57,
     type: 3}
   m_PrefabInstance: {fileID: 2078040159}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &828062503 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c289a477d4c9ae542b73188a84a7435b,
-    type: 3}
-  m_PrefabInstance: {fileID: 142058805}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &828734827
 GameObject:
@@ -16525,12 +16453,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 860709635}
   m_CullTransparentMesh: 0
---- !u!1 &862449253 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c289a477d4c9ae542b73188a84a7435b,
-    type: 3}
-  m_PrefabInstance: {fileID: 146175883}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &862616330
 GameObject:
   m_ObjectHideFlags: 0
@@ -19499,12 +19421,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 469edab27ab6d004d84af2c4a851bd7f, type: 3}
---- !u!1 &1006201507 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c289a477d4c9ae542b73188a84a7435b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1738134087}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1007645710
 GameObject:
   m_ObjectHideFlags: 0
@@ -20436,12 +20352,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1024613488}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1027929320 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f679f7d96503ea644b045ca3bffc7fbf,
-    type: 3}
-  m_PrefabInstance: {fileID: 1611005395}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1029147259
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22185,12 +22095,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1108520187}
   m_CullTransparentMesh: 0
---- !u!1 &1111214791 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c289a477d4c9ae542b73188a84a7435b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1348454448}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1114258315
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24279,12 +24183,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &1193390088 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f679f7d96503ea644b045ca3bffc7fbf,
-    type: 3}
-  m_PrefabInstance: {fileID: 1293764622}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1194319112
 GameObject:
   m_ObjectHideFlags: 0
@@ -26074,12 +25972,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1255755900}
   m_Mesh: {fileID: 4301082, guid: 5b8c5d15bf5cc4d4bb06d33f570abedd, type: 3}
---- !u!1 &1261514476 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c289a477d4c9ae542b73188a84a7435b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1431514379}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1270649840
 GameObject:
   m_ObjectHideFlags: 0
@@ -31440,12 +31332,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483742308}
   m_Mesh: {fileID: 4300036, guid: 5b8c5d15bf5cc4d4bb06d33f570abedd, type: 3}
---- !u!1 &1484799685 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c289a477d4c9ae542b73188a84a7435b,
-    type: 3}
-  m_PrefabInstance: {fileID: 2062216371}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1486304126
 GameObject:
   m_ObjectHideFlags: 0
@@ -33176,12 +33062,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1227636476}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1571872738 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c289a477d4c9ae542b73188a84a7435b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1227398545}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1584612349
 GameObject:
   m_ObjectHideFlags: 0
@@ -33789,12 +33669,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4892229677924781549, guid: 527be4f5b494b97459ecadb0ad229d72,
     type: 3}
   m_PrefabInstance: {fileID: 505034279}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1626203795 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c289a477d4c9ae542b73188a84a7435b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1783635593}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1626581642
 GameObject:
@@ -39740,12 +39614,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1952404309}
   m_CullTransparentMesh: 0
---- !u!1 &1953759223 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c289a477d4c9ae542b73188a84a7435b,
-    type: 3}
-  m_PrefabInstance: {fileID: 929290330}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1954369815
 GameObject:
   m_ObjectHideFlags: 0
@@ -44247,488 +44115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db09162d28112d64089abdb9ada7e354, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Load:
-  - {fileID: 9010657080123743161}
-  - {fileID: 9010657080123743091}
-  - {fileID: 9010657080123743089}
-  - {fileID: 9010657080123743087}
-  - {fileID: 9010657080123743083}
-  - {fileID: 9010657080123743081}
-  - {fileID: 9010657080123743017}
-  - {fileID: 9010657080123742419}
-  - {fileID: 9010657080123742461}
-  - {fileID: 9010657080123743011}
-  - {fileID: 9010657080123742431}
-  - {fileID: 9010657080123742421}
-  - {fileID: 9010657080123741295}
-  - {fileID: 9010657080123741209}
-  - {fileID: 9010657080123741187}
-  - {fileID: 9010657080123741229}
-  - {fileID: 9010657080123741659}
-  - {fileID: 9010657080123741657}
-  - {fileID: 9010657080123741655}
-  - {fileID: 9010657080123741653}
-  - {fileID: 9010657080123741643}
-  - {fileID: 9010657080123741641}
-  - {fileID: 9010657080123741639}
-  - {fileID: 9010657080123741637}
-  - {fileID: 9010657080123741681}
-  - {fileID: 9010657080123741679}
-  - {fileID: 9010657080123741677}
-  - {fileID: 9010657080123741675}
-  - {fileID: 9010657080123741673}
-  - {fileID: 9010657080123741671}
-  - {fileID: 9010657080123741669}
-  - {fileID: 9010657080123741667}
-  - {fileID: 9010657080123741599}
-  - {fileID: 9010657080123741597}
-  - {fileID: 9010657080123741595}
-  - {fileID: 9010657080123741635}
-  - {fileID: 9010657080123741633}
-  - {fileID: 9010657080123741695}
-  - {fileID: 9010657080123741693}
-  - {fileID: 9010657080123741691}
-  - {fileID: 9010657080123741689}
-  - {fileID: 9010657080123741685}
-  - {fileID: 9010657080123741683}
-  - {fileID: 9010657080123742569}
-  - {fileID: 9010657080123742417}
-  - {fileID: 9010657080123742561}
-  - {fileID: 1023574475}
-  - {fileID: 137291432}
-  - {fileID: 1822720262}
-  - {fileID: 185100716}
-  - {fileID: 1396307279}
-  - {fileID: 439046140}
-  - {fileID: 307538502}
-  - {fileID: 1092740957}
-  - {fileID: 1020828660}
-  - {fileID: 416745863}
-  - {fileID: 9010657080123741237}
-  - {fileID: 9010657080123741235}
-  - {fileID: 9010657080123741233}
-  - {fileID: 9010657080123733625}
-  - {fileID: 9010657080123733623}
-  - {fileID: 9010657080123742919}
-  - {fileID: 9010657080123742917}
-  - {fileID: 9010657080123742913}
-  - {fileID: 9010657080123742975}
-  - {fileID: 9010657080123742973}
-  - {fileID: 9010657080123742971}
-  - {fileID: 9010657080123742969}
-  - {fileID: 9010657080123742967}
-  - {fileID: 9010657080123742965}
-  - {fileID: 9010657080123742963}
-  - {fileID: 9010657080123742951}
-  - {fileID: 9010657080123742949}
-  - {fileID: 9010657080123742947}
-  - {fileID: 9010657080123742945}
-  - {fileID: 9010657080123742877}
-  - {fileID: 9010657080123742875}
-  - {fileID: 9010657080123742873}
-  - {fileID: 9010657080123742869}
-  - {fileID: 9010657080123742867}
-  - {fileID: 9010657080123742865}
-  - {fileID: 9010657080123742863}
-  - {fileID: 9010657080123742861}
-  - {fileID: 9010657080123742859}
-  - {fileID: 9010657080123742857}
-  - {fileID: 9010657080123742855}
-  - {fileID: 9010657080123742853}
-  - {fileID: 9010657080123742851}
-  - {fileID: 9010657080123742911}
-  - {fileID: 9010657080123742909}
-  - {fileID: 9010657080123742907}
-  - {fileID: 9010657080123742905}
-  - {fileID: 9010657080123743063}
-  - {fileID: 9010657080123733601}
-  - {fileID: 9010657080123733535}
-  - {fileID: 9010657080123743051}
-  - {fileID: 9010657080123733533}
-  - {fileID: 9010657080123733529}
-  - {fileID: 9010657080123733957}
-  - {fileID: 9010657080123733955}
-  - {fileID: 9010657080123733953}
-  - {fileID: 9010657080123734013}
-  - {fileID: 9010657080123734011}
-  - {fileID: 9010657080123743613}
-  - {fileID: 9010657080123739179}
-  - {fileID: 9010657080123738843}
-  - {fileID: 9010657080123738685}
-  - {fileID: 9010657080123738911}
-  - {fileID: 9010657080123738177}
-  - {fileID: 9010657080123749199}
-  - {fileID: 9010657080123748529}
-  - {fileID: 9010657080123741665}
-  - {fileID: 9010657080123733509}
-  - {fileID: 9010657080123733567}
-  - {fileID: 9010657080123750133}
-  - {fileID: 9010657080123750359}
-  - {fileID: 9010657080123741469}
-  - {fileID: 9010657080123733565}
-  - {fileID: 9010657080123733563}
-  - {fileID: 9010657080123742871}
-  - {fileID: 9010657080123733561}
-  - {fileID: 9010657080123733559}
-  - {fileID: 9010657080123749755}
-  - {fileID: 9010657080123751005}
-  - {fileID: 9010657080123733925}
-  - {fileID: 9010657080123743159}
-  - {fileID: 9010657080123743157}
-  - {fileID: 9010657080123743155}
-  - {fileID: 9010657080123743025}
-  - {fileID: 9010657080123743153}
-  - {fileID: 9010657080123743149}
-  - {fileID: 9010657080123743147}
-  - {fileID: 9010657080123743023}
-  - {fileID: 9010657080123743145}
-  - {fileID: 9010657080123743143}
-  - {fileID: 9010657080123743141}
-  - {fileID: 9010657080123743021}
-  - {fileID: 9010657080123743049}
-  - {fileID: 9010657080123743047}
-  - {fileID: 9010657080123743045}
-  - {fileID: 9010657080123743019}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 948446660}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 1261514476}
-  - {fileID: 328833405}
-  - {fileID: 782038692}
-  - {fileID: 505197177}
-  - {fileID: 759504685}
-  - {fileID: 1111214791}
-  - {fileID: 1006201507}
-  - {fileID: 1626203795}
-  - {fileID: 143095463}
-  - {fileID: 69182599}
-  - {fileID: 1571872738}
-  - {fileID: 828062503}
-  - {fileID: 862449253}
-  - {fileID: 1484799685}
-  - {fileID: 300924171}
-  - {fileID: 630515027}
-  - {fileID: 1953759223}
-  - {fileID: 765237060}
+  load: []
 --- !u!4 &5054759625643121911
 Transform:
   m_ObjectHideFlags: 0
@@ -44756,463 +44143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db09162d28112d64089abdb9ada7e354, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Load:
-  - {fileID: 9010657080123742923}
-  - {fileID: 9010657080123743101}
-  - {fileID: 9010657080123743099}
-  - {fileID: 9010657080123743097}
-  - {fileID: 9010657080123743095}
-  - {fileID: 9010657080123743093}
-  - {fileID: 9010657080123742425}
-  - {fileID: 9010657080123742423}
-  - {fileID: 9010657080123742961}
-  - {fileID: 9010657080123742959}
-  - {fileID: 9010657080123742903}
-  - {fileID: 9010657080123742901}
-  - {fileID: 9010657080123742899}
-  - {fileID: 9010657080123742897}
-  - {fileID: 9010657080123742895}
-  - {fileID: 9010657080123742893}
-  - {fileID: 9010657080123742889}
-  - {fileID: 9010657080123742887}
-  - {fileID: 9010657080123742885}
-  - {fileID: 9010657080123742883}
-  - {fileID: 9010657080123742881}
-  - {fileID: 9010657080123742815}
-  - {fileID: 9010657080123742813}
-  - {fileID: 9010657080123742811}
-  - {fileID: 9010657080123742809}
-  - {fileID: 9010657080123742807}
-  - {fileID: 9010657080123742803}
-  - {fileID: 9010657080123741215}
-  - {fileID: 9010657080123741213}
-  - {fileID: 9010657080123741211}
-  - {fileID: 9010657080123741207}
-  - {fileID: 9010657080123741205}
-  - {fileID: 9010657080123741203}
-  - {fileID: 9010657080123741201}
-  - {fileID: 9010657080123741199}
-  - {fileID: 9010657080123741607}
-  - {fileID: 9010657080123741605}
-  - {fileID: 9010657080123741603}
-  - {fileID: 9010657080123741601}
-  - {fileID: 9010657080123741517}
-  - {fileID: 9010657080123741515}
-  - {fileID: 9010657080123741511}
-  - {fileID: 9010657080123741509}
-  - {fileID: 9010657080123741507}
-  - {fileID: 9010657080123741505}
-  - {fileID: 9010657080123741567}
-  - {fileID: 9010657080123741565}
-  - {fileID: 9010657080123741563}
-  - {fileID: 9010657080123741561}
-  - {fileID: 9010657080123741559}
-  - {fileID: 9010657080123741533}
-  - {fileID: 9010657080123741531}
-  - {fileID: 9010657080123741529}
-  - {fileID: 9010657080123741527}
-  - {fileID: 9010657080123741525}
-  - {fileID: 9010657080123741523}
-  - {fileID: 9010657080123741521}
-  - {fileID: 9010657080123741519}
-  - {fileID: 9010657080123742493}
-  - {fileID: 9010657080123741197}
-  - {fileID: 9010657080123741195}
-  - {fileID: 9010657080123741193}
-  - {fileID: 9010657080123741191}
-  - {fileID: 9010657080123741189}
-  - {fileID: 9010657080123741185}
-  - {fileID: 9010657080123741247}
-  - {fileID: 9010657080123741245}
-  - {fileID: 9010657080123741557}
-  - {fileID: 9010657080123741553}
-  - {fileID: 9010657080123741551}
-  - {fileID: 9010657080123741549}
-  - {fileID: 9010657080123741465}
-  - {fileID: 9010657080123741463}
-  - {fileID: 9010657080123741461}
-  - {fileID: 9010657080123741459}
-  - {fileID: 9010657080123741457}
-  - {fileID: 9010657080123741455}
-  - {fileID: 9010657080123741453}
-  - {fileID: 9010657080123741451}
-  - {fileID: 9010657080123741449}
-  - {fileID: 9010657080123741445}
-  - {fileID: 9010657080123741443}
-  - {fileID: 9010657080123741547}
-  - {fileID: 9010657080123741545}
-  - {fileID: 9010657080123741543}
-  - {fileID: 9010657080123741541}
-  - {fileID: 9010657080123741539}
-  - {fileID: 9010657080123741537}
-  - {fileID: 9010657080123741471}
-  - {fileID: 9010657080123741467}
-  - {fileID: 9010657080123742489}
-  - {fileID: 9010657080123733621}
-  - {fileID: 9010657080123733979}
-  - {fileID: 9010657080123733959}
-  - {fileID: 9010657080123734015}
-  - {fileID: 9010657080123725957}
-  - {fileID: 9010657080123720151}
-  - {fileID: 9010657080123733853}
-  - {fileID: 9010657080123740135}
-  - {fileID: 9010657080123739337}
-  - {fileID: 9010657080123739177}
-  - {fileID: 9010657080123739403}
-  - {fileID: 9010657080123743131}
-  - {fileID: 9010657080123733617}
-  - {fileID: 9010657080123733531}
-  - {fileID: 9010657080123751359}
-  - {fileID: 9010657080123750625}
-  - {fileID: 9010657080123742737}
-  - {fileID: 9010657080123733557}
-  - {fileID: 9010657080123733615}
-  - {fileID: 9010657080123743183}
-  - {fileID: 9010657080123733613}
-  - {fileID: 9010657080123733611}
-  - {fileID: 9010657080123743169}
-  - {fileID: 9010657080123733609}
-  - {fileID: 9010657080123733607}
-  - {fileID: 9010657080123743221}
-  - {fileID: 9010657080123733605}
-  - {fileID: 9010657080123733603}
-  - {fileID: 9010657080123751499}
-  - {fileID: 9010657080123751853}
-  - {fileID: 9010657080123744909}
-  - {fileID: 9010657080123745263}
-  - {fileID: 9010657080123744465}
-  - {fileID: 9010657080123744307}
-  - {fileID: 9010657080123745693}
-  - {fileID: 9010657080123747071}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 366878585}
-  - {fileID: 1664764287}
-  - {fileID: 704667375}
-  - {fileID: 1508589013}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 1027929320}
-  - {fileID: 533518124}
-  - {fileID: 1193390088}
-  - {fileID: 205302610}
+  load: []
 --- !u!4 &5054759626188896753
 Transform:
   m_ObjectHideFlags: 0
@@ -45291,7 +44222,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5997685455455405084
 Transform:
   m_ObjectHideFlags: 0
