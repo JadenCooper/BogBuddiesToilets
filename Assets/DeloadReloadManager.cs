@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class DeloadReloadManager : MonoBehaviour
 {
-    public List<GameObject> Load;
+    public List<GameObject> load;
 
     void Awake()
     {
-        foreach (GameObject gameObject in Load)
+        for(int i = 0; i < load.Count; i++)
         {
-            gameObject.SetActive(false);
+            if(gameObject == null){
+                load[i].SetActive(false);
+            }
         }
     }
 
@@ -18,9 +20,11 @@ public class DeloadReloadManager : MonoBehaviour
     {
         if (other.gameObject.name.Equals("Player"))
         {
-            foreach (GameObject gameObject in Load)
+            for (int i = 0; i < load.Count; i++)
             {
-                gameObject.SetActive(true);
+                if (load[i] == null){
+                    load[i].SetActive(true);
+                }
             }
         }
     }
@@ -29,9 +33,11 @@ public class DeloadReloadManager : MonoBehaviour
     {
         if (other.gameObject.name.Equals("Player"))
         {
-            foreach (GameObject gameObject in Load)
+            for (int i = 0; i < load.Count; i++)
             {
-                gameObject.SetActive(false);
+                if (load[i] == null){
+                    load[i].SetActive(false);
+                }
             }
         }
     }
