@@ -24,4 +24,6 @@ Converted Using "https://anyconv.com/max-to-obj-converter/"
 
 "Lightbulb"("https://www.turbosquid.com/3d-models/3d-lighting-bulb-1552479")
 licensed = "https://blog.turbosquid.com/turbosquid-3d-model-license/"
+
+"Park Bench" ("https://www.turbosquid.com/3d-models/bench-seat-3d-model-1407057")
 */
