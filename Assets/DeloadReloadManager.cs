@@ -10,7 +10,10 @@ public class DeloadReloadManager : MonoBehaviour
     {
         foreach (GameObject gameObject in Load)
         {
-            gameObject.SetActive(false);
+            if(gameObject != null)
+            {
+                gameObject.SetActive(false);
+            }
         }
     }
 
@@ -20,7 +23,10 @@ public class DeloadReloadManager : MonoBehaviour
         {
             foreach (GameObject gameObject in Load)
             {
+            if(gameObject != null)
+            {
                 gameObject.SetActive(true);
+            }
             }
         }
     }
@@ -31,7 +37,10 @@ public class DeloadReloadManager : MonoBehaviour
         {
             foreach (GameObject gameObject in Load)
             {
+            if(gameObject != null)
+            {
                 gameObject.SetActive(false);
+            }
             }
         }
     }
