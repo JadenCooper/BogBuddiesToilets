@@ -22610,7 +22610,7 @@ PrefabInstance:
         type: 3}
       propertyPath: text
       value: 
-      objectReference: {fileID: 1626186142}
+      objectReference: {fileID: 0}
     - target: {fileID: 5997685455340090034, guid: 2531c8733be84e24387fc6b85e48356f,
         type: 3}
       propertyPath: InputText
