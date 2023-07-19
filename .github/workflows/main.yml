@@ -1,7 +1,9 @@
 name: WebGL Builder 😎
 
-on: workflow_dispatch
-
+on: 
+  push:
+    branches:
+      -main
 
 env:
   UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
