@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6524884910768751366}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -46,7 +46,7 @@ Camera:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
-  m_FOVAxisMode: 0
+  m_FOVAxisMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
   m_FocalLength: 50
@@ -58,7 +58,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 44.959797
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -94,9 +94,9 @@ GameObject:
   m_Component:
   - component: {fileID: 9010264696739504856}
   - component: {fileID: 9010264696739504861}
-  - component: {fileID: 9010264696739504862}
   - component: {fileID: 9010264696739504863}
   - component: {fileID: 9010264696739504850}
+  - component: {fileID: 9010264695610810687}
   - component: {fileID: 9010264696739504851}
   - component: {fileID: 9010264696739504860}
   - component: {fileID: 9010264696739504849}
@@ -117,7 +117,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9010264696739504857}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 88.616, y: 41.642, z: -43.92}
   m_LocalScale: {x: 0.44289598, y: 0.6939248, z: 0.5581404}
   m_ConstrainProportionsScale: 0
@@ -134,48 +134,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9010264696739504857}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &9010264696739504862
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9010264696739504857}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!136 &9010264696739504863
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -185,7 +143,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 9010264696739504857}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -206,6 +164,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!65 &9010264695610810687
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9010264696739504857}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 1.5, z: 0.75}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &9010264696739504851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,13 +225,11 @@ MonoBehaviour:
   Interact: {fileID: -1625955947220829342, guid: 282c8a8b4cb4f4e4e8fa399dc312db67,
     type: 3}
   Look: {fileID: -4402864217975144489, guid: 282c8a8b4cb4f4e4e8fa399dc312db67, type: 3}
-  Pause: {fileID: 0}
+  Pause: {fileID: 9159594919121882040, guid: 282c8a8b4cb4f4e4e8fa399dc312db67, type: 3}
   MovementInput: {x: 0, y: 0, z: 0}
   movement: {x: 0, y: 0, z: 0}
-  MaxSpeed: 300
-  CurrentSpeed: 0
-  Acceleration: 75
-  CanMove: 1
+  speed: 700
+  CanMove: 0
   mouseLook: {fileID: 0}
 --- !u!20 &9010264696739504849
 Camera:
@@ -278,7 +247,7 @@ Camera:
   m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
+  m_FocalLength: 100
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -287,7 +256,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 1000
-  field of view: 60
+  field of view: 70
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -298,7 +267,7 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
   m_TargetEye: 3
-  m_HDR: 0
+  m_HDR: 1
   m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
@@ -312,12 +281,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9010264696739504857}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da4b44f0be7e60e4fbd21c863d78e7e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 9010264696739504857}
+  Player: {fileID: 6524884910768751366}
   mouse_sensitivity: 30
 --- !u!114 &3497294839284820611
 MonoBehaviour:
@@ -326,14 +295,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9010264696739504857}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfa97387d0e27a64298a6ab79b9533cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cameraTransform: {fileID: 843281804658075895}
   cameraSensitivity: 10
-  CanMove: 1
+  CanMove: 0
 --- !u!82 &8807482195287657591
 AudioSource:
   m_ObjectHideFlags: 0
@@ -343,8 +312,9 @@ AudioSource:
   m_GameObject: {fileID: 9010264696739504857}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 637dd9b74a4833744a35a8aab1e72291,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 62fb0c2d1a04a644dbb1c96e5617b038, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
