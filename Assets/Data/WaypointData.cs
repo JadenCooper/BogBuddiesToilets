@@ -8,8 +8,8 @@ public static class WaypointData
     {
         { TransportLocation.FG, new Vector3[] { new Vector3(97.3310013f, 41.5699997f, -50.4099998f), new Vector3( 0, 0, 0)} }, // Waypoint 
         { TransportLocation.TS, new Vector3[] { new Vector3(98.6600037f, 41.818924f, -38.6599998f), new Vector3( -180, 0, 0)} }, // Waypoint 12
-        { TransportLocation.TL, new Vector3[] { new Vector3(100.57f, 41.6039238f, -55.4399986f), new Vector3( 150, 0, 0)} }, // Waypoint 12
-        { TransportLocation.TR, new Vector3[] { new Vector3(89.6699982f, 41.6039238f, -54.7400017f), new Vector3( 230, 0, 0)} }, // Waypoint 12
+        { TransportLocation.TL, new Vector3[] { new Vector3(100.57f, 41.6039238f, -55.4399986f), new Vector3( 150, 0, 0)} }, // Waypoint 13
+        { TransportLocation.TR, new Vector3[] { new Vector3(89.6699982f, 41.6039238f, -54.7400017f), new Vector3( 230, 0, 0)} }, // Waypoint 14
 
         { TransportLocation.FTS, new Vector3[] { new Vector3(103.290001f, 41.9087753f, -46.0279999f), new Vector3( -90, 0, 0)} }, // Waypoint 7
         { TransportLocation.FMA, new Vector3[] { new Vector3(101.402f, 38.5020447f, -45.0690002f), new Vector3( -90, 0, 0)} }, // Waypoint 8
