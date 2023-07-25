@@ -47,8 +47,16 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         MovementInput = Movement.action.ReadValue<Vector3>().normalized;
-        Move();
-        rb.velocity = transform.TransformDirection(movement * Time.deltaTime); // Increases Velocity And Changes Direction From Local World
+        if (MovementInput != Vector3.zero)
+        {
+            Move();
+            rb.velocity = transform.TransformDirection(movement * Time.deltaTime); // Increases Velocity And Changes Direction From Local World
+        }
+        else
+        {
+            rb.velocity = Vector3.zero;
+        }
+       
     }
 
     private void OnEnable()
