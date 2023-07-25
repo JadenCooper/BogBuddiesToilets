@@ -5,6 +5,8 @@ using UnityEngine;
 public enum TransportLocation
 {
     TS, // Topside Street
+    TL, // Topside Left
+    TR, // Topside Right
     FG, // Front Gate
 
     FTS, // Female Top Stairs
