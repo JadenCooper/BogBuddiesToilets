@@ -5,15 +5,14 @@ using UnityEngine;
 public class DeloadReloadManager : MonoBehaviour
 {
     public List<GameObject> Load;
+    public bool deloadOnStart;
+    public bool loadOnEnter;
 
     void Awake()
     {
-        foreach (GameObject gameObject in Load)
+        if(deloadOnStart == true)
         {
-            if(gameObject != null)
-            {
-                gameObject.SetActive(false);
-            }
+            DeloaderLoader(false);
         }
     }
 
@@ -21,12 +20,13 @@ public class DeloadReloadManager : MonoBehaviour
     {
         if (other.gameObject.name.Equals("Player"))
         {
-            foreach (GameObject gameObject in Load)
+            if (loadOnEnter == true)
             {
-            if(gameObject != null)
-            {
-                gameObject.SetActive(true);
+                DeloaderLoader(true);
             }
+            else
+            {
+                DeloaderLoader(false);
             }
         }
     }
@@ -35,12 +35,24 @@ public class DeloadReloadManager : MonoBehaviour
     {
         if (other.gameObject.name.Equals("Player"))
         {
-            foreach (GameObject gameObject in Load)
+            if (loadOnEnter == true)
             {
-            if(gameObject != null)
-            {
-                gameObject.SetActive(false);
+                DeloaderLoader(false);
             }
+            else
+            {
+                DeloaderLoader(true);
+            }
+        }
+    }
+
+    public void DeloaderLoader(bool setState)
+    {
+        foreach (GameObject gameObject in Load)
+        {
+            if (gameObject != null)
+            {
+                gameObject.SetActive(setState);
             }
         }
     }
