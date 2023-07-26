@@ -13,9 +13,10 @@ public class PlayerController : MonoBehaviour
     private Vector3 MovementInput;
     private Rigidbody rb;
     public Vector3 movement;
-    public float MaxSpeed = 20;
-    public float CurrentSpeed = 0;
-    public float Acceleration = 10;
+    //public float MaxSpeed = 20;
+    //public float CurrentSpeed = 0;
+    //public float Acceleration = 10;
+    public float speed = 700;
     public bool CanMove = false;
     public MouseLook mouseLook;
     private void Awake()
@@ -24,29 +25,38 @@ public class PlayerController : MonoBehaviour
     }
     public void Move()
     {
-        CalculateSpeed();
-        MovementInput *= CurrentSpeed;
-        movement = MovementInput;
+        //CalculateSpeed();
+        //MovementInput *= CurrentSpeed;
+        movement = MovementInput * speed;
+        
     }
 
     public void CalculateSpeed()
     {
-        if (MovementInput == Vector3.zero)
-        {
-            CurrentSpeed += -Acceleration * Time.deltaTime;
-        }
-        else
-        {
-            CurrentSpeed += Acceleration * Time.deltaTime;
-        }
-        CurrentSpeed = Mathf.Clamp(CurrentSpeed, 0, MaxSpeed);
+        //if (MovementInput == Vector3.zero)
+        //{
+        //    CurrentSpeed += -Acceleration * Time.deltaTime;
+        //}
+        //else
+        //{
+        //    CurrentSpeed += Acceleration * Time.deltaTime;
+        //}
+        //CurrentSpeed = Mathf.Clamp(CurrentSpeed, 0, MaxSpeed);
     }
 
     private void FixedUpdate()
     {
         MovementInput = Movement.action.ReadValue<Vector3>().normalized;
-        Move();
-        rb.velocity = transform.TransformDirection(movement * Time.deltaTime); // Increases Velocity And Changes Direction From Local World
+        if (MovementInput != Vector3.zero)
+        {
+            Move();
+            rb.velocity = transform.TransformDirection(movement * Time.deltaTime); // Increases Velocity And Changes Direction From Local World
+        }
+        else
+        {
+            rb.velocity = Vector3.zero;
+        }
+       
     }
 
     private void OnEnable()
