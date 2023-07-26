@@ -26,4 +26,6 @@ Converted Using "https://anyconv.com/max-to-obj-converter/"
 licensed = "https://blog.turbosquid.com/turbosquid-3d-model-license/"
 
 "Park Bench" ("https://www.turbosquid.com/3d-models/bench-seat-3d-model-1407057")
+
+"day-and-night" (<a href="https://www.flaticon.com/free-icons/day-and-night" title="day and night icons">Day and night icons created by Freepik - Flaticon</a>)
 */
