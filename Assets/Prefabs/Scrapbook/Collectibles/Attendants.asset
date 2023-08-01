@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90412d6a7919d984ca0092dbb6129d29, type: 3}
+  m_Script: {fileID: 11500000, guid: 352c40ee9622123449c8d1d2717d5655, type: 3}
   m_Name: Attendants
   m_EditorClassIdentifier: 
   title: Convenience Attendants

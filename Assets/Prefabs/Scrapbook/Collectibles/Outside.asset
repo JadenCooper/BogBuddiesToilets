@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90412d6a7919d984ca0092dbb6129d29, type: 3}
+  m_Script: {fileID: 11500000, guid: 352c40ee9622123449c8d1d2717d5655, type: 3}
   m_Name: Outside
   m_EditorClassIdentifier: 
-  title: No Girls Allowed
+  title: Boys Club
   description: Prior to 1910 there were only ten public toilets across Dunedin and
     all were for men
   background: {fileID: 21300000, guid: 3cf303f3183e89a49bc437e4a33487f4, type: 3}

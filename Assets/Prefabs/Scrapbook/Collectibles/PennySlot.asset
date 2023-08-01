@@ -9,13 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90412d6a7919d984ca0092dbb6129d29, type: 3}
+  m_Script: {fileID: 11500000, guid: 352c40ee9622123449c8d1d2717d5655, type: 3}
   m_Name: PennySlot
   m_EditorClassIdentifier: 
-  title: Pay To Play
+  title: Pay to Play
   description: "Each water closet had a \u201Cpenny in the slot\u201D locking system.
     It cost a penny to unlock the door to use the water closets. Urinals were free
     to use."
-  background: {fileID: 21300000, guid: 095291295fa46e74fb040d8bf3e282bb, type: 3}
-  picture: {fileID: 21300000, guid: deb1b8264b2a7774a97da79d386dacd0, type: 3}
+  background: {fileID: 0}
+  picture: {fileID: 0}
   collected: 0
