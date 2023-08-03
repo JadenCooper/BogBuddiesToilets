@@ -49,14 +49,14 @@ public class PlayerController : MonoBehaviour
         MovementInput = Movement.action.ReadValue<Vector3>().normalized;
         if (MovementInput != Vector3.zero)
         {
+            rb.isKinematic = false;
             Move();
             rb.velocity = transform.TransformDirection(movement * Time.deltaTime); // Increases Velocity And Changes Direction From Local World
         }
         else
         {
-            rb.velocity = Vector3.zero;
+            rb.isKinematic = true;
         }
-       
     }
 
     private void OnEnable()
@@ -89,5 +89,13 @@ public class PlayerController : MonoBehaviour
     private void PausePress(InputAction.CallbackContext obj)
     {
         Debug.Log("Pause");
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.tag == "Stairs")
+        {
+            gameObject.transform.position += new Vector3(0,.3f,0);
+        }
     }
 }
