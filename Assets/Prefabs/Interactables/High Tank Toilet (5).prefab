@@ -56,6 +56,7 @@ MonoBehaviour:
   RightTap: {fileID: 2412689811140530343}
   WaterObjects: {fileID: 4826284850024283980}
   FillingWater: {fileID: 5652699328775562130}
+  count: 0
 --- !u!1 &1330619604779352465
 GameObject:
   m_ObjectHideFlags: 0
