@@ -10,12 +10,10 @@ public class PrefabReplacer : MonoBehaviour
     [ContextMenu("Replace Gameobjects With Prefab")]
     public void ReplaceGameObjects()
     {
-        GameObject prefabParent = new GameObject(Prefab.name + " Parent");
-
         for (int i = 0; i < ObjectsToReplace.Count; i++)
         {
             GameObject newObject = Instantiate(Prefab);
-            newObject.transform.parent = prefabParent.transform;
+            newObject.transform.parent = ObjectsToReplace[i].transform.parent;
 
             newObject.transform.rotation = ObjectsToReplace[i].transform.rotation;
             newObject.transform.position = ObjectsToReplace[i].transform.position;

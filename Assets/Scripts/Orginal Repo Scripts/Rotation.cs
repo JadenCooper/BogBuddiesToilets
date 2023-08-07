@@ -7,7 +7,7 @@ public class Rotation : Interactable
 {
     private DateTime lastOpen;
     public bool open;
-    private bool Activated = false;
+    public bool Activated = false;
     private bool opening;
     private bool closing;
     private int count;
