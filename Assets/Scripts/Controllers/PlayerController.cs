@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 700;
     public bool CanMove = false;
     public MouseLook mouseLook;
+    public GameObject player;
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -28,6 +29,7 @@ public class PlayerController : MonoBehaviour
         //CalculateSpeed();
         //MovementInput *= CurrentSpeed;
         movement = MovementInput * speed;
+        rb.MovePosition(transform.position + movement * Time.deltaTime * 1);
         
     }
 
@@ -51,7 +53,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.isKinematic = false;
             Move();
-            rb.velocity = transform.TransformDirection(movement * Time.deltaTime); // Increases Velocity And Changes Direction From Local World
+            //rb.velocity = transform.TransformDirection(movement * Time.deltaTime); // Increases Velocity And Changes Direction From Local World
         }
         else
         {
@@ -95,7 +97,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Stairs")
         {
-            gameObject.transform.position += new Vector3(0,.3f,0);
+            //gameObject.transform.position += new Vector3(0,.3f,0);
         }
     }
 }

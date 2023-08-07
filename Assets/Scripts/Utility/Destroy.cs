@@ -8,7 +8,7 @@ public class Destroy : MonoBehaviour
     public MouseLook mouseLook;
     public void DestroyObject()
     {
-        mouseLook.mouseLocked = false;
+        //mouseLook.mouseLocked = false;
         Destroy(objectToDestroy);
     }
 }
