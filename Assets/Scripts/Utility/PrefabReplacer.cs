@@ -18,7 +18,7 @@ public class PrefabReplacer : MonoBehaviour
             newObject.transform.rotation = ObjectsToReplace[i].transform.rotation;
             newObject.transform.position = ObjectsToReplace[i].transform.position;
 
-            Destroy(ObjectsToReplace[i]);
+            DestroyImmediate(ObjectsToReplace[i]);
         }
 
         ObjectsToReplace.Clear();

@@ -59,7 +59,6 @@ public class Toilet : MonoBehaviour
             }
             if (count == 0)
             {
-                Debug.Log("Check");
                 Water.SetActive(true);
                 WaterObjects.SetActive(false);
                 if (!Refiling)
