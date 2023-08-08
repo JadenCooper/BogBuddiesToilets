@@ -13,10 +13,19 @@ public class Toilet : MonoBehaviour
     private const int FRAMES = 10;
     private const int OCCURANCE = 2;
     public int count = 0;
+    private bool Refiling = false;
+
+    public float RefillTime = 4f;
     void Update()
     {
         if (!ToiletChain.open)
         {
+            if (Refiling == true)
+            {
+                Refiling = false;
+                StopAllCoroutines();
+            }
+
             WaterObjects.SetActive(true);
             if (count <= FRAMES)
             {
@@ -50,9 +59,21 @@ public class Toilet : MonoBehaviour
             }
             if (count == 0)
             {
+                Debug.Log("Check");
                 Water.SetActive(true);
                 WaterObjects.SetActive(false);
+                if (!Refiling)
+                {
+                    Refiling = true;
+                    StartCoroutine(Refill());
+                }
             }
         }
     }
+    private IEnumerator Refill()
+    {
+        yield return new WaitForSeconds(RefillTime);
+        ToiletChain.Activated = true;
+    }
+
 }
