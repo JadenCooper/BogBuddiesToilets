@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 871661772595407203}
   m_Layer: 0
   m_Name: DisplayText
-  m_TagString: Text
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166,6 +166,7 @@ MonoBehaviour:
   image: {fileID: 5997685456499837224}
   text: {fileID: 5997685457133931511}
   InputText: 
+  Seen: 0
   invisableTimer: 20
   isCoroutineRunning: 0
 --- !u!65 &871661772595407203
