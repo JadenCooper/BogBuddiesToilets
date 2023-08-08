@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     private InputActionReference Movement, Interact, Look, Pause;
     [SerializeField]
     private Vector3 MovementInput;
-    private Rigidbody rb;
+    private CharacterController rb;
     public Vector3 movement;
     //public float MaxSpeed = 20;
     //public float CurrentSpeed = 0;
@@ -22,14 +22,14 @@ public class PlayerController : MonoBehaviour
     public GameObject player;
     private void Awake()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<CharacterController>();
     }
     public void Move()
     {
         //CalculateSpeed();
         //MovementInput *= CurrentSpeed;
         movement = MovementInput * speed;
-        rb.MovePosition(transform.position + movement * Time.deltaTime * 1);
+        //rb.MovePosition(transform.position + movement * Time.deltaTime * 1);
         
     }
 
@@ -51,13 +51,13 @@ public class PlayerController : MonoBehaviour
         MovementInput = Movement.action.ReadValue<Vector3>().normalized;
         if (MovementInput != Vector3.zero)
         {
-            rb.isKinematic = false;
+            //rb.isKinematic = false;
             Move();
-            //rb.velocity = transform.TransformDirection(movement * Time.deltaTime); // Increases Velocity And Changes Direction From Local World
+            rb.SimpleMove(transform.TransformDirection(movement * Time.deltaTime)); // Increases Velocity And Changes Direction From Local World
         }
         else
         {
-            rb.isKinematic = true;
+            //rb.isKinematic = true;
         }
     }
 
