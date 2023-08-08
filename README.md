@@ -1,5 +1,8 @@
 # BlindToilets
 
+## Github pages
+https://jadencooper.github.io/BogBuddiesToilets/
+
 ## Scripts
 - Water:
 <p>The Water script is used to both make the water appear/disappear in sinks, and make the water rise/lower. It does this by, increasing the local size of the water in the sink (by the amount of SIZE), and then increasing the local height (by the amount of DISTANCE) of the game object. Then, when the user clicks on the tap a second time, the script does the inverse (decreasing the size by SIZE, and the height by DISTANCE).

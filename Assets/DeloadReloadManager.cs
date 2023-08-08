@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class DeloadReloadManager : MonoBehaviour
 {
-    public List<GameObject> Load;
+    public GameObject[] load;
+    public bool deloadOnStart;
+    public bool loadOnEnter;
 
-    void Awake()
+    [ContextMenu("Assign Game Objects To Deload")] // Allows Developer To Activate The Method Through The Context Menu In The Inspector
+    public void AssignGameObjectsToDeload()
     {
-        foreach (GameObject gameObject in Load)
+        load = GameObject.FindGameObjectsWithTag(gameObject.name);
+
+        if(deloadOnStart == true)
         {
-            gameObject.SetActive(false);
+            DeloaderLoader(false);
         }
     }
 
@@ -18,9 +23,13 @@ public class DeloadReloadManager : MonoBehaviour
     {
         if (other.gameObject.name.Equals("Player"))
         {
-            foreach (GameObject gameObject in Load)
+            if (loadOnEnter == true)
             {
-                gameObject.SetActive(true);
+                DeloaderLoader(true);
+            }
+            else
+            {
+                DeloaderLoader(false);
             }
         }
     }
@@ -29,9 +38,24 @@ public class DeloadReloadManager : MonoBehaviour
     {
         if (other.gameObject.name.Equals("Player"))
         {
-            foreach (GameObject gameObject in Load)
+            if (loadOnEnter == true)
             {
-                gameObject.SetActive(false);
+                DeloaderLoader(false);
+            }
+            else
+            {
+                DeloaderLoader(true);
+            }
+        }
+    }
+
+    public void DeloaderLoader(bool setState)
+    {
+        foreach (GameObject gameObject in load)
+        {
+            if (gameObject != null)
+            {
+                gameObject.SetActive(setState);
             }
         }
     }
