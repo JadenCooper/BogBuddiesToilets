@@ -13,6 +13,7 @@ public class Toilet : MonoBehaviour
     private const int FRAMES = 10;
     private const int OCCURANCE = 2;
     public int count = 0;
+    public AudioSource audioSource;
     private bool Refiling = false;
 
     public float RefillTime = 4f;
@@ -71,6 +72,7 @@ public class Toilet : MonoBehaviour
     }
     private IEnumerator Refill()
     {
+        audioSource.Play();
         yield return new WaitForSeconds(RefillTime);
         ToiletChain.Activated = true;
     }
