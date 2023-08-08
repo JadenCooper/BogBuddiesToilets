@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1120566762032154354}
-  - component: {fileID: 5438919854450764153}
+  - component: {fileID: 2545034068522647388}
   m_Layer: 0
   m_Name: High Tank Toilet (5)
   m_TagString: Arrow
@@ -40,7 +40,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &5438919854450764153
+--- !u!114 &2545034068522647388
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49,14 +49,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 344205572200537160}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b29125a556d8f940ae09c74bafba3f6, type: 3}
+  m_Script: {fileID: 11500000, guid: 87d044cb10038774e9026c2e6a1c8e7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LeftTap: {fileID: 2412689811140530343}
-  RightTap: {fileID: 2412689811140530343}
+  ToiletChain: {fileID: 7293561014056913720}
   WaterObjects: {fileID: 4826284850024283980}
   FillingWater: {fileID: 5652699328775562130}
+  Water: {fileID: 3266506903717154241}
   count: 0
+  RefilTime: 2
 --- !u!1 &1330619604779352465
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,7 +240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c60241f795b88d4c8715162eaaa8d6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  open: 1
+  open: 0
   Activated: 0
   RotateTimes: 0
 --- !u!65 &1558996871115964014

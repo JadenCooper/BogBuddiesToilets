@@ -13,114 +13,46 @@ public class Toilet : MonoBehaviour
     private const int FRAMES = 10;
     private const int OCCURANCE = 2;
     public int count = 0;
-
-    [SerializeField]
-    private float RefilTime = 5f;
-    private bool Refiling = false;
-    private bool CompletedRefil = true;
     void Update()
     {
-        //if (!ToiletChain.open)
-        //{
-        //    WaterObjects.SetActive(true);
-        //    if (count <= FRAMES)
-        //    {
-        //        if (count % OCCURANCE == 0)
-        //        {
-        //            FillingWater.transform.localScale += new Vector3(0, 0, SIZE);
-        //            FillingWater.transform.localPosition += new Vector3(0, DISTANCE, 0);
-        //        }
-        //        count++;
-        //    }
-        //    else
-        //    {
-        //        Water.SetActive(false);
-        //    }
-        //}
-        //else
-        //{
-        //    if (count > 0)
-        //    {
-        //        if (count % OCCURANCE == 0)
-        //        {
-        //            FillingWater.transform.localScale -= new Vector3(0, 0, SIZE);
-        //            FillingWater.transform.localPosition -= new Vector3(0, DISTANCE, 0);
-        //        }
-        //        count--;
-        //        if (count == 0)
-        //        {
-        //            FillingWater.transform.localScale -= new Vector3(0, 0, SIZE);
-        //            FillingWater.transform.localPosition -= new Vector3(0, DISTANCE, 0);
-        //        }
-        //    }
-        //    if (count == 0 && Refiling == false)
-        //    {
-        //        Refiling = true;
-        //        Water.SetActive(true);
-        //        WaterObjects.SetActive(false);
-        //        StartCoroutine(refill());
-        //    }
-        //}
-    }
-    public void Activate()
-    {
-        Debug.Log("Check");
-        if (!CompletedRefil)
+        if (!ToiletChain.open)
         {
-            CompletedRefil = false;
-            int count = 0;
-            bool stageCompleted = false;
-
-            do
+            WaterObjects.SetActive(true);
+            if (count <= FRAMES)
             {
-                if (!Refiling)
+                if (count % OCCURANCE == 0)
                 {
-                    if (count == FRAMES)
-                    {
-                        stageCompleted = true;
-                    }
-                    else
-                    {
-                        StartCoroutine(refill(false));
-                        count++;
-                    }
+                    FillingWater.transform.localScale += new Vector3(0, 0, SIZE);
+                    FillingWater.transform.localPosition += new Vector3(0, DISTANCE, 0);
                 }
-            } while (!stageCompleted);
-
-            count = 0;
-            stageCompleted = false;
-            Water.SetActive(true);
-
-            do
+                count++;
+            }
+            else
             {
-                if (!Refiling)
-                {
-                    if (count == FRAMES)
-                    {
-                        stageCompleted = true;
-                    }
-                    else
-                    {
-                        StartCoroutine(refill(true));
-                        count++;
-                    }
-                }
-            } while (!stageCompleted);
-            Water.SetActive(false);
-        }
-    }
-    private IEnumerator refill(bool filling)
-    {
-        yield return new WaitForSeconds(2f);
-        if (filling)
-        {
-            FillingWater.transform.localScale += new Vector3(0, 0, SIZE);
-            FillingWater.transform.localPosition += new Vector3(0, DISTANCE, 0);
+                Water.SetActive(false);
+            }
         }
         else
         {
-            FillingWater.transform.localScale -= new Vector3(0, 0, SIZE);
-            FillingWater.transform.localPosition -= new Vector3(0, DISTANCE, 0);
+            if (count > 0)
+            {
+                if (count % OCCURANCE == 0)
+                {
+                    FillingWater.transform.localScale -= new Vector3(0, 0, SIZE);
+                    FillingWater.transform.localPosition -= new Vector3(0, DISTANCE, 0);
+                }
+                count--;
+                if (count == 0)
+                {
+                    FillingWater.transform.localScale -= new Vector3(0, 0, SIZE);
+                    FillingWater.transform.localPosition -= new Vector3(0, DISTANCE, 0);
+                }
+            }
+            if (count == 0)
+            {
+                Water.SetActive(true);
+                WaterObjects.SetActive(false);
+            }
         }
     }
 }
