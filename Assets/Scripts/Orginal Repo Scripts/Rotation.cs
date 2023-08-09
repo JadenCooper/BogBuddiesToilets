@@ -4,7 +4,7 @@ using System.Threading;
 using System;
 using UnityEngine;
 
-public class Rotation : MonoBehaviour
+public class Rotation : Interactable
 {
     private DateTime lastOpen;
     public bool open = true;
@@ -68,5 +68,10 @@ public class Rotation : MonoBehaviour
         }
         open = !open;
         lastOpen = DateTime.Now;
+    }
+
+    public override void Interact()
+    {
+        Activated = true;
     }
 }
