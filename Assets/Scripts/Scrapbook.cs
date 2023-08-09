@@ -12,7 +12,7 @@ public class Scrapbook : MonoBehaviour
 
     public GameObject scrapbookPage;
 
-    void Start()
+    void Awake()
     {
         foreach(Collectible collectible in collectiblesList)
         {
