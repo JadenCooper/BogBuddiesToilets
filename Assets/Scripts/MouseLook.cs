@@ -7,7 +7,7 @@ public class MouseLook : MonoBehaviour
 {
     public GameObject camera;
     float xrotation = 0;
-    float yrotation;
+    public float yrotation;
     Vector2 mousemovement;
     float camera_y;
     //Quaternion pos;

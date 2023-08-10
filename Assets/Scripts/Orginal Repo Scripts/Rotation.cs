@@ -3,25 +3,17 @@ using System.Collections.Generic;
 using System.Threading;
 using System;
 using UnityEngine;
+
 public class Rotation : Interactable
 {
     private DateTime lastOpen;
-    public bool open;
-    private bool Activated = false;
-    private bool opening;
-    private bool closing;
-    private int count;
+    public bool open = true;
+    public bool Activated = false;
+    private bool opening = false;
+    private bool closing = false;
+    private int count = 0;
     public int RotateTimes;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        open = true;
-        opening = false;
-        closing = false;
-        count = 0;
-    }
-    // Update is called once per frame
     void Update()
     {
         if (Activated)
@@ -69,12 +61,10 @@ public class Rotation : Interactable
         if (open)
         {
             opening = true;
-            Debug.Log("Activated = true");
         }
         else
         {
             closing = true;
-            Debug.Log("Activated = false");
         }
         open = !open;
         lastOpen = DateTime.Now;
