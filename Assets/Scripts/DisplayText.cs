@@ -17,6 +17,8 @@ public class DisplayText : Interactable
     private float invisableTimer = 20f; // Time To Turn Off
     [SerializeField]
     private bool isCoroutineRunning = false;
+    public Collectible collectible;
+
     private void Awake()
     {
         if (isImage)
@@ -31,7 +33,19 @@ public class DisplayText : Interactable
         }
         
         text.text = InputText;
+    
+        //Set collectible to uncollected, use backup text if no collectible
+        if(collectible)
+        {
+            collectible.collected = false;
+            text.text = collectible.description;
+        }
+        else
+        {
+            text.text = InputText;
+        }
     }
+    
     public IEnumerator InvisableTimer()
     {
         // Timer To Turn Off
@@ -58,6 +72,12 @@ public class DisplayText : Interactable
             textHolder.SetActive(true);
             if (!Seen)
             {
+                //Set collectible as collected if exists
+                if(collectible)
+                {
+                    Debug.Log("CLICKER");
+                    collectible.collected = true;
+                }
                 Seen = true;
                 image.color = Color.blue; // Set Image To Blue For Playerfeedback That Text Has Been Seen
             }
@@ -72,4 +92,5 @@ public class DisplayText : Interactable
         isCoroutineRunning = false;
         textHolder.SetActive(false);
     }
+
 }
