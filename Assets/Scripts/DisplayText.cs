@@ -8,6 +8,7 @@ using TMPro;
 public class DisplayText : Interactable
 {
     public GameObject textHolder;
+    public bool isImage;
     public Image image;
     public TextMeshProUGUI text;
     public String InputText;
@@ -16,8 +17,19 @@ public class DisplayText : Interactable
     private float invisableTimer = 20f; // Time To Turn Off
     [SerializeField]
     private bool isCoroutineRunning = false;
-    private void Start()
+    private void Awake()
     {
+        if (isImage)
+        {
+            textHolder = transform.GetChild(1).gameObject;
+            text = transform.GetChild(1).GetChild(0).GetChild(4).gameObject.GetComponent<TextMeshProUGUI>();
+        }
+        else
+        {
+            textHolder = transform.GetChild(1).gameObject;
+            text = transform.GetChild(1).GetChild(0).GetChild(1).gameObject.GetComponent<TextMeshProUGUI>();
+        }
+        
         text.text = InputText;
     }
     public IEnumerator InvisableTimer()
