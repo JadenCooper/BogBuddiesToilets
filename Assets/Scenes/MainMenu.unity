@@ -1356,6 +1356,10 @@ MonoBehaviour:
   look: {fileID: 0}
   playerController: {fileID: 0}
   map: {fileID: 21300000, guid: 5763ff7824c771e48897a17b81596bfa, type: 3}
+  textDisplayStatus: {x: 0, y: 0}
+  DisplayTextList: []
+  textDisplayCount: {fileID: 0}
+  textDisplaySeenCount: {fileID: 0}
 --- !u!114 &1357167225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1657,7 +1661,7 @@ RectTransform:
   m_GameObject: {fileID: 1412971638}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1618616, y: 1, z: 1}
+  m_LocalScale: {x: 0.14989962, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1983970918}
@@ -1665,7 +1669,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8.146133, y: -87.09149}
+  m_AnchoredPosition: {x: 2.1300297, y: -87.09143}
   m_SizeDelta: {x: 673.7391, y: 244.7765}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1412971640
@@ -1688,7 +1692,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Octagon Toilets
+  m_text: The Underground
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2239,7 +2243,7 @@ RectTransform:
   m_GameObject: {fileID: 1983970917}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6.1781178, y: 1, z: 1}
+  m_LocalScale: {x: 6.6711316, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1412971639}
