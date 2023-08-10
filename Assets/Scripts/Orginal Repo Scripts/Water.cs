@@ -12,13 +12,7 @@ public class Water : MonoBehaviour
     private const float SIZE = 0.01f;
     private const int FRAMES = 10;
     private const int OCCURANCE = 2;
-    private int count;
-
-    void Start()
-    {
-        count = 0;
-    }
-    // Update is called once per frame
+    public int count = 0;
     void Update()
     {
         if (!LeftTap.GetComponent<Rotation>().open || !RightTap.GetComponent<Rotation>().open)
