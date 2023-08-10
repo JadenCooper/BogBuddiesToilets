@@ -62,6 +62,7 @@ public class DisplayText : Interactable
                 //Set collectible as collected if exists
                 if(collectible)
                 {
+                    Debug.Log("CLICKER");
                     collectible.collected = true;
                 }
                 Seen = true;
