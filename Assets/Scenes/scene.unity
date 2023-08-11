@@ -34159,6 +34159,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bb21862e2bd4fd409db8ce020513051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1755137184 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 857918330997587283, guid: 46cee76cbb0e4c140bebd55e22e81361,
+    type: 3}
+  m_PrefabInstance: {fileID: 1682642276}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1761392238 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6178767075678446387, guid: 26e5b2ddfb5ea66409d93db65f424084,
@@ -35275,7 +35281,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1755137184}
     - target: {fileID: 3604756785905444059, guid: 55bea1f734ed6a64ca6eced3e7479e64,
         type: 3}
       propertyPath: m_RootOrder
