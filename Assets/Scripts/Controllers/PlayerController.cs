@@ -11,42 +11,54 @@ public class PlayerController : MonoBehaviour
     private InputActionReference Movement, Interact, Look, Pause;
     [SerializeField]
     private Vector3 MovementInput;
-    private Rigidbody rb;
+    private CharacterController rb;
     public Vector3 movement;
-    public float MaxSpeed = 20;
-    public float CurrentSpeed = 0;
-    public float Acceleration = 10;
+    //public float MaxSpeed = 20;
+    //public float CurrentSpeed = 0;
+    //public float Acceleration = 10;
+    public float speed = 700;
     public bool CanMove = false;
     public MouseLook mouseLook;
+    public GameObject player;
     private void Awake()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<CharacterController>();
     }
     public void Move()
     {
-        CalculateSpeed();
-        MovementInput *= CurrentSpeed;
-        movement = MovementInput;
+        //CalculateSpeed();
+        //MovementInput *= CurrentSpeed;
+        movement = MovementInput * speed;
+        //rb.MovePosition(transform.position + movement * Time.deltaTime * 1);
+        
     }
 
     public void CalculateSpeed()
     {
-        if (MovementInput == Vector3.zero)
-        {
-            CurrentSpeed += -Acceleration * Time.deltaTime;
-        }
-        else
-        {
-            CurrentSpeed += Acceleration * Time.deltaTime;
-        }
-        CurrentSpeed = Mathf.Clamp(CurrentSpeed, 0, MaxSpeed);
+        //if (MovementInput == Vector3.zero)
+        //{
+        //    CurrentSpeed += -Acceleration * Time.deltaTime;
+        //}
+        //else
+        //{
+        //    CurrentSpeed += Acceleration * Time.deltaTime;
+        //}
+        //CurrentSpeed = Mathf.Clamp(CurrentSpeed, 0, MaxSpeed);
     }
 
     private void FixedUpdate()
     {
         MovementInput = Movement.action.ReadValue<Vector3>().normalized;
-        Move();
-        rb.velocity = transform.TransformDirection(movement * Time.deltaTime); // Increases Velocity And Changes Direction From Local World
+        if (MovementInput != Vector3.zero)
+        {
+            //rb.isKinematic = false;
+            Move();
+            rb.SimpleMove(transform.TransformDirection(movement * Time.deltaTime)); // Increases Velocity And Changes Direction From Local World
+        }
+        else
+        {
+            //rb.isKinematic = true;
+        }
     }
 
     private void OnEnable()
@@ -79,5 +91,13 @@ public class PlayerController : MonoBehaviour
     private void PausePress(InputAction.CallbackContext obj)
     {
         Debug.Log("Pause");
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.tag == "Stairs")
+        {
+            //gameObject.transform.position += new Vector3(0,.3f,0);
+        }
     }
 }

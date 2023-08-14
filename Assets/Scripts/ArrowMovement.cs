@@ -19,6 +19,12 @@ public class ArrowMovement : Interactable
     public GameObject LocationArrows;
 
     public ArrowManager arrowManager;
+
+    void Awake()
+    {
+        text = transform.GetChild(0).GetChild(0).GetChild(0).GetChild(1).gameObject.GetComponent<TextMeshProUGUI>();
+    }
+
     public override void Interact()
     {
         //ArrowMovement objectHit = raycastHit.collider.gameObject.transform.GetComponent<ArrowMovement>();

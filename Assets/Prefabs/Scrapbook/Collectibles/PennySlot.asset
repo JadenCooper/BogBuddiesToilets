@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 352c40ee9622123449c8d1d2717d5655, type: 3}
+  m_Name: PennySlot
+  m_EditorClassIdentifier: 
+  title: Pay to Play
+  description: "Each water closet had a \u201Cpenny in the slot\u201D locking system.
+    It cost a penny to unlock the door to use the water closets. Urinals were free
+    to use."
+  background: {fileID: 0}
+  picture: {fileID: 0}
+  collected: 0
