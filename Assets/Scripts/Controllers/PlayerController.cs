@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     //public float Acceleration = 10;
     public float speed = 700;
     public bool CanMove = false;
+    public bool clickMove = false;
     public MouseLook mouseLook;
     public GameObject player;
     private void Awake()
@@ -49,7 +50,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         MovementInput = Movement.action.ReadValue<Vector3>().normalized;
-        if (MovementInput != Vector3.zero)
+        if (MovementInput != Vector3.zero && !clickMove)
         {
             //rb.isKinematic = false;
             Move();
