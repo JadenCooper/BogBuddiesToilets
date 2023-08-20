@@ -14,7 +14,6 @@ public class Rotation : Interactable
     private bool closing = false;
     private int count = 0;
     public int RotateTimes;
-    public UnityEvent OnOpening, OnClosing;
     void Update()
     {
         if (Activated)
@@ -62,12 +61,10 @@ public class Rotation : Interactable
         if (open)
         {
             opening = true;
-            OnOpening?.Invoke();
         }
         else
         {
             closing = true;
-            OnClosing?.Invoke();
         }
         open = !open;
         lastOpen = DateTime.Now;
