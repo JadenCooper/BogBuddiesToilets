@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Rotation : Interactable
 {
@@ -13,7 +14,7 @@ public class Rotation : Interactable
     private bool closing = false;
     private int count = 0;
     public int RotateTimes;
-
+    public UnityEvent OnOpening, OnClosing;
     void Update()
     {
         if (Activated)
@@ -56,15 +57,17 @@ public class Rotation : Interactable
         }
     }
 
-    private void Toggle()
+    public virtual void Toggle()
     {
         if (open)
         {
             opening = true;
+            OnOpening?.Invoke();
         }
         else
         {
             closing = true;
+            OnClosing?.Invoke();
         }
         open = !open;
         lastOpen = DateTime.Now;
