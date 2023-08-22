@@ -77,17 +77,33 @@ public class PlayerController : MonoBehaviour
         // Interact - Shoots Out Raycast Out At Press/Click Position 
         if (CanMove)
         {
-            Ray raycast = Camera.main.ScreenPointToRay(Look.action.ReadValue<Vector2>());
-            RaycastHit raycastHit;
-            if (Physics.Raycast(raycast, out raycastHit))
+            if (Input.GetTouch(0).phase == UnityEngine.TouchPhase.Began)
             {
-                if (raycastHit.collider.CompareTag("Arrow")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
+                Vector3 touchPosWorld = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
+                RaycastHit2D hit2D = Physics2D.Raycast(touchPosWorld, Camera.main.transform.forward);
+                Debug.DrawRay(touchPosWorld, Camera.main.transform.forward, Color.red);
+
+                Ray raycast = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+                RaycastHit hit3D;
+
+                if (hit2D.collider != null)
                 {
-                    raycastHit.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
+                    if (hit2D.collider.CompareTag("Arrow")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
+                    {
+                        hit2D.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
+                    }
+                }
+                else if (Physics.Raycast(raycast, out hit3D))
+                {
+                    if (hit3D.collider.CompareTag("Information")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
+                    {
+                        hit3D.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
+                    }
                 }
             }
         }
     }
+
     private void PausePress(InputAction.CallbackContext obj)
     {
         Debug.Log("Pause");
