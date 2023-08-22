@@ -17,7 +17,15 @@ public class PrefabReplacer : MonoBehaviour
 
             newObject.transform.rotation = ObjectsToReplace[i].transform.rotation;
             newObject.transform.position = ObjectsToReplace[i].transform.position;
+            newObject.transform.localScale = ObjectsToReplace[i].transform.localScale;
+        }
+    }
 
+    [ContextMenu("Delete Gameobjects")]
+    public void DeleteOldObjects()
+    {
+        for (int i = 0; i < ObjectsToReplace.Count; i++)
+        {
             DestroyImmediate(ObjectsToReplace[i]);
         }
 
