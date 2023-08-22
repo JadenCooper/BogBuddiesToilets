@@ -41,6 +41,18 @@ public class Destroy : MonoBehaviour
         }
     }
 
+    public void Update()
+    {
+        if (!clickMove && !freeMove)
+        {
+            GetComponent<Button>().interactable = false;
+        }
+        else
+        {
+            GetComponent<Button>().interactable = true;
+        }
+    }
+
     private void HideAllArrows()
     {
         arrowsParent.SetActive(false);
