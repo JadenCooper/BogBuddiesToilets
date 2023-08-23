@@ -79,17 +79,18 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetTouch(0).phase == UnityEngine.TouchPhase.Began)
             {
-                Vector3 touchPosWorld = Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position);
-                RaycastHit2D hit2D = Physics2D.Raycast(touchPosWorld, Camera.main.transform.forward);
-                Debug.DrawRay(touchPosWorld, Camera.main.transform.forward, Color.red);
+                
+                RaycastHit2D hit2D = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Look.action.ReadValue<Vector2>()), Camera.main.transform.forward);
+                Debug.DrawRay(Camera.main.ScreenToWorldPoint(Look.action.ReadValue<Vector2>()), Camera.main.transform.forward, Color.red);
 
-                Ray raycast = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+                Ray raycast = Camera.main.ScreenPointToRay(Look.action.ReadValue<Vector2>());
                 RaycastHit hit3D;
 
                 if (hit2D.collider != null)
                 {
                     if (hit2D.collider.CompareTag("Arrow")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
                     {
+                        Debug.Log(Look.action.ReadValue<Vector2>());
                         hit2D.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
                     }
                 }
