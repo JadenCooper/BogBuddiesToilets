@@ -13,7 +13,7 @@ public class Rotation : Interactable
     private bool closing = false;
     private int count = 0;
     public int RotateTimes;
-
+    public AudioSource audioSource;
     void Update()
     {
         if (Activated)
@@ -73,5 +73,9 @@ public class Rotation : Interactable
     public override void Interact()
     {
         Activated = true;
+        if (audioSource != null)
+        {
+            audioSource.Play();
+        }
     }
 }
