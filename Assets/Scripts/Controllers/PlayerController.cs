@@ -21,6 +21,9 @@ public class PlayerController : MonoBehaviour
     public bool clickMove = false;
     public MouseLook mouseLook;
     public GameObject player;
+
+    public Joystick movementJoystick;
+    public bool mobile = false;
     private void Awake()
     {
         rb = GetComponent<CharacterController>();
@@ -49,7 +52,15 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        MovementInput = Movement.action.ReadValue<Vector3>().normalized;
+        if (!mobile && CanMove)
+        {
+            MovementInput = Movement.action.ReadValue<Vector3>().normalized;
+        }
+        else if (CanMove)
+        {
+            MovementInput = new Vector3(movementJoystick.Horizontal, 0, movementJoystick.Vertical);
+        }
+        
         if (MovementInput != Vector3.zero && !clickMove)
         {
             //rb.isKinematic = false;
