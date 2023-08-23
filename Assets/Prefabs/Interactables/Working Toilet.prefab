@@ -352,6 +352,7 @@ MonoBehaviour:
   open: 0
   Activated: 0
   RotateTimes: 0
+  audioSource: {fileID: 0}
 --- !u!65 &3369921035976177631
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -518,7 +519,7 @@ AudioSource:
   m_GameObject: {fileID: 4584711784590415353}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 637dd9b74a4833744a35a8aab1e72291,
+  OutputAudioMixerGroup: {fileID: 24300002, guid: fdef6c51dd7b5324180511963eb76165,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: f357c361694006b4f8db405707f15f54, type: 3}
   m_PlayOnAwake: 0

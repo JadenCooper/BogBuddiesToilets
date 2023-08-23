@@ -6,29 +6,42 @@ using UnityEngine.UI;
 
 public class SoundSettings : MonoBehaviour
 {
-    public Slider SoundSettingSlider;
-    public AudioMixer MasterMixer;
+    public Slider MusicSlider;
+    public Slider SoundEffectSlider;
+    public AudioMixer MusicMixer;
+    public AudioMixer SoundEffectMixer;
     void Start()
     {
-        SetVolume(PlayerPrefs.GetFloat("SavedMasterVolume", 100));
+        SetMusicVolume(PlayerPrefs.GetFloat("SavedMusicVolume", 100));
+        SetSoundEffectVolume(PlayerPrefs.GetFloat("SavedSoundEffectVolume", 100));
     }
 
-    public void SetVolume(float value)
+    public void SetMusicVolume(float value)
     {
         if (value < 1)
         {
             value = 0.001f;
         }
-        RefreshSlider(value);
-        PlayerPrefs.SetFloat("SavedMasterVolume", value);
-        MasterMixer.SetFloat("MasterVolume", Mathf.Log10(value / 100) * 20f);
+        RefreshSlider(value, MusicSlider);
+        PlayerPrefs.SetFloat("SavedMusicVolume", value);
+        MusicMixer.SetFloat("MasterVolume", Mathf.Log10(value / 100) * 20f);
+    }
+    public void SetSoundEffectVolume(float value)
+    {
+        if (value < 1)
+        {
+            value = 0.001f;
+        }
+        RefreshSlider(value, SoundEffectSlider);
+        PlayerPrefs.SetFloat("SavedSoundEffectVolume", value);
+        SoundEffectMixer.SetFloat("MasterVolume", Mathf.Log10(value / 100) * 20f);
     }
     public void SetVolumeFromSlider()
     {
-        SetVolume(SoundSettingSlider.value);
+        //SetVolume(MusicSlider.value);
     }
-    public void RefreshSlider(float value)
+    public void RefreshSlider(float value, Slider slider)
     {
-        SoundSettingSlider.value = value;
+        slider.value = value;
     }
 }
