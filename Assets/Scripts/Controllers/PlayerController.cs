@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     //public float Acceleration = 10;
     public float speed = 700;
     public bool CanMove = false;
+    public bool clickMove = false;
     public MouseLook mouseLook;
     public GameObject player;
 
@@ -60,7 +61,7 @@ public class PlayerController : MonoBehaviour
             MovementInput = new Vector3(movementJoystick.Horizontal, 0, movementJoystick.Vertical);
         }
         
-        if (MovementInput != Vector3.zero)
+        if (MovementInput != Vector3.zero && !clickMove)
         {
             //rb.isKinematic = false;
             Move();
