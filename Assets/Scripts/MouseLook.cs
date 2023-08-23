@@ -18,6 +18,8 @@ public class MouseLook : MonoBehaviour
     public bool mobile = false;
     public float mobileLookSpeed = 2.5f;
 
+    public float xMin = -30, xMax = 30;
+
     void Start()
     {
         mouseLocked = true;
@@ -42,7 +44,7 @@ public class MouseLook : MonoBehaviour
         }
 
         xrotation -= mousemovement.y * Time.deltaTime * mouse_sensitivity;
-        xrotation = Mathf.Clamp(xrotation, -20, 20);
+        xrotation = Mathf.Clamp(xrotation, xMin, xMax);
 
         yrotation += mousemovement.x * Time.deltaTime * mouse_sensitivity;
 
