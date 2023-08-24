@@ -91,7 +91,8 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetTouch(0).phase == UnityEngine.TouchPhase.Began)
             {
-                if (Physics.Raycast(Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position), Camera.main.transform.forward, out RaycastHit hitinfo, 200f))
+                Ray raycast = Camera.main.ScreenPointToRay(Look.action.ReadValue<Vector2>());
+                if (Physics.Raycast(raycast, out RaycastHit hitinfo, 400f))
                 {
                     if (hitinfo.collider.CompareTag("Information")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
                     {
