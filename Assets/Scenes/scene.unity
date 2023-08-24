@@ -43687,12 +43687,12 @@ PrefabInstance:
     - target: {fileID: 3604756786866645884, guid: 55bea1f734ed6a64ca6eced3e7479e64,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3604756786993636338, guid: 55bea1f734ed6a64ca6eced3e7479e64,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3604756787134452441, guid: 55bea1f734ed6a64ca6eced3e7479e64,
         type: 3}
@@ -72487,17 +72487,17 @@ PrefabInstance:
         type: 3}
       propertyPath: arrowManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1177636084}
     - target: {fileID: 586332880449119176, guid: a1e01e38a56264b4ab0459c253475a4a,
         type: 3}
       propertyPath: arrowManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1177636084}
     - target: {fileID: 612970484490807861, guid: a1e01e38a56264b4ab0459c253475a4a,
         type: 3}
       propertyPath: arrowManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1177636084}
     - target: {fileID: 632910946824850314, guid: a1e01e38a56264b4ab0459c253475a4a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -72607,7 +72607,7 @@ PrefabInstance:
         type: 3}
       propertyPath: arrowManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1177636084}
     - target: {fileID: 774953740077937350, guid: a1e01e38a56264b4ab0459c253475a4a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -72927,7 +72927,7 @@ PrefabInstance:
         type: 3}
       propertyPath: arrowManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1177636084}
     - target: {fileID: 3292280834371994158, guid: a1e01e38a56264b4ab0459c253475a4a,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -73352,27 +73352,42 @@ PrefabInstance:
         type: 3}
       propertyPath: arrowManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1177636084}
     - target: {fileID: 5180212319620420774, guid: a1e01e38a56264b4ab0459c253475a4a,
         type: 3}
       propertyPath: m_Name
       value: Waypoints
       objectReference: {fileID: 0}
+    - target: {fileID: 5364471331559696644, guid: a1e01e38a56264b4ab0459c253475a4a,
+        type: 3}
+      propertyPath: arrowManager
+      value: 
+      objectReference: {fileID: 1177636084}
     - target: {fileID: 5502665991991729024, guid: a1e01e38a56264b4ab0459c253475a4a,
         type: 3}
       propertyPath: arrowManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1177636084}
     - target: {fileID: 5738748173504520228, guid: a1e01e38a56264b4ab0459c253475a4a,
         type: 3}
       propertyPath: arrowManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1177636084}
+    - target: {fileID: 5775392533375381641, guid: a1e01e38a56264b4ab0459c253475a4a,
+        type: 3}
+      propertyPath: arrowManager
+      value: 
+      objectReference: {fileID: 1177636084}
     - target: {fileID: 6371847440736095960, guid: a1e01e38a56264b4ab0459c253475a4a,
         type: 3}
       propertyPath: arrowManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1177636084}
+    - target: {fileID: 7860525567650715348, guid: a1e01e38a56264b4ab0459c253475a4a,
+        type: 3}
+      propertyPath: arrowManager
+      value: 
+      objectReference: {fileID: 1177636084}
     - target: {fileID: 7873478946566490688, guid: a1e01e38a56264b4ab0459c253475a4a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -73587,7 +73602,7 @@ PrefabInstance:
         type: 3}
       propertyPath: arrowManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1177636084}
     - target: {fileID: 9033213619663333058, guid: a1e01e38a56264b4ab0459c253475a4a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -73802,12 +73817,12 @@ PrefabInstance:
         type: 3}
       propertyPath: arrowManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1177636084}
     - target: {fileID: 9159458350409973297, guid: a1e01e38a56264b4ab0459c253475a4a,
         type: 3}
       propertyPath: arrowManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1177636084}
     - target: {fileID: 9190233006828255104, guid: a1e01e38a56264b4ab0459c253475a4a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
