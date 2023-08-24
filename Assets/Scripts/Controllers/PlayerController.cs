@@ -89,17 +89,34 @@ public class PlayerController : MonoBehaviour
         // Interact - Shoots Out Raycast Out At Press/Click Position 
         if (CanMove)
         {
-            Ray raycast = Camera.main.ScreenPointToRay(Look.action.ReadValue<Vector2>());
-            RaycastHit raycastHit;
-            if (Physics.Raycast(raycast, out raycastHit))
+            if (Input.GetTouch(0).phase == UnityEngine.TouchPhase.Began)
             {
-                if (raycastHit.collider.CompareTag("Arrow")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
+                
+                RaycastHit2D hit2D = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Look.action.ReadValue<Vector2>()), Camera.main.transform.forward);
+                Debug.DrawRay(Camera.main.ScreenToWorldPoint(Look.action.ReadValue<Vector2>()), Camera.main.transform.forward, Color.red);
+
+                Ray raycast = Camera.main.ScreenPointToRay(Look.action.ReadValue<Vector2>());
+                RaycastHit hit3D;
+
+                if (hit2D.collider != null)
                 {
-                    raycastHit.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
+                    if (hit2D.collider.CompareTag("Arrow")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
+                    {
+                        Debug.Log(Look.action.ReadValue<Vector2>());
+                        hit2D.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
+                    }
+                }
+                else if (Physics.Raycast(raycast, out hit3D))
+                {
+                    if (hit3D.collider.CompareTag("Information")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
+                    {
+                        hit3D.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
+                    }
                 }
             }
         }
     }
+
     private void PausePress(InputAction.CallbackContext obj)
     {
         Debug.Log("Pause");

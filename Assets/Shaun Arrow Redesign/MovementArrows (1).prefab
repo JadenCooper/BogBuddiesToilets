@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3604756785153923057}
   - component: {fileID: 3604756785153923059}
-  - component: {fileID: 3604756785153923056}
   m_Layer: 0
   m_Name: Female Two Toilets Area
   m_TagString: Arrow
@@ -52,19 +51,6 @@ MonoBehaviour:
   rotation: -100
   LocationArrows: {fileID: 3604756787134452441}
   arrowManager: {fileID: 3604756785905444058}
---- !u!65 &3604756785153923056
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3604756785153923054}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: -0.5, y: 1, z: 0}
 --- !u!1 &3604756785183673147
 GameObject:
   m_ObjectHideFlags: 0
@@ -75,7 +61,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3604756785183673151}
   - component: {fileID: 3604756785183673149}
-  - component: {fileID: 3604756785183673148}
   m_Layer: 0
   m_Name: Male Top Stairs
   m_TagString: Arrow
@@ -122,19 +107,6 @@ MonoBehaviour:
   rotation: 90
   LocationArrows: {fileID: 3604756786993636338}
   arrowManager: {fileID: 3604756785905444058}
---- !u!65 &3604756785183673148
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3604756785183673147}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 8, y: 2, z: 2}
-  m_Center: {x: -0.5, y: 1, z: 0}
 --- !u!1 &3604756785214621569
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,7 +117,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3604756785214621568}
   - component: {fileID: 3604756785214621570}
-  - component: {fileID: 3604756785214621571}
   m_Layer: 0
   m_Name: Male Main
   m_TagString: Arrow
@@ -187,19 +158,6 @@ MonoBehaviour:
   rotation: -90
   LocationArrows: {fileID: 3604756786234349589}
   arrowManager: {fileID: 3604756785905444058}
---- !u!65 &3604756785214621571
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3604756785214621569}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: -0.5, y: 1, z: 0}
 --- !u!1 &3604756785227015442
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,7 +168,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3604756785227015445}
   - component: {fileID: 3604756785227015447}
-  - component: {fileID: 3604756785227015444}
   m_Layer: 0
   m_Name: Male Back
   m_TagString: Arrow
@@ -252,19 +209,6 @@ MonoBehaviour:
   rotation: -110
   LocationArrows: {fileID: 3604756785753794236}
   arrowManager: {fileID: 3604756785905444058}
---- !u!65 &3604756785227015444
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3604756785227015442}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: -0.5, y: 1, z: 0}
 --- !u!1 &3604756785241012079
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,7 +219,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3604756785241012078}
   - component: {fileID: 3604756785241012080}
-  - component: {fileID: 3604756785241012081}
   m_Layer: 0
   m_Name: Female Side Area
   m_TagString: Arrow
@@ -317,19 +260,6 @@ MonoBehaviour:
   rotation: -90
   LocationArrows: {fileID: 3604756787286063034}
   arrowManager: {fileID: 3604756785905444058}
---- !u!65 &3604756785241012081
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3604756785241012079}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.9999996, y: 4.011986, z: 2}
-  m_Center: {x: -0.49999985, y: -0.0059928, z: 0.000000001333504}
 --- !u!1 &3604756785300357282
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,7 +270,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3604756785300357285}
   - component: {fileID: 3604756785300357287}
-  - component: {fileID: 3604756785300357284}
   m_Layer: 0
   m_Name: Female Top Stairs
   m_TagString: Arrow
@@ -382,19 +311,6 @@ MonoBehaviour:
   rotation: -90
   LocationArrows: {fileID: 3604756786866645884}
   arrowManager: {fileID: 3604756785905444058}
---- !u!65 &3604756785300357284
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3604756785300357282}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.429281, y: 10.513918, z: 2}
-  m_Center: {x: 1.1814672, y: -3.4839258, z: 0.0000005002562}
 --- !u!1 &3604756785384567894
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,7 +321,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3604756785384567897}
   - component: {fileID: 3604756785384567899}
-  - component: {fileID: 3604756785384567896}
   m_Layer: 0
   m_Name: Female Big Room
   m_TagString: Arrow
@@ -447,19 +362,6 @@ MonoBehaviour:
   rotation: -100
   LocationArrows: {fileID: 3604756786214211820}
   arrowManager: {fileID: 3604756785905444058}
---- !u!65 &3604756785384567896
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3604756785384567894}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 7.30381, z: 2}
-  m_Center: {x: -0.5, y: 0.26891708, z: -3.1974393e-15}
 --- !u!1 &3604756785386534420
 GameObject:
   m_ObjectHideFlags: 0
@@ -986,7 +888,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3604756785687140641}
   - component: {fileID: 3604756785687140643}
-  - component: {fileID: 3604756785687140640}
   m_Layer: 0
   m_Name: Male Right Room
   m_TagString: Arrow
@@ -1028,19 +929,6 @@ MonoBehaviour:
   rotation: -110
   LocationArrows: {fileID: 3604756785481232993}
   arrowManager: {fileID: 3604756785905444058}
---- !u!65 &3604756785687140640
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3604756785687140638}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: -0.5, y: 1, z: 0}
 --- !u!1 &3604756785751548595
 GameObject:
   m_ObjectHideFlags: 0
@@ -1248,7 +1136,7 @@ GameObject:
   - component: {fileID: 3604756785905444058}
   m_Layer: 0
   m_Name: MovementArrows (1)
-  m_TagString: Untagged
+  m_TagString: Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1314,7 +1202,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3604756785919709500}
   - component: {fileID: 3604756785919709502}
-  - component: {fileID: 3604756785919709503}
   m_Layer: 0
   m_Name: Male Main
   m_TagString: Arrow
@@ -1356,19 +1243,6 @@ MonoBehaviour:
   rotation: -90
   LocationArrows: {fileID: 3604756786234349589}
   arrowManager: {fileID: 3604756785905444058}
---- !u!65 &3604756785919709503
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3604756785919709501}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.510091, y: 4.3833933, z: 3.2620623}
-  m_Center: {x: -1.2550436, y: 0.5559923, z: -0.6310304}
 --- !u!1 &3604756785929609153
 GameObject:
   m_ObjectHideFlags: 0
@@ -1379,7 +1253,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3604756785929609152}
   - component: {fileID: 3604756785929609154}
-  - component: {fileID: 3604756785929609155}
   m_Layer: 0
   m_Name: Male Top Stairs
   m_TagString: Arrow
@@ -1421,19 +1294,6 @@ MonoBehaviour:
   rotation: 90
   LocationArrows: {fileID: 3604756786993636338}
   arrowManager: {fileID: 3604756785905444058}
---- !u!65 &3604756785929609155
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3604756785929609153}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: -0.5, y: 1, z: 0}
 --- !u!1 &3604756785950005699
 GameObject:
   m_ObjectHideFlags: 0
@@ -1444,7 +1304,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3604756785950005698}
   - component: {fileID: 3604756785950005700}
-  - component: {fileID: 3604756785950005701}
   m_Layer: 0
   m_Name: Male Back
   m_TagString: Arrow
@@ -1486,19 +1345,6 @@ MonoBehaviour:
   rotation: -110
   LocationArrows: {fileID: 3604756785753794236}
   arrowManager: {fileID: 3604756785905444058}
---- !u!65 &3604756785950005701
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3604756785950005699}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: -0.5, y: 1, z: 0}
 --- !u!1 &3604756785984249279
 GameObject:
   m_ObjectHideFlags: 0
@@ -1509,7 +1355,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3604756785984249278}
   - component: {fileID: 3604756785984248896}
-  - component: {fileID: 3604756785984248897}
   m_Layer: 0
   m_Name: Male Main
   m_TagString: Arrow
@@ -1551,19 +1396,6 @@ MonoBehaviour:
   rotation: -90
   LocationArrows: {fileID: 3604756786234349589}
   arrowManager: {fileID: 3604756785905444058}
---- !u!65 &3604756785984248897
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3604756785984249279}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: -0.5, y: 1, z: 0}
 --- !u!1 &3604756786050248383
 GameObject:
   m_ObjectHideFlags: 0
@@ -1574,7 +1406,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3604756786050248382}
   - component: {fileID: 3604756786050246976}
-  - component: {fileID: 3604756786050246977}
   m_Layer: 0
   m_Name: Female Two Toilets Area
   m_TagString: Arrow
@@ -1616,19 +1447,6 @@ MonoBehaviour:
   rotation: -90
   LocationArrows: {fileID: 3604756787286063034}
   arrowManager: {fileID: 3604756785905444058}
---- !u!65 &3604756786050246977
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3604756786050248383}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: -0.5, y: 1, z: 0}
 --- !u!1 &3604756786058149386
 GameObject:
   m_ObjectHideFlags: 0
@@ -1639,7 +1457,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3604756786058149389}
   - component: {fileID: 3604756786058149391}
-  - component: {fileID: 3604756786058149388}
   m_Layer: 0
   m_Name: Male Left Room
   m_TagString: Arrow
@@ -1681,19 +1498,6 @@ MonoBehaviour:
   rotation: -110
   LocationArrows: {fileID: 3604756785481232993}
   arrowManager: {fileID: 3604756785905444058}
---- !u!65 &3604756786058149388
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3604756786058149386}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: -0.5, y: 1, z: 0}
 --- !u!1 &3604756786166545598
 GameObject:
   m_ObjectHideFlags: 0
@@ -1704,7 +1508,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3604756786166546241}
   - component: {fileID: 3604756786166546243}
-  - component: {fileID: 3604756786166546240}
   m_Layer: 0
   m_Name: Front Gate
   m_TagString: Arrow
@@ -1746,19 +1549,6 @@ MonoBehaviour:
   rotation: 0
   LocationArrows: {fileID: 3604756785602895049}
   arrowManager: {fileID: 3604756785905444058}
---- !u!65 &3604756786166546240
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3604756786166545598}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: -0.5, y: 1, z: 0}
 --- !u!1 &3604756786214211820
 GameObject:
   m_ObjectHideFlags: 0
@@ -1816,7 +1606,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3604756786215261613}
   - component: {fileID: 3604756786215261615}
-  - component: {fileID: 3604756786215261612}
   m_Layer: 0
   m_Name: Front Gate
   m_TagString: Arrow
@@ -1858,19 +1647,6 @@ MonoBehaviour:
   rotation: 0
   LocationArrows: {fileID: 3604756785602895049}
   arrowManager: {fileID: 3604756785905444058}
---- !u!65 &3604756786215261612
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3604756786215261610}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: -0.5, y: 1, z: 0}
 --- !u!1 &3604756786234349589
 GameObject:
   m_ObjectHideFlags: 0
@@ -2008,7 +1784,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3604756786275407413}
   - component: {fileID: 3604756786275407415}
-  - component: {fileID: 3604756786275407412}
   m_Layer: 0
   m_Name: Female Top Stairs
   m_TagString: Arrow
@@ -2050,19 +1825,6 @@ MonoBehaviour:
   rotation: -90
   LocationArrows: {fileID: 3604756786866645884}
   arrowManager: {fileID: 3604756785905444058}
---- !u!65 &3604756786275407412
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3604756786275407410}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: -0.5, y: 1, z: 0}
 --- !u!1 &3604756786293002090
 GameObject:
   m_ObjectHideFlags: 0
@@ -2073,7 +1835,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3604756786293002093}
   - component: {fileID: 3604756786293002095}
-  - component: {fileID: 3604756786293002092}
   m_Layer: 0
   m_Name: Female Big Room
   m_TagString: Arrow
@@ -2115,19 +1876,6 @@ MonoBehaviour:
   rotation: -90
   LocationArrows: {fileID: 3604756787286063034}
   arrowManager: {fileID: 3604756785905444058}
---- !u!65 &3604756786293002092
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3604756786293002090}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 5.550194, z: 2}
-  m_Center: {x: -0.50000006, y: -0.012340546, z: 0.0000000011100347}
 --- !u!1 &3604756786296771339
 GameObject:
   m_ObjectHideFlags: 0
@@ -2185,7 +1933,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3604756786408153896}
   - component: {fileID: 3604756786408153898}
-  - component: {fileID: 3604756786408153899}
   m_Layer: 0
   m_Name: Female Main Area
   m_TagString: Arrow
@@ -2232,19 +1979,6 @@ MonoBehaviour:
   rotation: -90
   LocationArrows: {fileID: 3604756787286063034}
   arrowManager: {fileID: 3604756785905444058}
---- !u!65 &3604756786408153899
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3604756786408153897}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: -0.5, y: 1, z: 0}
 --- !u!1 &3604756786582296072
 GameObject:
   m_ObjectHideFlags: 0
@@ -2258,7 +1992,7 @@ GameObject:
   - component: {fileID: 3604756786582296077}
   m_Layer: 0
   m_Name: DisplayPicture (2)
-  m_TagString: Text
+  m_TagString: Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2324,7 +2058,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3604756786630759716}
   - component: {fileID: 3604756786630759718}
-  - component: {fileID: 3604756786630759719}
   m_Layer: 0
   m_Name: Male Main
   m_TagString: Arrow
@@ -2366,19 +2099,6 @@ MonoBehaviour:
   rotation: -90
   LocationArrows: {fileID: 3604756786234349589}
   arrowManager: {fileID: 3604756785905444058}
---- !u!65 &3604756786630759719
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3604756786630759717}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: -0.5, y: 1, z: 0}
 --- !u!1 &3604756786641238952
 GameObject:
   m_ObjectHideFlags: 0
@@ -2389,7 +2109,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3604756786641238955}
   - component: {fileID: 3604756786641238957}
-  - component: {fileID: 3604756786641238954}
   m_Layer: 0
   m_Name: Male Front
   m_TagString: Arrow
@@ -2431,19 +2150,6 @@ MonoBehaviour:
   rotation: -90
   LocationArrows: {fileID: 3604756785684516885}
   arrowManager: {fileID: 3604756785905444058}
---- !u!65 &3604756786641238954
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3604756786641238952}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: -0.5, y: 1, z: 0}
 --- !u!1 &3604756786683725908
 GameObject:
   m_ObjectHideFlags: 0
@@ -2454,7 +2160,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3604756786683725911}
   - component: {fileID: 3604756786683725913}
-  - component: {fileID: 3604756786683725910}
   m_Layer: 0
   m_Name: Female Side Area
   m_TagString: Arrow
@@ -2496,19 +2201,6 @@ MonoBehaviour:
   rotation: 90
   LocationArrows: {fileID: 3604756786296771339}
   arrowManager: {fileID: 3604756785905444058}
---- !u!65 &3604756786683725910
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3604756786683725908}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.9999998, y: 3.2957, z: 1.9999998}
-  m_Center: {x: -0.5000002, y: 0.35214996, z: -0.000000025983262}
 --- !u!1 &3604756786791758607
 GameObject:
   m_ObjectHideFlags: 0
@@ -2522,7 +2214,7 @@ GameObject:
   - component: {fileID: 3604756786791758608}
   m_Layer: 0
   m_Name: DisplayPicture (1)
-  m_TagString: Text
+  m_TagString: Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2636,7 +2328,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3604756786934143687}
   - component: {fileID: 3604756786934143689}
-  - component: {fileID: 3604756786934143686}
   m_Layer: 0
   m_Name: Male Front
   m_TagString: Arrow
@@ -2678,19 +2369,6 @@ MonoBehaviour:
   rotation: -70
   LocationArrows: {fileID: 3604756785684516885}
   arrowManager: {fileID: 3604756785905444058}
---- !u!65 &3604756786934143686
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3604756786934143684}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: -0.5, y: 1, z: 0}
 --- !u!1 &3604756786943791767
 GameObject:
   m_ObjectHideFlags: 0
@@ -2701,7 +2379,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3604756786943791766}
   - component: {fileID: 3604756786943791768}
-  - component: {fileID: 3604756786943791769}
   m_Layer: 0
   m_Name: Male Top Stairs
   m_TagString: Arrow
@@ -2743,19 +2420,6 @@ MonoBehaviour:
   rotation: 90
   LocationArrows: {fileID: 3604756786993636338}
   arrowManager: {fileID: 3604756785905444058}
---- !u!65 &3604756786943791769
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3604756786943791767}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: -0.5, y: 1, z: 0}
 --- !u!1 &3604756786993636338
 GameObject:
   m_ObjectHideFlags: 0
@@ -2942,7 +2606,7 @@ GameObject:
   - component: {fileID: 3604756787193633529}
   m_Layer: 0
   m_Name: DisplayPicture (2)
-  m_TagString: Text
+  m_TagString: Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3062,7 +2726,7 @@ GameObject:
   - component: {fileID: 5853523866854235315}
   m_Layer: 0
   m_Name: DisplayPicture (4)
-  m_TagString: Text
+  m_TagString: Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3577,7 +3241,7 @@ GameObject:
   - component: {fileID: 5853523868241508927}
   m_Layer: 0
   m_Name: DisplayPicture (3)
-  m_TagString: Text
+  m_TagString: Information
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4331,6 +3995,11 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5997685455837704275, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Information
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2531c8733be84e24387fc6b85e48356f, type: 3}
 --- !u!4 &7006092591336187058 stripped
@@ -4416,6 +4085,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DisplayText (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455837704275, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Information
       objectReference: {fileID: 0}
     - target: {fileID: 5997685457133931511, guid: 2531c8733be84e24387fc6b85e48356f,
         type: 3}
@@ -4873,6 +4547,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455837704275, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Information
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2531c8733be84e24387fc6b85e48356f, type: 3}
@@ -6147,6 +5826,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DisplayText
       objectReference: {fileID: 0}
+    - target: {fileID: 5997685455837704275, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Information
+      objectReference: {fileID: 0}
     - target: {fileID: 5997685457133931511, guid: 2531c8733be84e24387fc6b85e48356f,
         type: 3}
       propertyPath: m_text
@@ -6260,6 +5944,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DisplayText (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455837704275, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Information
       objectReference: {fileID: 0}
     - target: {fileID: 5997685457133931400, guid: 2531c8733be84e24387fc6b85e48356f,
         type: 3}
@@ -6404,6 +6093,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DisplayText (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455837704275, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Information
       objectReference: {fileID: 0}
     - target: {fileID: 5997685457133931511, guid: 2531c8733be84e24387fc6b85e48356f,
         type: 3}
@@ -7398,6 +7092,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DisplayText
       objectReference: {fileID: 0}
+    - target: {fileID: 5997685455837704275, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Information
+      objectReference: {fileID: 0}
     - target: {fileID: 5997685457133931511, guid: 2531c8733be84e24387fc6b85e48356f,
         type: 3}
       propertyPath: m_fontAsset
@@ -7687,6 +7386,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DisplayText
       objectReference: {fileID: 0}
+    - target: {fileID: 5997685455837704275, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Information
+      objectReference: {fileID: 0}
     - target: {fileID: 5997685457133931511, guid: 2531c8733be84e24387fc6b85e48356f,
         type: 3}
       propertyPath: m_fontAsset
@@ -7793,6 +7497,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DisplayText
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455837704275, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Information
       objectReference: {fileID: 0}
     - target: {fileID: 5997685456616446491, guid: 2531c8733be84e24387fc6b85e48356f,
         type: 3}
@@ -7949,6 +7658,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DisplayText (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455837704275, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Information
       objectReference: {fileID: 0}
     - target: {fileID: 5997685457133931511, guid: 2531c8733be84e24387fc6b85e48356f,
         type: 3}
@@ -9337,6 +9051,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DisplayText
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997685455837704275, guid: 2531c8733be84e24387fc6b85e48356f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Information
       objectReference: {fileID: 0}
     - target: {fileID: 5997685457133931511, guid: 2531c8733be84e24387fc6b85e48356f,
         type: 3}
