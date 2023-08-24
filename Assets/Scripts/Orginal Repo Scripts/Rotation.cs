@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Rotation : Interactable
 {
@@ -56,7 +57,7 @@ public class Rotation : Interactable
         }
     }
 
-    private void Toggle()
+    public virtual void Toggle()
     {
         if (open)
         {

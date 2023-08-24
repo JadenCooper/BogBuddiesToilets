@@ -14,6 +14,12 @@ public class MouseLook : MonoBehaviour
     public float mouse_sensitivity = 10f;
     public bool mouseLocked = true;
 
+    public Joystick rotationJoystick;
+    public bool mobile = false;
+    public float mobileLookSpeed = 2.5f;
+
+    public float xMin = -30, xMax = 30;
+
     void Start()
     {
         mouseLocked = true;
@@ -28,20 +34,24 @@ public class MouseLook : MonoBehaviour
         ////pos.y += camera_y;
         //transform.rotation = pos;
         //Get mouse movement in new input system
-        if (!mouseLocked)
+        if (!mouseLocked && !mobile)
         {
             mousemovement = Mouse.current.delta.ReadValue();     
-
-            xrotation -= mousemovement.y * Time.deltaTime * mouse_sensitivity;   
-            xrotation = Mathf.Clamp(xrotation,-20,20);
-    
-            yrotation += mousemovement.x * Time.deltaTime * mouse_sensitivity;
-
-            //Rotate the camera
-            camera.transform.rotation = Quaternion.Euler(xrotation , yrotation , 0);
-            gameObject.transform.rotation = Quaternion.Euler(0 , yrotation , 0);
         }
-       
+        else if (!mouseLocked && mobile)
+        {
+            mousemovement = rotationJoystick.Direction * mobileLookSpeed;
+        }
+
+        xrotation -= mousemovement.y * Time.deltaTime * mouse_sensitivity;
+        xrotation = Mathf.Clamp(xrotation, xMin, xMax);
+
+        yrotation += mousemovement.x * Time.deltaTime * mouse_sensitivity;
+
+        //Rotate the camera
+        camera.transform.rotation = Quaternion.Euler(xrotation, yrotation, 0);
+        gameObject.transform.rotation = Quaternion.Euler(0, yrotation, 0);
+
     }
     
 }
