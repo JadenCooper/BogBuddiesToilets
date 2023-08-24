@@ -9,7 +9,7 @@ public class ArrowCollidersContact : Interactable
     public Mesh mesh;
     public MeshCollider currentMeshCollider;
     public bool createNewMesh;
-    public bool firstLoad = true;
+    public bool firstLoad;
 
     void Update()
     {
@@ -29,7 +29,7 @@ public class ArrowCollidersContact : Interactable
             createNewMesh = true;
             firstLoad = false;
         }
-        
+
     }
 
     public override void Interact()
