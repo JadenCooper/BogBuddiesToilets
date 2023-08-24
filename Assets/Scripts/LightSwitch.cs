@@ -6,6 +6,11 @@ public class LightSwitch : Interactable
 {
     public List<GameObject> lights = new List<GameObject>();
     public List<GameObject> lightBulbs = new List<GameObject>();
+    private AudioSource audioSource;
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     public override void Interact()
     {
         foreach (GameObject light in lights)
@@ -25,5 +30,6 @@ public class LightSwitch : Interactable
                 renderer.material.DisableKeyword("_EMISSION");
             }
         }
+        audioSource.Play();
     }
 }
