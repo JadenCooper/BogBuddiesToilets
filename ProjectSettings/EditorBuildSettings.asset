@@ -8,12 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 4a7ca564db038ac4699a62078fb3050d
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/scene.unity
     guid: 0b1aaf97dc6d4554e85a1015d7994df5
-  - enabled: 1
-    path: Assets/Scenes/Add swapable movement.unity
-    guid: 3d5be68c84bba4641bef3c4edb628ef8
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 0e01778e0abdf9c4886b51f7ef3276ae,
       type: 2}
