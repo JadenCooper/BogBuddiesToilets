@@ -5,9 +5,7 @@ Explore the Underground toilets of Dunedin
 ## Table of Contents
 - [About](#about)
 - [Features](#features)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
+- [Installation](#installation)
 - [Contact](#contact)
 
 ## About
