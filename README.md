@@ -17,7 +17,6 @@ This application was created to coincide with heritage designation of the Mannor
 
 ## Features
 
-List the main features of your Unity project. Bullet points work well here.
 - The game scene includes a architectural model of the original toilets.
 - The ability to choose bettween two controls types.
 - Movement arrows: The player can press on arrows which take the player through curated locations within the scene. This control types is for those types of players that want a streamlined experience.
