@@ -11,6 +11,9 @@ TagManager:
   - Text
   - Interact
   - interact
+  - Arrow
+  - Image
+  - Information
   layers:
   - Default
   - TransparentFX

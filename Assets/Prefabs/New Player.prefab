@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 857918330997587284}
   - component: {fileID: 857918330997587288}
   - component: {fileID: 857918330997587287}
-  - component: {fileID: 857918330997587290}
   - component: {fileID: 857918330997587291}
   - component: {fileID: 5072732193100297480}
   - component: {fileID: 925316316799980540}
@@ -116,51 +115,11 @@ MonoBehaviour:
   movement: {x: 0, y: 0, z: 0}
   speed: 100
   CanMove: 0
+  clickMove: 0
   mouseLook: {fileID: 0}
   player: {fileID: 0}
---- !u!20 &857918330997587290
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 857918330997587282}
-  m_Enabled: 0
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 100
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.01
-  far clip plane: 1000
-  field of view: 70
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
+  movementJoystick: {fileID: 0}
+  mobile: 0
 --- !u!114 &857918330997587291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,6 +136,11 @@ MonoBehaviour:
   yrotation: 0
   mouse_sensitivity: 30
   mouseLocked: 1
+  rotationJoystick: {fileID: 0}
+  mobile: 0
+  mobileLookSpeed: 2.5
+  xMin: -30
+  xMax: 30
 --- !u!114 &5072732193100297480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,7 +171,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

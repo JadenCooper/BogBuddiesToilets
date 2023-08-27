@@ -18,8 +18,12 @@ public class PlayerController : MonoBehaviour
     //public float Acceleration = 10;
     public float speed = 700;
     public bool CanMove = false;
+    public bool clickMove = false;
     public MouseLook mouseLook;
     public GameObject player;
+
+    public Joystick movementJoystick;
+    public bool mobile = false;
     private void Awake()
     {
         rb = GetComponent<CharacterController>();
@@ -48,8 +52,16 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        MovementInput = Movement.action.ReadValue<Vector3>().normalized;
-        if (MovementInput != Vector3.zero)
+        if (!mobile && CanMove)
+        {
+            MovementInput = Movement.action.ReadValue<Vector3>().normalized;
+        }
+        else if (CanMove)
+        {
+            MovementInput = new Vector3(movementJoystick.Horizontal, 0, movementJoystick.Vertical);
+        }
+        
+        if (MovementInput != Vector3.zero && !clickMove)
         {
             //rb.isKinematic = false;
             Move();
@@ -77,17 +89,24 @@ public class PlayerController : MonoBehaviour
         // Interact - Shoots Out Raycast Out At Press/Click Position 
         if (CanMove)
         {
-            Ray raycast = Camera.main.ScreenPointToRay(Look.action.ReadValue<Vector2>());
-            RaycastHit raycastHit;
-            if (Physics.Raycast(raycast, out raycastHit))
+            if (Input.GetTouch(0).phase == UnityEngine.TouchPhase.Began)
             {
-                if (raycastHit.collider.CompareTag("Arrow")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
+                Ray raycast = Camera.main.ScreenPointToRay(Look.action.ReadValue<Vector2>());
+                if (Physics.Raycast(raycast, out RaycastHit hitinfo, 400f))
                 {
-                    raycastHit.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
+                    if (hitinfo.collider.CompareTag("Information")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
+                    {
+                        hitinfo.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
+                    }
+                    if (hitinfo.collider.CompareTag("Arrow")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
+                    {
+                        hitinfo.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
+                    }
                 }
             }
         }
     }
+
     private void PausePress(InputAction.CallbackContext obj)
     {
         Debug.Log("Pause");

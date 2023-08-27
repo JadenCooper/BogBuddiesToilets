@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1903815453838162508}
   - component: {fileID: 2328227518947184026}
   - component: {fileID: 8697333216054480880}
+  - component: {fileID: 6587928050701027695}
   m_Layer: 0
   m_Name: Fence_01_Canal_LOD0
   m_TagString: Untagged
@@ -83,6 +84,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6587928050701027695
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2331046479542439972}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.4639997, y: 0.17029567, z: 2.270215}
+  m_Center: {x: -0.000007987022, y: 0.032978028, z: -0.15971138}
 --- !u!1 &7889970742593874683
 GameObject:
   m_ObjectHideFlags: 0
