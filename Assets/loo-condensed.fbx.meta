@@ -33,12 +33,14 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Porcelain RT
-    second: {fileID: 2100000, guid: e4d0aeea600f20a4498a0aef8f7e2be8, type: 2}
+    second: {fileID: -8662533969550169027, guid: f679f7d96503ea644b045ca3bffc7fbf,
+      type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Porcelain _Attr Color_ RT
-    second: {fileID: 2100000, guid: e4d0aeea600f20a4498a0aef8f7e2be8, type: 2}
+    second: {fileID: -8662533969550169027, guid: f679f7d96503ea644b045ca3bffc7fbf,
+      type: 3}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
