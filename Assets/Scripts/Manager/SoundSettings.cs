@@ -18,6 +18,7 @@ public class SoundSettings : MonoBehaviour
 
     public void SetMusicVolume(float value)
     {
+        //AllAudioSourcesManager.instance.AdjustVolumneMusic(value);
         if (value < 1)
         {
             value = 0.001f;
@@ -28,6 +29,7 @@ public class SoundSettings : MonoBehaviour
     }
     public void SetSoundEffectVolume(float value)
     {
+        AllAudioSourcesManager.instance.AdjustVolumneSoundEffect(value / 100);
         if (value < 1)
         {
             value = 0.001f;
