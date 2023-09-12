@@ -62,17 +62,11 @@ public class Destroy : MonoBehaviour
     {
         freeMove = true;
         clickMove = false;
-
-        freeMovementButton.gameObject.GetComponent<Image>().color = Color.green;
-        clickMovementButton.gameObject.GetComponent<Image>().color = Color.red;
     }
 
     public void ToggleClickMovement()
     {
         freeMove = false;
         clickMove = true;
-
-        freeMovementButton.gameObject.GetComponent<Image>().color = Color.red;
-        clickMovementButton.gameObject.GetComponent<Image>().color = Color.green;
     }
 }
