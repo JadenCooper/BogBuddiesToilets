@@ -17,6 +17,7 @@ public class Destroy : MonoBehaviour
 
     public PlayerController playerController;
     public GameObject arrowsParent;
+    public GameObject displays;
 
     private void Start()
     {
@@ -35,7 +36,7 @@ public class Destroy : MonoBehaviour
             }
             else
             {
-                HideAllArrows();
+                EnableFreeMovement();
             }
             Destroy(objectToDestroy);
         }
@@ -53,9 +54,10 @@ public class Destroy : MonoBehaviour
         }
     }
 
-    private void HideAllArrows()
+    private void EnableFreeMovement()
     {
         arrowsParent.SetActive(false);
+        displays.SetActive(true);
     }
 
     public void ToggleFreeMovement()
