@@ -10,7 +10,6 @@ public class PauseManager : MonoBehaviour
     public GameObject pauseButton;
     public GameObject MapScreen;
     public GameObject IntialScreen;
-    public LookingMobile look;
     public PlayerController playerController;
     private Color orginalMapColor;
     public Sprite map;
@@ -68,7 +67,6 @@ public class PauseManager : MonoBehaviour
     }
     public void DisablePlayerMovement()
     {
-        look.CanMove = !look.CanMove;
         playerController.CanMove = !playerController.CanMove;
     }
     public void MapChange()
