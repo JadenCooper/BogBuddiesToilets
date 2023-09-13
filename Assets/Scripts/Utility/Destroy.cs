@@ -57,7 +57,7 @@ public class Destroy : MonoBehaviour
     private void EnableFreeMovement()
     {
         arrowsParent.SetActive(false);
-        displays.SetActive(true);
+       //displays.SetActive(true);
     }
 
     public void ToggleFreeMovement()

@@ -20,6 +20,7 @@ public class PauseManager : MonoBehaviour
     public List<DisplayText> DisplayTextList = new List<DisplayText>();
     public TextMeshProUGUI textDisplayCount;
     public TextMeshProUGUI textDisplaySeenCount;
+    public GameObject joysticks;
     private void Start()
     {
         image = PauseMenu.GetComponent<Image>();
@@ -35,12 +36,14 @@ public class PauseManager : MonoBehaviour
             // Pause Menu Is Already Active
             PauseMenu.SetActive(false);
             pauseButton.SetActive(true);
+            joysticks.SetActive(true);
             Time.timeScale = 1f;
         }
         else
         {
             // Activate Pause Menu
             PauseMenu.SetActive(true);
+            joysticks.SetActive(false);
             pauseButton.SetActive(false);
             UpdateTextDisplayTracker();
             Time.timeScale = 0f;
