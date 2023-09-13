@@ -37444,6 +37444,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 857918330997587291, guid: 46cee76cbb0e4c140bebd55e22e81361,
         type: 3}
+      propertyPath: yrotation
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 857918330997587291, guid: 46cee76cbb0e4c140bebd55e22e81361,
+        type: 3}
       propertyPath: rotationJoystick
       value: 
       objectReference: {fileID: 720113975}
@@ -40342,6 +40347,11 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1755137184}
+    - target: {fileID: 3604756785905444058, guid: 55bea1f734ed6a64ca6eced3e7479e64,
+        type: 3}
+      propertyPath: PlayerLook
+      value: 
+      objectReference: {fileID: 1755137175}
     - target: {fileID: 3604756785905444059, guid: 55bea1f734ed6a64ca6eced3e7479e64,
         type: 3}
       propertyPath: m_RootOrder
