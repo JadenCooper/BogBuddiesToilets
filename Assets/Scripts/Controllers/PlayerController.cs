@@ -21,11 +21,18 @@ public class PlayerController : MonoBehaviour
     public bool clickMove = false;
     public MouseLook mouseLook;
     public GameObject player;
+
+
+    
+    public AudioSource walkingAudio;
+
+
     public Joystick movementJoystick;
     public bool mobile = false;
     private void Awake()
     {
         rb = GetComponent<CharacterController>();
+        walkingAudio = GetComponent<AudioSource>();
     }
     public void Move()
     {
@@ -59,9 +66,13 @@ public class PlayerController : MonoBehaviour
         {
             MovementInput = new Vector3(movementJoystick.Horizontal, 0, movementJoystick.Vertical);
         }
-        
+
         if (MovementInput != Vector3.zero && !clickMove)
         {
+            if (!walkingAudio.isPlaying)
+            {
+                walkingAudio.Play();
+            }
             //rb.isKinematic = false;
             Move();
             rb.SimpleMove(transform.TransformDirection(movement * Time.deltaTime)); // Increases Velocity And Changes Direction From Local World
@@ -69,6 +80,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             //rb.isKinematic = true;
+            walkingAudio.Stop();
         }
     }
 
