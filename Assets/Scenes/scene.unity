@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.443241, g: 0.49248254, b: 0.5721508, a: 1}
+  m_IndirectSpecularColor: {r: 0.44324118, g: 0.4924829, b: 0.57215136, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14317,7 +14317,7 @@ MonoBehaviour:
   - {fileID: 7006092592656610498}
   - {fileID: 7006092591873947988}
   - {fileID: 7006092591709226244}
-  - {fileID: 7006092591554245488}
+  - {fileID: 0}
   - {fileID: 7006092592904159337}
   - {fileID: 7006092591900856767}
   - {fileID: 7006092592755704558}
@@ -14368,7 +14368,8 @@ MonoBehaviour:
   freeMovementButton: {fileID: 550681283}
   freeMove: 0
   playerController: {fileID: 1755137177}
-  arrowsParent: {fileID: 1838851293}
+  arrowsParent: {fileID: 3604756786215124996}
+  displays: {fileID: 449272064}
 --- !u!1001 &704339014
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37828,14 +37829,6 @@ PrefabInstance:
       propertyPath: MaxDistance
       value: 1.000001
       objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46cee76cbb0e4c140bebd55e22e81361, type: 3}
 --- !u!224 &1683958224 stripped
@@ -43951,18 +43944,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931959400}
   m_CullTransparentMesh: 1
---- !u!114 &1938287651 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7006092593222948780, guid: 55bea1f734ed6a64ca6eced3e7479e64,
-    type: 3}
-  m_PrefabInstance: {fileID: 1838851292}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcd1678990e902a4c96b4001be32c87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1943307941 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 834c3fa5e648f5b4faae78fbdd317a75,
@@ -108102,18 +108083,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7916090903816220646, guid: 37111dbf023bbbe43bc7f59db12701ef, type: 3}
---- !u!114 &7006092591554245488 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7006092593222948780, guid: 55bea1f734ed6a64ca6eced3e7479e64,
-    type: 3}
-  m_PrefabInstance: {fileID: 1838851292}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fcd1678990e902a4c96b4001be32c87e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &7006092591709226244 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7006092592471974360, guid: 55bea1f734ed6a64ca6eced3e7479e64,
