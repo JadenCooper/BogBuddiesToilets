@@ -19,17 +19,18 @@ public class ArrowMovement : Interactable
     public GameObject LocationArrows;
 
     public ArrowManager arrowManager;
+    public TransportLocation transportLocation;
 
     void Awake()
     {
         text = transform.GetChild(0).GetChild(0).GetChild(0).GetChild(1).gameObject.GetComponent<TextMeshProUGUI>();
+        Initialize();
     }
 
     public override void Interact()
     {
         //ArrowMovement objectHit = raycastHit.collider.gameObject.transform.GetComponent<ArrowMovement>();
         arrowManager.MovePlayer(moveTo, rotation);
-        Debug.Log(moveTo);
         LocationArrows.SetActive(true);
         gameObject.transform.parent.gameObject.SetActive(false);
     }
@@ -38,5 +39,12 @@ public class ArrowMovement : Interactable
     void Start()
     {
         text.text = startingText;
+    }
+
+    public void Initialize()
+    {
+        Vector3[] temp = WaypointData.Locations[transportLocation];
+        rotation = temp[1].x;
+        moveTo = temp[0];
     }
 }

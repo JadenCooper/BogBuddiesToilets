@@ -163,12 +163,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textHolder: {fileID: 5997685455865862240}
+  isImage: 0
   image: {fileID: 5997685456499837224}
   text: {fileID: 5997685457133931511}
   InputText: 
   Seen: 0
   invisableTimer: 20
   isCoroutineRunning: 0
+  collectible: {fileID: 0}
 --- !u!65 &871661772595407203
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -273,7 +275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.20764458, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0.7076149, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
