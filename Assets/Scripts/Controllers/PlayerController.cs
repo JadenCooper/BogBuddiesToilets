@@ -21,8 +21,11 @@ public class PlayerController : MonoBehaviour
     public bool clickMove = false;
     public MouseLook mouseLook;
     public GameObject player;
+
+
     
     public AudioSource walkingAudio;
+
 
     public Joystick movementJoystick;
     public bool mobile = false;
@@ -99,16 +102,19 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetTouch(0).phase == UnityEngine.TouchPhase.Began)
             {
-                Ray raycast = Camera.main.ScreenPointToRay(Look.action.ReadValue<Vector2>());
-                if (Physics.Raycast(raycast, out RaycastHit hitinfo, 400f))
+                Ray ray = Camera.main.ScreenPointToRay(Look.action.ReadValue<Vector2>());
+                RaycastHit[] hits = Physics.RaycastAll(ray, 3f);
+                foreach (RaycastHit hitinfo in hits)
                 {
                     if (hitinfo.collider.CompareTag("Information")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
                     {
                         hitinfo.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
+                        break;
                     }
                     if (hitinfo.collider.CompareTag("Arrow")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
                     {
                         hitinfo.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
+                        break;
                     }
                 }
             }
