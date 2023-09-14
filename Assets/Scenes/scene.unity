@@ -40300,12 +40300,12 @@ PrefabInstance:
     - target: {fileID: 3604756785602895049, guid: 55bea1f734ed6a64ca6eced3e7479e64,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3604756785602895051, guid: 55bea1f734ed6a64ca6eced3e7479e64,
         type: 3}
       propertyPath: transportLocation.Array.data[0]
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3604756785684516885, guid: 55bea1f734ed6a64ca6eced3e7479e64,
         type: 3}
@@ -40352,6 +40352,16 @@ PrefabInstance:
       propertyPath: PlayerLook
       value: 
       objectReference: {fileID: 1755137175}
+    - target: {fileID: 3604756785905444058, guid: 55bea1f734ed6a64ca6eced3e7479e64,
+        type: 3}
+      propertyPath: ArrowHolders.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3604756785905444058, guid: 55bea1f734ed6a64ca6eced3e7479e64,
+        type: 3}
+      propertyPath: ArrowHolders.Array.data[11]
+      value: 
+      objectReference: {fileID: 1404187848}
     - target: {fileID: 3604756785905444059, guid: 55bea1f734ed6a64ca6eced3e7479e64,
         type: 3}
       propertyPath: m_RootOrder
