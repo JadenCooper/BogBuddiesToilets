@@ -43805,6 +43805,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 637812071}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1 &1931959400
 GameObject:
   m_ObjectHideFlags: 0
@@ -43963,6 +43964,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd1678990e902a4c96b4001be32c87e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> staging-client
 --- !u!4 &1943307941 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 834c3fa5e648f5b4faae78fbdd317a75,
