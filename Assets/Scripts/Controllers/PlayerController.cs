@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     public bool clickMove = false;
     public MouseLook mouseLook;
     public GameObject player;
-
+    public float raycastDistance;
 
     
     public AudioSource walkingAudio;
@@ -103,9 +103,10 @@ public class PlayerController : MonoBehaviour
             if (Input.GetTouch(0).phase == UnityEngine.TouchPhase.Began)
             {
                 Ray ray = Camera.main.ScreenPointToRay(Look.action.ReadValue<Vector2>());
-                RaycastHit[] hits = Physics.RaycastAll(ray, 3f);
+                RaycastHit[] hits = Physics.RaycastAll(ray, raycastDistance);
                 foreach (RaycastHit hitinfo in hits)
                 {
+                    Debug.Log(hitinfo.collider.gameObject.name);
                     if (hitinfo.collider.CompareTag("Information")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
                     {
                         hitinfo.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
