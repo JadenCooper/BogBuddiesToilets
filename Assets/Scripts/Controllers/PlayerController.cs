@@ -21,12 +21,18 @@ public class PlayerController : MonoBehaviour
     public bool clickMove = false;
     public MouseLook mouseLook;
     public GameObject player;
+    public float raycastDistance;
+
+    
+    public AudioSource walkingAudio;
+
 
     public Joystick movementJoystick;
     public bool mobile = false;
     private void Awake()
     {
         rb = GetComponent<CharacterController>();
+        walkingAudio = GetComponent<AudioSource>();
     }
     public void Move()
     {
@@ -60,9 +66,13 @@ public class PlayerController : MonoBehaviour
         {
             MovementInput = new Vector3(movementJoystick.Horizontal, 0, movementJoystick.Vertical);
         }
-        
+
         if (MovementInput != Vector3.zero && !clickMove)
         {
+            if (!walkingAudio.isPlaying)
+            {
+                walkingAudio.Play();
+            }
             //rb.isKinematic = false;
             Move();
             rb.SimpleMove(transform.TransformDirection(movement * Time.deltaTime)); // Increases Velocity And Changes Direction From Local World
@@ -70,6 +80,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             //rb.isKinematic = true;
+            walkingAudio.Stop();
         }
     }
 
@@ -91,16 +102,20 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetTouch(0).phase == UnityEngine.TouchPhase.Began)
             {
-                Ray raycast = Camera.main.ScreenPointToRay(Look.action.ReadValue<Vector2>());
-                if (Physics.Raycast(raycast, out RaycastHit hitinfo, 400f))
+                Ray ray = Camera.main.ScreenPointToRay(Look.action.ReadValue<Vector2>());
+                RaycastHit[] hits = Physics.RaycastAll(ray, raycastDistance);
+                foreach (RaycastHit hitinfo in hits)
                 {
+                    Debug.Log(hitinfo.collider.gameObject.name);
                     if (hitinfo.collider.CompareTag("Information")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
                     {
                         hitinfo.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
+                        break;
                     }
                     if (hitinfo.collider.CompareTag("Arrow")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
                     {
                         hitinfo.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
+                        break;
                     }
                 }
             }

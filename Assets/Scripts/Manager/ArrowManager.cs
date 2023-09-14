@@ -5,10 +5,12 @@ using UnityEngine;
 public class ArrowManager : MonoBehaviour
 {
     public  Transform Player;
+    public MouseLook PlayerLook;
     public List<ArrowHolder> ArrowHolders;
     public void MovePlayer(Vector3 moveTo, float Rotation)
     {
-        Player.SetPositionAndRotation(moveTo, Quaternion.Euler(0, Rotation, 0));
+        Player.position = moveTo;
+        PlayerLook.yrotation = Rotation;
     }
 
     public void OpenArrows(TransportLocation newLocation)
