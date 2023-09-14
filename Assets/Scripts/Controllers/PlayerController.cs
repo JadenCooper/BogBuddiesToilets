@@ -106,7 +106,6 @@ public class PlayerController : MonoBehaviour
                 RaycastHit[] hits = Physics.RaycastAll(ray, raycastDistance);
                 foreach (RaycastHit hitinfo in hits)
                 {
-                    Debug.Log(hitinfo.collider.gameObject.name);
                     if (hitinfo.collider.CompareTag("Information")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
                     {
                         hitinfo.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
