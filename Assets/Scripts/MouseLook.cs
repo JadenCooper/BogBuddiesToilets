@@ -18,7 +18,7 @@ public class MouseLook : MonoBehaviour
     public bool mobile = false;
     public float mobileLookSpeed = 2.5f;
 
-    public float xMin = -30, xMax = 30;
+    private float xMin = -45, xMax = 45;
 
     void Start()
     {
