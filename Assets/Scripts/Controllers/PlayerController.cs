@@ -100,22 +100,19 @@ public class PlayerController : MonoBehaviour
         // Interact - Shoots Out Raycast Out At Press/Click Position 
         if (CanMove)
         {
-            if (Input.GetTouch(0).phase == UnityEngine.TouchPhase.Began)
+            Ray ray = Camera.main.ScreenPointToRay(Look.action.ReadValue<Vector2>());
+            RaycastHit[] hits = Physics.RaycastAll(ray, raycastDistance);
+            foreach (RaycastHit hitinfo in hits)
             {
-                Ray ray = Camera.main.ScreenPointToRay(Look.action.ReadValue<Vector2>());
-                RaycastHit[] hits = Physics.RaycastAll(ray, raycastDistance);
-                foreach (RaycastHit hitinfo in hits)
+                if (hitinfo.collider.CompareTag("Information")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
                 {
-                    if (hitinfo.collider.CompareTag("Information")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
-                    {
-                        hitinfo.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
-                        break;
-                    }
-                    if (hitinfo.collider.CompareTag("Arrow")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
-                    {
-                        hitinfo.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
-                        break;
-                    }
+                    hitinfo.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
+                    break;
+                }
+                if (hitinfo.collider.CompareTag("Arrow")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
+                {
+                    hitinfo.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
+                    break;
                 }
             }
         }
