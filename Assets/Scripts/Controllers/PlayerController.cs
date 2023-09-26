@@ -128,9 +128,6 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.tag == "Stairs")
-        {
-            //gameObject.transform.position += new Vector3(0,.3f,0);
-        }
+        Debug.Log(collision.gameObject.name);
     }
 }
