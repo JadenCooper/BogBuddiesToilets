@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
+using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class PlayerController : MonoBehaviour
     public GameObject player;
     public float raycastDistance;
 
-    
+
     public AudioSource walkingAudio;
 
 
@@ -40,7 +41,7 @@ public class PlayerController : MonoBehaviour
         //MovementInput *= CurrentSpeed;
         movement = MovementInput * speed;
         //rb.MovePosition(transform.position + movement * Time.deltaTime * 1);
-        
+
     }
 
     public void CalculateSpeed()
@@ -100,19 +101,33 @@ public class PlayerController : MonoBehaviour
         // Interact - Shoots Out Raycast Out At Press/Click Position 
         if (CanMove)
         {
-            Ray ray = Camera.main.ScreenPointToRay(Look.action.ReadValue<Vector2>());
-            RaycastHit[] hits = Physics.RaycastAll(ray, raycastDistance);
-            foreach (RaycastHit hitinfo in hits)
+            if (Input.GetTouch(0).phase == UnityEngine.TouchPhase.Began && Input.GetTouch(0).fingerId == 0)
             {
-                if (hitinfo.collider.CompareTag("Information")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
+                PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
+                eventDataCurrentPosition.position = new Vector2(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y);
+                List<RaycastResult> results = new List<RaycastResult>();
+                EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
+                Ray ray = Camera.main.ScreenPointToRay(Look.action.ReadValue<Vector2>());
+                RaycastHit[] hits = Physics.RaycastAll(ray, raycastDistance);
+                foreach (RaycastHit hitinfo in hits)
                 {
-                    hitinfo.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
-                    break;
-                }
-                if (hitinfo.collider.CompareTag("Arrow")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
-                {
-                    hitinfo.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
-                    break;
+                    if (!results[0].gameObject.CompareTag("Joystick"))
+                    {
+                        if (hitinfo.collider.CompareTag("Information")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
+                        {
+                            hitinfo.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
+                            break;
+                        }
+                        if (hitinfo.collider.CompareTag("Arrow")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
+                        {
+                            hitinfo.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
+                            break;
+                        }
+                    }
+                    else
+                    {
+                        Debug.Log("Joystick hit");
+                    }
                 }
             }
         }
