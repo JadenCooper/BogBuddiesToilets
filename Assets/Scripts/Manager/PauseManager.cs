@@ -20,7 +20,6 @@ public class PauseManager : MonoBehaviour
     [SerializeField]
     private List<Collectible> collectibles = new List<Collectible>();
     public TextMeshProUGUI textDisplayCount;
-    public TextMeshProUGUI textDisplaySeenCount;
     public GameObject joysticks;
     private void Start()
     {
@@ -66,7 +65,7 @@ public class PauseManager : MonoBehaviour
             }
         }
         textDisplayCount.text = textDisplayStatus.y.ToString();
-        textDisplaySeenCount.text = textDisplayStatus.x.ToString() + " /";
+        textDisplayCount.text = textDisplayStatus.x.ToString() + "/" +  textDisplayStatus.y.ToString();
         textDisplayStatus.x = 0; // Reset
     }
     public void DisablePlayerMovement()
