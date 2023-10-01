@@ -101,7 +101,7 @@ public class PlayerController : MonoBehaviour
         // Interact - Shoots Out Raycast Out At Press/Click Position 
         if (CanMove)
         {
-            if (Input.GetTouch(0).phase == UnityEngine.TouchPhase.Began && Input.GetTouch(0).fingerId == 0)
+            if (Input.GetTouch(0).phase == UnityEngine.TouchPhase.Began)
             {
                 PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
                 eventDataCurrentPosition.position = new Vector2(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y);
@@ -111,7 +111,7 @@ public class PlayerController : MonoBehaviour
                 RaycastHit[] hits = Physics.RaycastAll(ray, raycastDistance);
                 foreach (RaycastHit hitinfo in hits)
                 {
-                    if (!results[0].gameObject.CompareTag("Joystick"))
+                    if (results.Count == 0 || !results[0].gameObject.CompareTag("Joystick"))
                     {
                         if (hitinfo.collider.CompareTag("Information")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
                         {
