@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 352c40ee9622123449c8d1d2717d5655, type: 3}
-  m_Name: FreeWilly
+  m_Name: CorniceTiles
   m_EditorClassIdentifier: 
-  title: Unprofitable
-  description: The Penny in the Slot system was introduced for the water closets
-    (toilets), urinals were free to use, although this never covered the cost of
-    annual maintenance.
+  title: Cornice Tiles
+  description: They were designed to be aesthetically pleasing with the interiors
+    in the underground facilities fitted with wall to ceiling tiles (for easy cleaning),
+    skirting and dados and enriched with cornice tiles
   background: {fileID: 21300000, guid: 386a710bbbdf39347be0d0724c0f01af, type: 3}
-  picture: {fileID: 21300000, guid: deb1b8264b2a7774a97da79d386dacd0, type: 3}
+  picture: {fileID: 21300000, guid: e18f6d9de31c6674a9531e23bf727656, type: 3}
   collected: 1

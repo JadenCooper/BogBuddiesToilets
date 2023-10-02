@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 352c40ee9622123449c8d1d2717d5655, type: 3}
-  m_Name: Unstaffed
+  m_Name: PennySlot
   m_EditorClassIdentifier: 
-  title: Unstaffed
-  description: ' Attendants were no longer employes in the 1960s and the lack of
-    staff saw the spaces misused and vandalism was rife. '
+  title: Pay to Play
+  description: "Each water closet had a \u201Cpenny in the slot\u201D locking system.
+    It cost a penny to unlock the door to use the water closets. Urinals were free
+    to use. (High Street Toilets Finished)"
   background: {fileID: 21300000, guid: 095291295fa46e74fb040d8bf3e282bb, type: 3}
-  picture: {fileID: 21300000, guid: deb1b8264b2a7774a97da79d386dacd0, type: 3}
+  picture: {fileID: 21300000, guid: a2ab30b2a6270604da201e4d9f74f4bf, type: 3}
   collected: 1

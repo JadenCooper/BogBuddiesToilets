@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 352c40ee9622123449c8d1d2717d5655, type: 3}
-  m_Name: Demolished
+  m_Name: FreeWilly
   m_EditorClassIdentifier: 
-  title: Demolished
-  description: The Octagon underground was demolished and filled in 1989
-  background: {fileID: 21300000, guid: 04d7cf0b31bd5414ab846ce1f029479b, type: 3}
-  picture: {fileID: 21300000, guid: deb1b8264b2a7774a97da79d386dacd0, type: 3}
+  title: Unprofitable
+  description: The Penny in the Slot system was introduced for the water closets
+    (toilets), urinals were free to use, although this never covered the cost of
+    annual maintenance.
+  background: {fileID: 21300000, guid: 386a710bbbdf39347be0d0724c0f01af, type: 3}
+  picture: {fileID: 21300000, guid: 95ab18f4f79a7134c9bb1c889ad09781, type: 3}
   collected: 1

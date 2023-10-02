@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 352c40ee9622123449c8d1d2717d5655, type: 3}
-  m_Name: OtherUndergrounds
+  m_Name: ModernFacilities
   m_EditorClassIdentifier: 
-  title: Sister Cisterns
-  description: There were three undergrounds built in Dunedin in 1910
-  background: {fileID: 0}
-  picture: {fileID: 0}
+  title: Modern Facilities
+  description: They were state of the art, modern facilities for both sanitation
+    reasons and for promoting cities as hygienic and modern.
+  background: {fileID: 21300000, guid: 095291295fa46e74fb040d8bf3e282bb, type: 3}
+  picture: {fileID: 21300000, guid: 5763ff7824c771e48897a17b81596bfa, type: 3}
   collected: 1

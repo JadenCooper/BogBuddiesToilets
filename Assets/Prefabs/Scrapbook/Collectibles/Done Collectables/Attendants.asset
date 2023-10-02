@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 352c40ee9622123449c8d1d2717d5655, type: 3}
-  m_Name: NarrowStairs
+  m_Name: Attendants
   m_EditorClassIdentifier: 
-  title: Narrow Stairs
-  description: Architecturally impressive, the underground spaces were however, prone
-    to contant leaks and had very narrow, sometimes treacherous access stairs
-  background: {fileID: 21300000, guid: 095291295fa46e74fb040d8bf3e282bb, type: 3}
-  picture: {fileID: 21300000, guid: deb1b8264b2a7774a97da79d386dacd0, type: 3}
+  title: Convenience Attendants
+  description: Convenience Attendants would work 8 hour shifts alone in the often
+    damp spaces (Manor Place Comfort Station)
+  background: {fileID: 21300000, guid: 965734c7bd8e1b64cbb42e3ba8240386, type: 3}
+  picture: {fileID: 21300000, guid: 62cbddbec2c5d3b4882b0bf03de961b7, type: 3}
   collected: 1
