@@ -124,10 +124,6 @@ public class PlayerController : MonoBehaviour
                             break;
                         }
                     }
-                    else
-                    {
-                        Debug.Log("Joystick hit");
-                    }
                 }
             }
         }
