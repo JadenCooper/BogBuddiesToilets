@@ -16,4 +16,4 @@ MonoBehaviour:
   description: There were three undergrounds built in Dunedin in 1910
   background: {fileID: 0}
   picture: {fileID: 0}
-  collected: 0
+  collected: 1

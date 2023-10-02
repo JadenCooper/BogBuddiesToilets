@@ -18,4 +18,4 @@ MonoBehaviour:
     to use."
   background: {fileID: 0}
   picture: {fileID: 0}
-  collected: 0
+  collected: 1

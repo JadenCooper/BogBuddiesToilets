@@ -17,4 +17,4 @@ MonoBehaviour:
     reasons and for promoting cities as hygienic and modern.
   background: {fileID: 21300000, guid: 095291295fa46e74fb040d8bf3e282bb, type: 3}
   picture: {fileID: 21300000, guid: deb1b8264b2a7774a97da79d386dacd0, type: 3}
-  collected: 0
+  collected: 1

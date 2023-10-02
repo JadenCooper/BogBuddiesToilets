@@ -16,4 +16,4 @@ MonoBehaviour:
   description: The Octagon underground was demolished and filled in 1989
   background: {fileID: 21300000, guid: 04d7cf0b31bd5414ab846ce1f029479b, type: 3}
   picture: {fileID: 21300000, guid: deb1b8264b2a7774a97da79d386dacd0, type: 3}
-  collected: 0
+  collected: 1
