@@ -17,14 +17,14 @@ public class PauseManager : MonoBehaviour
     private Image image;
     [SerializeField]
     private Vector2 textDisplayStatus = Vector2.zero; // X = Displays Seen Y = Total Displays
-    public List<DisplayText> DisplayTextList = new List<DisplayText>();
+    [SerializeField]
+    private List<Collectible> collectibles = new List<Collectible>();
     public TextMeshProUGUI textDisplayCount;
-    public TextMeshProUGUI textDisplaySeenCount;
     public GameObject joysticks;
     private void Start()
     {
         image = PauseMenu.GetComponent<Image>();
-        textDisplayStatus.y = DisplayTextList.Count;
+        textDisplayStatus.y = collectibles.Count;
         orginalMapColor = image.color;
         orginalSprite = image.sprite;
     }
@@ -57,15 +57,15 @@ public class PauseManager : MonoBehaviour
     }
     public void UpdateTextDisplayTracker()
     {
-        for (int i = 0; i < DisplayTextList.Count; i++)
+        for (int i = 0; i < collectibles.Count; i++)
         {
-            if (DisplayTextList[i].Seen)
+            if (collectibles[i].collected)
             {
                 textDisplayStatus.x++;
             }
         }
         textDisplayCount.text = textDisplayStatus.y.ToString();
-        textDisplaySeenCount.text = textDisplayStatus.x.ToString() + " /";
+        textDisplayCount.text = textDisplayStatus.x.ToString() + "/" +  textDisplayStatus.y.ToString();
         textDisplayStatus.x = 0; // Reset
     }
     public void DisablePlayerMovement()

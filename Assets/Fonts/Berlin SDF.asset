@@ -869,6 +869,36 @@ MonoBehaviour:
     m_Scale: 1
     m_AtlasIndex: 0
     m_ClassDefinitionType: 0
+  - m_Index: 39
+    m_Metrics:
+      m_Width: 41.5
+      m_Height: 45
+      m_HorizontalBearingX: 1.796875
+      m_HorizontalBearingY: 45
+      m_HorizontalAdvance: 45.09375
+    m_GlyphRect:
+      m_X: 796
+      m_Y: 92
+      m_Width: 43
+      m_Height: 45
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+  - m_Index: 32
+    m_Metrics:
+      m_Width: 39.15625
+      m_Height: 67.765625
+      m_HorizontalBearingX: 1.796875
+      m_HorizontalBearingY: 45.453125
+      m_HorizontalAdvance: 42.75
+    m_GlyphRect:
+      m_X: 928
+      m_Y: 10
+      m_Width: 40
+      m_Height: 69
+    m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
   m_CharacterTable:
   - m_ElementType: 1
     m_Unicode: 32
@@ -1089,6 +1119,14 @@ MonoBehaviour:
   - m_ElementType: 1
     m_Unicode: 63
     m_GlyphIndex: 101
+    m_Scale: 1
+  - m_ElementType: 1
+    m_Unicode: 120
+    m_GlyphIndex: 39
+    m_Scale: 1
+  - m_ElementType: 1
+    m_Unicode: 113
+    m_GlyphIndex: 32
     m_Scale: 1
   m_AtlasTextures:
   - {fileID: 7287792926359616465}
@@ -1312,11 +1350,20 @@ MonoBehaviour:
     m_Y: 333
     m_Width: 53
     m_Height: 82
+  - m_X: 786
+    m_Y: 82
+    m_Width: 62
+    m_Height: 64
+  - m_X: 918
+    m_Y: 0
+    m_Width: 59
+    m_Height: 88
   m_FreeGlyphRects:
   - m_X: 26
     m_Y: 33
     m_Width: 12
     m_Height: 33
+<<<<<<< HEAD
   - m_X: 26
     m_Y: 42
     m_Width: 15
@@ -1343,6 +1390,94 @@ MonoBehaviour:
     m_Height: 3
   - m_X: 59
     m_Y: 460
+=======
+  - m_X: 170
+    m_Y: 382
+    m_Width: 853
+    m_Height: 641
+  - m_X: 170
+    m_Y: 363
+    m_Width: 27
+    m_Height: 660
+  - m_X: 58
+    m_Y: 172
+    m_Width: 27
+    m_Height: 20
+  - m_X: 53
+    m_Y: 234
+    m_Width: 32
+    m_Height: 14
+  - m_X: 0
+    m_Y: 341
+    m_Width: 41
+    m_Height: 73
+  - m_X: 0
+    m_Y: 497
+    m_Width: 1023
+    m_Height: 526
+  - m_X: 71
+    m_Y: 450
+    m_Width: 952
+    m_Height: 573
+  - m_X: 85
+    m_Y: 123
+    m_Width: 26
+    m_Height: 42
+  - m_X: 71
+    m_Y: 447
+    m_Width: 40
+    m_Height: 576
+  - m_X: 109
+    m_Y: 414
+    m_Width: 2
+    m_Height: 609
+  - m_X: 145
+    m_Y: 193
+    m_Width: 31
+    m_Height: 22
+  - m_X: 174
+    m_Y: 165
+    m_Width: 2
+    m_Height: 50
+  - m_X: 635
+    m_Y: 65
+    m_Width: 17
+    m_Height: 17
+  - m_X: 717
+    m_Y: 146
+    m_Width: 306
+    m_Height: 877
+  - m_X: 717
+    m_Y: 82
+    m_Width: 11
+    m_Height: 941
+  - m_X: 554
+    m_Y: 83
+    m_Width: 9
+    m_Height: 64
+  - m_X: 626
+    m_Y: 147
+    m_Width: 9
+    m_Height: 876
+  - m_X: 626
+    m_Y: 182
+    m_Width: 397
+    m_Height: 841
+  - m_X: 469
+    m_Y: 149
+    m_Width: 20
+    m_Height: 18
+  - m_X: 534
+    m_Y: 229
+    m_Width: 489
+    m_Height: 794
+  - m_X: 534
+    m_Y: 167
+    m_Width: 20
+    m_Height: 856
+  - m_X: 408
+    m_Y: 229
+>>>>>>> staging-client
     m_Width: 3
     m_Height: 65
   - m_X: 125

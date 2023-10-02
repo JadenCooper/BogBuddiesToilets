@@ -9,7 +9,7 @@ public class ArrowManager : MonoBehaviour
     public List<ArrowHolder> ArrowHolders;
     public void MovePlayer(Vector3 moveTo, float Rotation)
     {
-        Player.position = moveTo;
+        Player.localPosition = moveTo;
         PlayerLook.yrotation = Rotation;
     }
 
