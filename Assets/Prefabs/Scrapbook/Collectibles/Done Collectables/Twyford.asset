@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 352c40ee9622123449c8d1d2717d5655, type: 3}
+  m_Name: Twyford
+  m_EditorClassIdentifier: 
+  title: English Craftmanship
+  description: All the interior tiles and fixtures were imported from England from
+    the Twyford company (A Company That Still Exists (High Street Toilets))
+  background: {fileID: 21300000, guid: 965734c7bd8e1b64cbb42e3ba8240386, type: 3}
+  picture: {fileID: 21300000, guid: 4e6eb9412e741e245a74ba639399f10d, type: 3}
+  collected: 1
