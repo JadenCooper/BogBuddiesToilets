@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 1
   m_FogDensity: 0.01
@@ -19259,6 +19259,17 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 130903518938214005, guid: 55bea1f734ed6a64ca6eced3e7479e64,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 130903518938214005, guid: 55bea1f734ed6a64ca6eced3e7479e64,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 130903519191810468, guid: 55bea1f734ed6a64ca6eced3e7479e64,
         type: 3}
       propertyPath: m_PresetInfoIsWorld
@@ -19416,6 +19427,17 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2343948496734759742, guid: 55bea1f734ed6a64ca6eced3e7479e64,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 2343948496734759742, guid: 55bea1f734ed6a64ca6eced3e7479e64,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 3604756785153923059, guid: 55bea1f734ed6a64ca6eced3e7479e64,
         type: 3}
       propertyPath: startingText
@@ -20016,6 +20038,17 @@ PrefabInstance:
       propertyPath: transportLocation.Array.data[0]
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3604756786888252445, guid: 55bea1f734ed6a64ca6eced3e7479e64,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 3604756786888252445, guid: 55bea1f734ed6a64ca6eced3e7479e64,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 3604756786934143689, guid: 55bea1f734ed6a64ca6eced3e7479e64,
         type: 3}
       propertyPath: startingText
@@ -20266,6 +20299,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -3
       objectReference: {fileID: 0}
+    - target: {fileID: 7006092591328293579, guid: 55bea1f734ed6a64ca6eced3e7479e64,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 7006092591328293579, guid: 55bea1f734ed6a64ca6eced3e7479e64,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 7006092591336187061, guid: 55bea1f734ed6a64ca6eced3e7479e64,
         type: 3}
       propertyPath: collectible
@@ -20295,6 +20339,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: a152825d56ab06343bb85adad546813f,
         type: 2}
+    - target: {fileID: 7006092591717065566, guid: 55bea1f734ed6a64ca6eced3e7479e64,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 7006092591717065566, guid: 55bea1f734ed6a64ca6eced3e7479e64,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 7006092591918320678, guid: 55bea1f734ed6a64ca6eced3e7479e64,
         type: 3}
       propertyPath: m_sharedMaterial
