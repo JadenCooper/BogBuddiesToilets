@@ -10301,6 +10301,21 @@ PrefabInstance:
       propertyPath: m_enableWordWrapping
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3367375528793740341, guid: 8c2a95527b92cb6429eba4f21429b293,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.019607844
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367375528793740341, guid: 8c2a95527b92cb6429eba4f21429b293,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.5882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367375528793740341, guid: 8c2a95527b92cb6429eba4f21429b293,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.94509804
+      objectReference: {fileID: 0}
     - target: {fileID: 3367375529088823618, guid: 8c2a95527b92cb6429eba4f21429b293,
         type: 3}
       propertyPath: m_fontAsset
