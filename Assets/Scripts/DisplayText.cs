@@ -18,6 +18,7 @@ public class DisplayText : Interactable
     [SerializeField]
     private bool isCoroutineRunning = false;
     public Collectible collectible;
+    public Color seenColor;
 
     private void Awake()
     {
@@ -78,7 +79,7 @@ public class DisplayText : Interactable
                     collectible.collected = true;
                 }
                 Seen = true;
-                image.color = Color.blue; // Set Image To Blue For Playerfeedback That Text Has Been Seen
+                image.color = seenColor; // Set Image To Seen Color For Playerfeedback That Text Has Been Seen
             }
             StartCoroutine(InvisableTimer());
         }
