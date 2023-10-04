@@ -1473,13 +1473,12 @@ MonoBehaviour:
   pauseButton: {fileID: 0}
   MapScreen: {fileID: 0}
   IntialScreen: {fileID: 4892229676890024106}
-  look: {fileID: 0}
   playerController: {fileID: 0}
   map: {fileID: 21300000, guid: 5763ff7824c771e48897a17b81596bfa, type: 3}
   textDisplayStatus: {x: 0, y: 0}
-  DisplayTextList: []
+  collectibles: []
   textDisplayCount: {fileID: 0}
-  textDisplaySeenCount: {fileID: 0}
+  joysticks: {fileID: 0}
 --- !u!114 &1357167225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1882,7 +1881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.20784314, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.94509804, g: 0.5882353, b: 0.019607844, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2532,7 +2531,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -24, y: 227}
+  m_AnchoredPosition: {x: -24, y: 86}
   m_SizeDelta: {x: 160, y: 28}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &2024051148
@@ -3786,7 +3785,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -24.007265, y: 364}
+  m_AnchoredPosition: {x: -24.007265, y: 223}
   m_SizeDelta: {x: 160, y: 28}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &4892229677920889164
@@ -3951,7 +3950,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -24.007265, y: 88}
+  m_AnchoredPosition: {x: -24.007265, y: -53}
   m_SizeDelta: {x: 160, y: 28}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &4892229677953790869
@@ -4040,7 +4039,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &4892229678511813113
 GameObject:
   m_ObjectHideFlags: 0

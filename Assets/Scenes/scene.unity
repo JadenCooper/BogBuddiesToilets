@@ -599,6 +599,13 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 180.4
       objectReference: {fileID: 0}
+    - target: {fileID: 272914531747245222, guid: a8427952fb0068843b2115c2c7fef6ea,
+        type: 3}
+      propertyPath: m_text
+      value: 'Use the Joystick on the LEFT to control player movement
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 1207415179175661185, guid: a8427952fb0068843b2115c2c7fef6ea,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -625,6 +632,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: edf3a12c5d0b11940b49761bb7f13e71,
         type: 3}
+    - target: {fileID: 4280090134776068400, guid: a8427952fb0068843b2115c2c7fef6ea,
+        type: 3}
+      propertyPath: m_text
+      value: Use the Joystick on the RIGHT to control rotation in both movement modes
+      objectReference: {fileID: 0}
     - target: {fileID: 5662899021594590794, guid: a8427952fb0068843b2115c2c7fef6ea,
         type: 3}
       propertyPath: m_Type
@@ -2023,7 +2035,7 @@ MonoBehaviour:
   open: 0
   Activated: 0
   RotateTimes: 9
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 72930857}
 --- !u!4 &78692383 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 678383473952506899, guid: 1a87fa2aa706da44ab40d52afa41cd5a,
@@ -3739,6 +3751,11 @@ PrefabInstance:
         type: 3}
       propertyPath: playerFootSteps
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2756417106816742954, guid: 456f5072b62ca344f87f030720a1a53f,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.65
       objectReference: {fileID: 0}
     - target: {fileID: 2756417107771712378, guid: 456f5072b62ca344f87f030720a1a53f,
         type: 3}
@@ -10154,6 +10171,11 @@ PrefabInstance:
       propertyPath: arrowManager
       value: 
       objectReference: {fileID: 3604756786215124998}
+    - target: {fileID: 1567544679846997067, guid: 8c2a95527b92cb6429eba4f21429b293,
+        type: 3}
+      propertyPath: m_text
+      value: Use the Joystick on the RIGHT to control rotation in both movement modes
+      objectReference: {fileID: 0}
     - target: {fileID: 2048241886366906444, guid: 8c2a95527b92cb6429eba4f21429b293,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -10189,6 +10211,13 @@ PrefabInstance:
       propertyPath: arrowManager
       value: 
       objectReference: {fileID: 3604756786215124998}
+    - target: {fileID: 3273396242930498013, guid: 8c2a95527b92cb6429eba4f21429b293,
+        type: 3}
+      propertyPath: m_text
+      value: 'Use the Joystick on the LEFT to control player movement
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 3367375527551767011, guid: 8c2a95527b92cb6429eba4f21429b293,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -10248,6 +10277,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetSoundEffectVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367375528526346733, guid: 8c2a95527b92cb6429eba4f21429b293,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367375528526346733, guid: 8c2a95527b92cb6429eba4f21429b293,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3367375528564789747, guid: 8c2a95527b92cb6429eba4f21429b293,
         type: 3}
@@ -11239,6 +11278,11 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 8463683445220642465, guid: 8c2a95527b92cb6429eba4f21429b293,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8463683445220642471, guid: 8c2a95527b92cb6429eba4f21429b293,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
@@ -24781,7 +24825,7 @@ MonoBehaviour:
   open: 0
   Activated: 0
   RotateTimes: 9
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 1973965720}
 --- !u!1 &1978618987
 GameObject:
   m_ObjectHideFlags: 0
@@ -26833,6 +26877,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5395318852271765493}
     m_Modifications:
+    - target: {fileID: 2582778309426393539, guid: da84f757dfb359a4bb259751e3cebbc1,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4393656621487749646, guid: da84f757dfb359a4bb259751e3cebbc1,
         type: 3}
       propertyPath: m_RootOrder
@@ -43522,6 +43571,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5395318852271765493}
     m_Modifications:
+    - target: {fileID: 2582778309426393539, guid: da84f757dfb359a4bb259751e3cebbc1,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4393656621487749646, guid: da84f757dfb359a4bb259751e3cebbc1,
         type: 3}
       propertyPath: m_RootOrder
@@ -43602,6 +43656,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5395318852271765493}
     m_Modifications:
+    - target: {fileID: 2582778309426393539, guid: da84f757dfb359a4bb259751e3cebbc1,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4393656621487749646, guid: da84f757dfb359a4bb259751e3cebbc1,
         type: 3}
       propertyPath: m_RootOrder
@@ -43682,6 +43741,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5395318852271765493}
     m_Modifications:
+    - target: {fileID: 2582778309426393539, guid: da84f757dfb359a4bb259751e3cebbc1,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4393656621487749646, guid: da84f757dfb359a4bb259751e3cebbc1,
         type: 3}
       propertyPath: m_RootOrder
@@ -43762,6 +43826,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5395318852271765493}
     m_Modifications:
+    - target: {fileID: 2582778309426393539, guid: da84f757dfb359a4bb259751e3cebbc1,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4393656621487749646, guid: da84f757dfb359a4bb259751e3cebbc1,
         type: 3}
       propertyPath: m_RootOrder
@@ -43842,6 +43911,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5395318852271765493}
     m_Modifications:
+    - target: {fileID: 2582778309426393539, guid: da84f757dfb359a4bb259751e3cebbc1,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4393656621487749646, guid: da84f757dfb359a4bb259751e3cebbc1,
         type: 3}
       propertyPath: m_RootOrder
@@ -54204,6 +54278,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5395318852271765493}
     m_Modifications:
+    - target: {fileID: 2582778309426393539, guid: da84f757dfb359a4bb259751e3cebbc1,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4393656621487749646, guid: da84f757dfb359a4bb259751e3cebbc1,
         type: 3}
       propertyPath: m_RootOrder
@@ -62154,6 +62233,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5395318852271765493}
     m_Modifications:
+    - target: {fileID: 2582778309426393539, guid: da84f757dfb359a4bb259751e3cebbc1,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4393656621487749646, guid: da84f757dfb359a4bb259751e3cebbc1,
         type: 3}
       propertyPath: m_RootOrder
@@ -64354,6 +64438,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5395318852271765493}
     m_Modifications:
+    - target: {fileID: 2582778309426393539, guid: da84f757dfb359a4bb259751e3cebbc1,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4393656621487749646, guid: da84f757dfb359a4bb259751e3cebbc1,
         type: 3}
       propertyPath: m_RootOrder
@@ -72875,6 +72964,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5395318852271765493}
     m_Modifications:
+    - target: {fileID: 2582778309426393539, guid: da84f757dfb359a4bb259751e3cebbc1,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4393656621487749646, guid: da84f757dfb359a4bb259751e3cebbc1,
         type: 3}
       propertyPath: m_RootOrder
