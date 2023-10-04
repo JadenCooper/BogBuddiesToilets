@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: English Craftmanship
   description: All the interior tiles and fixtures were imported from England from
-    the Twyford company (A Company That Still Exists (High Street Toilets))
+    the Twyford company
   background: {fileID: 21300000, guid: 965734c7bd8e1b64cbb42e3ba8240386, type: 3}
   picture: {fileID: 21300000, guid: 4e6eb9412e741e245a74ba639399f10d, type: 3}
   collected: 1
