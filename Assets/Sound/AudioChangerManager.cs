@@ -14,7 +14,7 @@ public class AudioChangerManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.name == "New Player")
+        if(other.gameObject.name == "Player")
         {
             topSideAudio.enabled = false;
             bottomSideAudio.enabled = true;
@@ -25,7 +25,7 @@ public class AudioChangerManager : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.name == "New Player")
+        if (other.gameObject.name == "Player")
         {
             bottomSideReverbZone.enabled = false;
             bottomSideAudio.enabled = false;

@@ -3751,7 +3751,7 @@ PrefabInstance:
         type: 3}
       propertyPath: playerFootSteps
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1928135587}
     - target: {fileID: 2756417106816742954, guid: 456f5072b62ca344f87f030720a1a53f,
         type: 3}
       propertyPath: m_Volume
@@ -17200,6 +17200,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3110014841751707575, guid: ccbe641e1394c884991d176b133c954d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 3110014841751707582, guid: ccbe641e1394c884991d176b133c954d,
         type: 3}
       propertyPath: yrotation
@@ -23825,6 +23830,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bb21862e2bd4fd409db8ce020513051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1928135587 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3177408704368210201, guid: ccbe641e1394c884991d176b133c954d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1425735236}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1929071712
 PrefabInstance:
   m_ObjectHideFlags: 0
