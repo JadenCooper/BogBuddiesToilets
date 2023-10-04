@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 352c40ee9622123449c8d1d2717d5655, type: 3}
   m_Name: GentlemensEntrance
   m_EditorClassIdentifier: 
-  title: Gentlemens Entrance
+  title: Gentlemen's Entrance
   description: ' By the 1960s there was no longer a need to have conveniences out
     of sight, or hidden, and the public''s and Council''s attatude changed over the
     decades'

@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: OtherUndergrounds
   m_EditorClassIdentifier: 
   title: Sister Cisterns
-  description: There were three undergrounds built in Dunedin in 1910 (London Street
-    Comfort Station)
+  description: There were three undergrounds built in Dunedin in 1910
   background: {fileID: 21300000, guid: 095291295fa46e74fb040d8bf3e282bb, type: 3}
   picture: {fileID: 21300000, guid: ecda74db629db8d46bcbe8c7cc3f8075, type: 3}
   collected: 1
