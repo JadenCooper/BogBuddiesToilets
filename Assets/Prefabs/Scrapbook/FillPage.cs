@@ -12,6 +12,7 @@ public class FillPage : MonoBehaviour
     public GameObject picture;
     public TextMeshProUGUI title;
     public TextMeshProUGUI description;
+    public TextMeshProUGUI imageDescription;
 
     void OnEnable()
     {
@@ -21,6 +22,7 @@ public class FillPage : MonoBehaviour
             picture.GetComponent<Image>().sprite = collectible.picture;
             title.text = collectible.title;
             description.text = collectible.description;
+            imageDescription.text = collectible.imageDescription;
         }
     }
 }

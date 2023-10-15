@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 352c40ee9622123449c8d1d2717d5655, type: 3}
   m_Name: GentlemensEntrance
   m_EditorClassIdentifier: 
-  title: Gentlemen's Entrance
+  title: Gentleman's Entrance
   description: ' By the 1960s there was no longer a need to have conveniences out
     of sight, or hidden, and the public''s and Council''s attatude changed over the
     decades'
+  imageDescription: Octagon Underground Comfort Station, Gentlman's Entrance 1919,
+    DCC Archives
   background: {fileID: 21300000, guid: b81b8d33264a8b744aca6c376d38f3e3, type: 3}
   picture: {fileID: 21300000, guid: 849b5f29749cd12489edb122c5204962, type: 3}
-  collected: 1
+  collected: 0

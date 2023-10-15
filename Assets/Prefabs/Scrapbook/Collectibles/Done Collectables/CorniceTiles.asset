@@ -16,6 +16,8 @@ MonoBehaviour:
   description: They were designed to be aesthetically pleasing with the interiors
     in the underground facilities fitted with wall to ceiling tiles (for easy cleaning),
     skirting and dados and enriched with cornice tiles
+  imageDescription: Manor Place urinals interior showing cornice tiles 2017 - Alison
+    Breese
   background: {fileID: 21300000, guid: 386a710bbbdf39347be0d0724c0f01af, type: 3}
   picture: {fileID: 21300000, guid: e18f6d9de31c6674a9531e23bf727656, type: 3}
-  collected: 1
+  collected: 0

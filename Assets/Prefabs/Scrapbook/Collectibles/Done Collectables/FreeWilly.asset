@@ -16,6 +16,8 @@ MonoBehaviour:
   description: The Penny in the Slot system was introduced for the water closets
     (toilets), urinals were free to use, although this never covered the cost of
     annual maintenance.
+  imageDescription: Virtual Rendering of  the Octagon Undergrounds interior recreated
+    using original specifications by Michael Findlay 2017
   background: {fileID: 21300000, guid: 386a710bbbdf39347be0d0724c0f01af, type: 3}
   picture: {fileID: 21300000, guid: 95ab18f4f79a7134c9bb1c889ad09781, type: 3}
-  collected: 1
+  collected: 0

@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Ladies First
   description: These conveniences were the first in the city built for women
+  imageDescription: Octagon Underground Comfort Station, Ladies Entrance 1919, DCC
+    Archives
   background: {fileID: 21300000, guid: 0b39533d3d6db5a4398d45703e260761, type: 3}
   picture: {fileID: 21300000, guid: deb1b8264b2a7774a97da79d386dacd0, type: 3}
-  collected: 1
+  collected: 0
