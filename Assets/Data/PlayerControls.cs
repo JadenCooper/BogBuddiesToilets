@@ -46,9 +46,18 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Interact"",
+                    ""name"": ""InteractPC"",
                     ""type"": ""Button"",
                     ""id"": ""10dc3cf2-f27d-4d72-adc9-867f32439735"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""InteractMobile"",
+                    ""type"": ""Button"",
+                    ""id"": ""8a2ae436-f325-46d1-a95d-49a402ce2fe3"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -199,23 +208,12 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""65405536-edb3-4d2e-a94c-23ce49a32c39"",
-                    ""path"": ""<Touchscreen>/Press"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Mobile"",
-                    ""action"": ""Interact"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""2f3024bc-3a42-438f-9980-ccf1d91841c4"",
                     ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""PC"",
-                    ""action"": ""Interact"",
+                    ""action"": ""InteractPC"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -227,6 +225,17 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": ""PC"",
                     ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""65405536-edb3-4d2e-a94c-23ce49a32c39"",
+                    ""path"": ""<Touchscreen>/Press"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Mobile"",
+                    ""action"": ""InteractMobile"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -557,7 +566,8 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_Play = asset.FindActionMap("Play", throwIfNotFound: true);
         m_Play_Movement = m_Play.FindAction("Movement", throwIfNotFound: true);
         m_Play_Look = m_Play.FindAction("Look", throwIfNotFound: true);
-        m_Play_Interact = m_Play.FindAction("Interact", throwIfNotFound: true);
+        m_Play_InteractPC = m_Play.FindAction("InteractPC", throwIfNotFound: true);
+        m_Play_InteractMobile = m_Play.FindAction("InteractMobile", throwIfNotFound: true);
         m_Play_Pause = m_Play.FindAction("Pause", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
@@ -634,7 +644,8 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private List<IPlayActions> m_PlayActionsCallbackInterfaces = new List<IPlayActions>();
     private readonly InputAction m_Play_Movement;
     private readonly InputAction m_Play_Look;
-    private readonly InputAction m_Play_Interact;
+    private readonly InputAction m_Play_InteractPC;
+    private readonly InputAction m_Play_InteractMobile;
     private readonly InputAction m_Play_Pause;
     public struct PlayActions
     {
@@ -642,7 +653,8 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         public PlayActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Play_Movement;
         public InputAction @Look => m_Wrapper.m_Play_Look;
-        public InputAction @Interact => m_Wrapper.m_Play_Interact;
+        public InputAction @InteractPC => m_Wrapper.m_Play_InteractPC;
+        public InputAction @InteractMobile => m_Wrapper.m_Play_InteractMobile;
         public InputAction @Pause => m_Wrapper.m_Play_Pause;
         public InputActionMap Get() { return m_Wrapper.m_Play; }
         public void Enable() { Get().Enable(); }
@@ -659,9 +671,12 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Look.started += instance.OnLook;
             @Look.performed += instance.OnLook;
             @Look.canceled += instance.OnLook;
-            @Interact.started += instance.OnInteract;
-            @Interact.performed += instance.OnInteract;
-            @Interact.canceled += instance.OnInteract;
+            @InteractPC.started += instance.OnInteractPC;
+            @InteractPC.performed += instance.OnInteractPC;
+            @InteractPC.canceled += instance.OnInteractPC;
+            @InteractMobile.started += instance.OnInteractMobile;
+            @InteractMobile.performed += instance.OnInteractMobile;
+            @InteractMobile.canceled += instance.OnInteractMobile;
             @Pause.started += instance.OnPause;
             @Pause.performed += instance.OnPause;
             @Pause.canceled += instance.OnPause;
@@ -675,9 +690,12 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Look.started -= instance.OnLook;
             @Look.performed -= instance.OnLook;
             @Look.canceled -= instance.OnLook;
-            @Interact.started -= instance.OnInteract;
-            @Interact.performed -= instance.OnInteract;
-            @Interact.canceled -= instance.OnInteract;
+            @InteractPC.started -= instance.OnInteractPC;
+            @InteractPC.performed -= instance.OnInteractPC;
+            @InteractPC.canceled -= instance.OnInteractPC;
+            @InteractMobile.started -= instance.OnInteractMobile;
+            @InteractMobile.performed -= instance.OnInteractMobile;
+            @InteractMobile.canceled -= instance.OnInteractMobile;
             @Pause.started -= instance.OnPause;
             @Pause.performed -= instance.OnPause;
             @Pause.canceled -= instance.OnPause;
@@ -838,7 +856,8 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
-        void OnInteract(InputAction.CallbackContext context);
+        void OnInteractPC(InputAction.CallbackContext context);
+        void OnInteractMobile(InputAction.CallbackContext context);
         void OnPause(InputAction.CallbackContext context);
     }
     public interface IUIActions

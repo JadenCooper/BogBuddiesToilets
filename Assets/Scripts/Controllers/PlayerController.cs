@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
     public float raycastDistance;
 
 
+    private bool MenuOpened = true;
+
     public AudioSource walkingAudio;
 
 
@@ -59,11 +61,31 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!mobile && CanMove)
+        bool isEditor = false;
+#if UNITY_EDITOR
+        /*
+        This piece of code will only run while in the editor. This is because 
+        the simulator mode needs to be checked since if we just check our device
+        it will always return desktop. Only is important for editor.
+        */
+        isEditor = true;
+        if (UnityEngine.Device.SystemInfo.deviceType == DeviceType.Desktop)
         {
             MovementInput = Movement.action.ReadValue<Vector3>().normalized;
         }
-        else if (CanMove)
+        if(UnityEngine.Device.SystemInfo.deviceType == DeviceType.Handheld)
+        {
+            MovementInput = new Vector3(movementJoystick.Horizontal, 0, movementJoystick.Vertical);
+        }
+#endif
+        // Will run when the device is desktop.
+        if (SystemInfo.deviceType == DeviceType.Desktop && CanMove && !isEditor)
+        {
+            MovementInput = Movement.action.ReadValue<Vector3>().normalized;
+        }
+
+        //Will run when the device is mobile.
+        if(SystemInfo.deviceType == DeviceType.Handheld && CanMove && !isEditor)
         {
             MovementInput = new Vector3(movementJoystick.Horizontal, 0, movementJoystick.Vertical);
         }
@@ -85,48 +107,69 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnEnable()
-    {
-        Interact.action.performed += Press;
-        Pause.action.performed += PausePress;
-    }
-    private void OnDisable()
-    {
-        Interact.action.performed -= Press;
-        Pause.action.performed -= PausePress;
-    }
+    //private void OnEnable()
+    //{
+    //    Interact.action.performed += Press;
+    //    Pause.action.performed += PausePress;
+    //}
+    //private void OnDisable()
+    //{
+    //    Interact.action.performed -= Press;
+    //    Pause.action.performed -= PausePress;
+    //}
 
-    private void Press(InputAction.CallbackContext obj)
+    //private void Press(InputAction.CallbackContext obj)
+    //{
+
+    //}
+
+    public void MobilePress(InputAction.CallbackContext context)
     {
-        // Interact - Shoots Out Raycast Out At Press/Click Position 
-        if (CanMove)
+        if (context.started && CanMove && (Input.GetTouch(0).phase == UnityEngine.TouchPhase.Began))
         {
-            if (Input.GetTouch(0).phase == UnityEngine.TouchPhase.Began)
+            // Interact - Shoots Out Raycast Out At Press/Click Position 
+
+            PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
+            eventDataCurrentPosition.position = new Vector2(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y);
+            List<RaycastResult> results = new List<RaycastResult>();
+            EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
+            Ray ray = Camera.main.ScreenPointToRay(Look.action.ReadValue<Vector2>());
+            RaycastHit[] hits = Physics.RaycastAll(ray, raycastDistance);
+            foreach (RaycastHit hitinfo in hits)
             {
-                PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
-                eventDataCurrentPosition.position = new Vector2(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y);
-                List<RaycastResult> results = new List<RaycastResult>();
-                EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
-                Ray ray = Camera.main.ScreenPointToRay(Look.action.ReadValue<Vector2>());
-                RaycastHit[] hits = Physics.RaycastAll(ray, raycastDistance);
-                foreach (RaycastHit hitinfo in hits)
+                if (results.Count == 0 || !results[0].gameObject.CompareTag("Joystick"))
                 {
-                    if (results.Count == 0 || !results[0].gameObject.CompareTag("Joystick"))
-                    {
-                        if (hitinfo.collider.CompareTag("Information")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
-                        {
-                            hitinfo.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
-                            break;
-                        }
-                        if (hitinfo.collider.CompareTag("Arrow")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
-                        {
-                            hitinfo.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
-                            break;
-                        }
-                    }
+                    RunRayCastHitInteractable(hitinfo);
                 }
             }
         }
+    }
+
+    public void PCPress(InputAction.CallbackContext context)
+    {
+        if (context.started && CanMove)
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Look.action.ReadValue<Vector2>());
+            RaycastHit[] hits = Physics.RaycastAll(ray, raycastDistance);
+            foreach (RaycastHit hitinfo in hits)
+            {
+                RunRayCastHitInteractable(hitinfo);
+            }
+        }
+    }
+
+    public void RunRayCastHitInteractable(RaycastHit hitinfo)
+    {
+
+        if (hitinfo.collider.CompareTag("Information")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
+        {
+            hitinfo.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
+        }
+        else if (hitinfo.collider.CompareTag("Arrow")) // Text Tag Is For Intractable Doesn't Work On Any Other Tag For Some Reason
+        {
+            hitinfo.collider.GetComponent<Interactable>().Interact(); // Activates Object's Interaction
+        }
+
     }
 
     private void PausePress(InputAction.CallbackContext obj)

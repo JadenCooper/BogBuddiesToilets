@@ -24,9 +24,18 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Interact",
+                    "name": "InteractPC",
                     "type": "Button",
                     "id": "10dc3cf2-f27d-4d72-adc9-867f32439735",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "InteractMobile",
+                    "type": "Button",
+                    "id": "8a2ae436-f325-46d1-a95d-49a402ce2fe3",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -177,23 +186,12 @@
                 },
                 {
                     "name": "",
-                    "id": "65405536-edb3-4d2e-a94c-23ce49a32c39",
-                    "path": "<Touchscreen>/Press",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Mobile",
-                    "action": "Interact",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "2f3024bc-3a42-438f-9980-ccf1d91841c4",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "PC",
-                    "action": "Interact",
+                    "action": "InteractPC",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -205,6 +203,17 @@
                     "processors": "",
                     "groups": "PC",
                     "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "65405536-edb3-4d2e-a94c-23ce49a32c39",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Mobile",
+                    "action": "InteractMobile",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
