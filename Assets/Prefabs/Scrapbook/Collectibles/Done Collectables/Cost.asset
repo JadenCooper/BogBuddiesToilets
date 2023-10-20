@@ -15,6 +15,7 @@ MonoBehaviour:
   title: Costly Convenience
   description: Underground toilets were very expensive to build and required a lot
     of investment and ongoing maintenance.
+  imageDescription: Manor Place Convenience Tender 1912 - DCC Archives
   background: {fileID: 21300000, guid: 095291295fa46e74fb040d8bf3e282bb, type: 3}
   picture: {fileID: 21300000, guid: e051bdde68c5b82478ecaa5f839b58a7, type: 3}
   collected: 1

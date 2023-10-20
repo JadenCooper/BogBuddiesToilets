@@ -15,6 +15,7 @@ MonoBehaviour:
   title: Narrow Stairs
   description: Architecturally impressive, the underground spaces were however, prone
     to contant leaks and had very narrow, sometimes treacherous access stairs
+  imageDescription: King Edward Street Comfort Station 1919 - DCC Archives
   background: {fileID: 21300000, guid: 095291295fa46e74fb040d8bf3e282bb, type: 3}
   picture: {fileID: 21300000, guid: 2e7034b3c286b0e4eb5d79a3cde958e6, type: 3}
-  collected: 1
+  collected: 0
