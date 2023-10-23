@@ -21,12 +21,28 @@ public class PauseManager : MonoBehaviour
     private List<Collectible> collectibles = new List<Collectible>();
     public TextMeshProUGUI textDisplayCount;
     public GameObject joysticks;
+    public bool GameHasStarted;
     private void Start()
     {
         image = PauseMenu.GetComponent<Image>();
         textDisplayStatus.y = collectibles.Count;
         orginalMapColor = image.color;
         orginalSprite = image.sprite;
+    }
+    public void Update()
+    {
+        //Update method runs and checks if escape has been pressed.
+        if (Input.GetKeyDown(KeyCode.Escape) && GameHasStarted)
+        {
+            Pause();
+        }
+    }
+
+    // This method is purely there to stop the play from opening and closing
+    // the pause menu before the game has started.
+    public void StartGameUpdate()
+    {
+        GameHasStarted = true;
     }
     public void Pause()
     {

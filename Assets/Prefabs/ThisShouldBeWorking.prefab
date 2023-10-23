@@ -57,7 +57,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 1500
   field of view: 44.959797
   orthographic: 0
   orthographic size: 5
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 6206551848295021829}
   m_Layer: 0
   m_Name: ThisShouldBeWorking
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,15 +113,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3110014841751707575}
-  m_LocalRotation: {x: 0, y: 0.90791625, z: 0, w: 0.41915175}
+  m_LocalRotation: {x: 0, y: 0.90791655, z: 0, w: 0.41915098}
   m_LocalPosition: {x: 131.8245, y: 47.487698, z: -36.10384}
-  m_LocalScale: {x: 2.21448, y: 1.2, z: 2.7907019}
+  m_LocalScale: {x: 2.21448, y: 1.64, z: 2.7907019}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6742427750387864985}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 130.438, z: 0}
 --- !u!33 &3110014841751707571
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: 282c8a8b4cb4f4e4e8fa399dc312db67,
     type: 3}
-  m_NotificationBehavior: 0
+  m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -155,7 +155,91 @@ MonoBehaviour:
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ActionEvents: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d4268348-12ce-46ac-b20c-f1dfa06a7d7f
+    m_ActionName: Play/Movement[/Keyboard/a,/Keyboard/d,/Keyboard/w,/Keyboard/s]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4472353e-dceb-480a-8326-eba0895fc76c
+    m_ActionName: Play/Look[/Mouse/position,/Device Simulator Touchscreen/position]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3110014841751707570}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: PCPress
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 10dc3cf2-f27d-4d72-adc9-867f32439735
+    m_ActionName: Play/Interact[/Device Simulator Touchscreen/press,/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 66c06c79-90e8-41db-a10a-d1d9714fb505
+    m_ActionName: Play/Pause[/Keyboard/p]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a25bb5b4-d480-4dc0-b077-f0f0be6b3286
+    m_ActionName: UI/Navigate
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e6ead1cc-262e-4304-bc1f-a8496e7c6086
+    m_ActionName: UI/Submit
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 45c07fdf-17ed-44b2-b3cd-88d3c3711894
+    m_ActionName: UI/Cancel
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6edc239d-d2a8-4ca9-8bcd-bece7b10beb1
+    m_ActionName: UI/Point
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4f55e998-fd72-426e-9f39-006f0eab7cf1
+    m_ActionName: UI/Click[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e729952a-90f1-4857-9f70-8f90fa698420
+    m_ActionName: UI/ScrollWheel[/Mouse/scroll]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 319241cc-d687-4af8-b915-88b72eadbae2
+    m_ActionName: UI/MiddleClick[/Mouse/middleButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 07169901-15d5-4a27-bf5d-baf96d516790
+    m_ActionName: UI/RightClick[/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: fac0a542-e753-45fc-801f-81489b1559ff
+    m_ActionName: UI/TrackedDevicePosition
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7d5bb9d2-a05a-4104-a982-4d292960be41
+    m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3110014841751707570}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: MobilePress
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 8a2ae436-f325-46d1-a95d-49a402ce2fe3
+    m_ActionName: Play/InteractMobile[/Device Simulator Touchscreen/press]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Play
@@ -181,12 +265,12 @@ MonoBehaviour:
   Pause: {fileID: 9159594919121882040, guid: 282c8a8b4cb4f4e4e8fa399dc312db67, type: 3}
   MovementInput: {x: 0, y: 0, z: 0}
   movement: {x: 419.97165, y: 0, z: -46.942738}
-  speed: 700
+  speed: 1400
   CanMove: 1
   clickMove: 0
   mouseLook: {fileID: 3110014841751707582}
   player: {fileID: 3110014841751707575}
-  raycastDistance: 15
+  raycastDistance: 45
   walkingAudio: {fileID: 3177408704368210201}
   movementJoystick: {fileID: 0}
   mobile: 1
@@ -203,12 +287,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 913973731750493800}
-  yrotation: 130.43791
+  yrotation: 180
   mouse_sensitivity: 30
   mouseLocked: 0
   rotationJoystick: {fileID: 0}
   mobile: 1
   mobileLookSpeed: 2.5
+  joystick1: {fileID: 0}
+  joystick2: {fileID: 0}
 --- !u!82 &3177408704368210201
 AudioSource:
   m_ObjectHideFlags: 0
@@ -317,10 +403,10 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
+  m_Height: 3
   m_Radius: 0.1
   m_SlopeLimit: 45
-  m_StepOffset: 1
+  m_StepOffset: 6
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
