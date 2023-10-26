@@ -15,6 +15,8 @@ MonoBehaviour:
   title: Modern Facilities
   description: They were state of the art, modern facilities for both sanitation
     reasons and for promoting cities as hygienic and modern.
+  imageDescription: Octagon Underground Convenience Plans 1909, Plan 4427, City Engineers,
+    DCC Archives
   background: {fileID: 21300000, guid: 095291295fa46e74fb040d8bf3e282bb, type: 3}
   picture: {fileID: 21300000, guid: 5763ff7824c771e48897a17b81596bfa, type: 3}
-  collected: 1
+  collected: 0

@@ -16,6 +16,8 @@ MonoBehaviour:
   description: The 19th and early 20th century society saw public urination as indecent
     and the out of sight public toilet was seen as the only appropriate place for
     these "offensive" bodily functions.
+  imageDescription: Petition from local business owners to Council to upgrade the
+    urinals at Market Reserve 1912 - DCC Archives
   background: {fileID: 21300000, guid: 0b39533d3d6db5a4398d45703e260761, type: 3}
   picture: {fileID: 21300000, guid: 10631dcd725c5db4e9c3688a0532e740, type: 3}
-  collected: 1
+  collected: 0

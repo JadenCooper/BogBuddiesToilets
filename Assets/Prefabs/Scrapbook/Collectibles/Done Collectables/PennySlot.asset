@@ -16,6 +16,7 @@ MonoBehaviour:
   description: "Each water closet had a \u201Cpenny in the slot\u201D locking system.
     It cost a penny to unlock the door to use the water closets. Urinals were free
     to use."
+  imageDescription: High Street Toilets at Dowling Street Carpark 1969 - DCC Archives
   background: {fileID: 21300000, guid: 095291295fa46e74fb040d8bf3e282bb, type: 3}
   picture: {fileID: 21300000, guid: a2ab30b2a6270604da201e4d9f74f4bf, type: 3}
   collected: 1
