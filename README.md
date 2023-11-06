@@ -34,7 +34,7 @@ This application was created to coincide with heritage designation of the Mannor
 
 ## Deployment
 - WebGL: (Using Github Pages) https://jadencooper.github.io/BogBuddiesToilets/
-- Android: TBA
+- Android: https://play.google.com/store/apps/details?id=com.DefaultCompany.Octagon
 - IOS: TBA
 
 ## Contact
