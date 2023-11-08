@@ -40,18 +40,18 @@ public class MouseLook : MonoBehaviour
         isEditor = true;
         if (UnityEngine.Device.SystemInfo.deviceType == DeviceType.Desktop)
         {
-            joystick1.SetActive(false);
-            joystick2.SetActive(false);
-            Cursor.lockState = CursorLockMode.Locked;
+            //joystick1.SetActive(false);
+            //joystick2.SetActive(false);
+            //Cursor.lockState = CursorLockMode.Locked;
         }
 #endif
         // Checks if the device is desktop. If true, disables joystick controls
         // and locks the mouse to the screen.
         if (SystemInfo.deviceType == DeviceType.Desktop && !isEditor)
         {
-            joystick1.SetActive(false);
-            joystick2.SetActive(false);
-            Cursor.lockState = CursorLockMode.Locked;
+            //joystick1.SetActive(false);
+            //joystick2.SetActive(false);
+            //Cursor.lockState = CursorLockMode.Locked;
         }
 
     }
