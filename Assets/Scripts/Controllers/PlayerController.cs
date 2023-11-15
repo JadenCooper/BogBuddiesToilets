@@ -79,16 +79,16 @@ public class PlayerController : MonoBehaviour
         }
 #endif
         // Will run when the device is desktop.
-        if (SystemInfo.deviceType == DeviceType.Desktop && CanMove && !isEditor)
-        {
-            MovementInput = Movement.action.ReadValue<Vector3>().normalized;
-        }
+        //if (SystemInfo.deviceType == DeviceType.Desktop && CanMove && !isEditor)
+        //{
+            //MovementInput = Movement.action.ReadValue<Vector3>().normalized;
+        //}
 
         //Will run when the device is mobile.
-        if(SystemInfo.deviceType == DeviceType.Handheld && CanMove && !isEditor)
-        {
+        //if(SystemInfo.deviceType == DeviceType.Handheld && CanMove && !isEditor)
+        //{
             MovementInput = new Vector3(movementJoystick.Horizontal, 0, movementJoystick.Vertical);
-        }
+        //}
 
         if (MovementInput != Vector3.zero && !clickMove)
         {
