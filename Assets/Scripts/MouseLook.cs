@@ -85,15 +85,15 @@ public class MouseLook : MonoBehaviour
 #endif
 
         //Runs when device is desktop
-        if (SystemInfo.deviceType == DeviceType.Desktop && !mouseLocked && !isEditor)
-        {
-            mousemovement = Mouse.current.delta.ReadValue();
-        }
+        //if (SystemInfo.deviceType == DeviceType.Desktop && !mouseLocked && !isEditor)
+        //{
+            //mousemovement = Mouse.current.delta.ReadValue();
+        //}
         //Runs when device is mobile
-        if (SystemInfo.deviceType == DeviceType.Handheld && !mouseLocked && !isEditor)
-        {
+        //if (SystemInfo.deviceType == DeviceType.Handheld && !mouseLocked && !isEditor)
+        //{
             mousemovement = rotationJoystick.Direction * mobileLookSpeed;
-        }
+        //}
 
 
         xrotation -= mousemovement.y * Time.deltaTime * mouse_sensitivity;
